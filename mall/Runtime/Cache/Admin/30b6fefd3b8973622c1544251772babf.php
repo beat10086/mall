@@ -30,7 +30,9 @@
                             <span><img alt="image" class="img-circle" src="/mall/PUBLIC/Admin/img/profile_small.jpg" /></span>
                             <a data-toggle="dropdown" class="dropdown-toggle" href="#">
                                 <span class="clear">
-                               <span class="block m-t-xs"><strong class="font-bold">Beaut-zihan</strong></span>
+                                    <span class="block m-t-xs">
+                                    	<strong class="font-bold"><?php echo ($_SESSION['admin']['username']); ?></strong>
+                                    </span>
                                 <span class="text-muted text-xs block">超级管理员<b class="caret"></b></span>
                                 </span>
                             </a>
@@ -44,7 +46,7 @@
                                 <li><a class="J_menuItem" href="mailbox.html">信箱</a>
                                 </li>
                                 <li class="divider"></li>
-                                <li><a href="login.html">安全退出</a>
+                                <li><a href="<?php echo U('Login/layout');?>">安全退出</a>
                                 </li>
                             </ul>
                         </div>
@@ -132,7 +134,7 @@
                         </li>
                     </ul>
                 </div>
-                <a href="login.html" class="roll-nav roll-right J_tabExit"><i class="fa fa fa-sign-out"></i> 退出</a>
+                <a href="<?php echo U('Login/layout');?>" class="roll-nav roll-right J_tabExit"><i class="fa fa fa-sign-out"></i> 退出</a>
             </div>
             <div class="row J_mainContent" id="content-main">
                 <iframe class="J_iframe" name="iframe0" width="100%" height="100%" src="" frameborder="0" >

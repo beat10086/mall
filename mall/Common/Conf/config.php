@@ -12,8 +12,9 @@ return array(
     'DB_TYPE'=>'pdo',
     'DB_USER'=>'root',
     'DB_PWD'=>'',
-    'DB_PREFIX'=>'hd_',
-    'DB_DSN'=>'mysql:host=localhost;dbname=hdmall;charset=UTF8',
+    'DB_PREFIX'=>'ts_',
+    'DB_DSN'=>'mysql:host=localhost;dbname=tsmall;charset=UTF8',
     //URL模式
     'URL_MODEL'=>2,
+    'LOAD_EXT_FILE'=> 'function.php',
 );
