@@ -1,0 +1,39 @@
+@CHARSET "UTF-8";
+.pagination{
+	 float:right;
+}
+.pagination .prev{
+	
+	
+}
+.pagination a{
+	background-color: #fff;
+    border: 1px solid #ddd;
+    color: #337ab7;
+    float: left;
+    line-height: 1.42857;
+    margin-left: -1px;
+    padding: 4px 8px;
+    position: relative;
+    text-decoration: none;	
+}
+.pagination .current{
+	padding: 4px 8px;
+	background-color: #337ab7;
+    border-color: #337ab7;
+    color: #fff;
+    cursor: default;
+    z-index: 2;
+    float: left;
+    line-height: 1.42857;
+    border: 1px solid #ddd;
+    position: relative;
+    margin-left: -1px;
+}
+.ibox-content{
+	padding: 10px;
+}
+.table > tbody > tr > td, .table > tbody > tr > th, .table > tfoot > tr > td, .table > tfoot > tr > th, .table > thead > tr > td, .table > thead > tr > th{
+	  padding:4px;
+	
+}

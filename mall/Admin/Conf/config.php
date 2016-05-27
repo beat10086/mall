@@ -7,4 +7,5 @@ return array(
 		'__JS__'=>__ROOT__.'/PUBLIC/'.MODULE_NAME.'/js',
 		'__IMG__'=>__ROOT__.'/PUBLIC/'.MODULE_NAME.'/img',
 	),
+    'PAGE_SIZE'=>10
 );
