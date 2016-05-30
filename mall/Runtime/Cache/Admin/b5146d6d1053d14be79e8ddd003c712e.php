@@ -43,7 +43,7 @@
                 <div class="ibox float-e-margins">
                     <div class="ibox-title">
                         <ol class="breadcrumb">
-                              <li>商品管理</li>
+                              <li><a href="<?php echo U('GoodType/index');?>">商品管理</a></li>
                               <li class="active">商品类型</li>
                        </ol>
                     </div>
@@ -66,7 +66,7 @@
 	                                    <td><?php echo ($i); ?></td>
 	                                    <td><?php echo ($type["type_name"]); ?></td>
 	                                    <td>
-	                                    	<button type="button" class="btn btn-primary btn-xs">
+	                                    	<button type="button" class="btn btn-primary btn-xs param_btn" data-url="/mall/Admin/GoodType/typeAttr/typeid/<?php echo ($type["goods_type_id"]); ?>/name/<?php echo ($type["type_name"]); ?>/type/0">
                                                  <span class="glyphicon  glyphicon-list" aria-hidden="true"></span>
                                                                                                                            参数
                                             </button>

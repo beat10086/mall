@@ -7,40 +7,43 @@
     <meta http-equiv="Cache-Control" content="no-siteapp" />
     <title>电商后台</title>
     <meta name="keywords" content="">
-    <meta name="description" content="">    
-    <link rel="shortcut icon" href="favicon.ico">
-    <link href="/mall/PUBLIC/Admin/css/bootstrap.min.css?v=3.3.5" rel="stylesheet">
-    <!-- Data Tables -->
-    <link href="/mall/PUBLIC/Admin/css/plugins/dataTables/dataTables.bootstrap.css" rel="stylesheet">
-    <link href="/mall/PUBLIC/Admin/css/animate.min.css" rel="stylesheet">
-    <link href="/mall/PUBLIC/Admin/css/style.min.css?v=4.0.0" rel="stylesheet">
-    <link href="/mall/PUBLIC/Admin/css/page.css?v=4.0.0" rel="stylesheet">
-    <style>
-      #addGoods{
-        background:#fff;
-        overflow:hidden;
-        padding-right:1.4%;
-      }
-      .error_info{
-      	 color:#c90000;
-      }
-    </style>
-    <script>
-    	var ThinkPHP={
-    		'CheckType':'<?php echo U("GoodType/checkType");?>',
-    		'INDEX':'<?php echo U("GoodType/Index");?>',
-    		'DELETE':'<?php echo U("GoodType/delType");?>'
-    	}
-    </script>
-</head>
- <body>
+    <meta name="description" content="">
+    <meta http-equiv="pragma" content="no-cache">
+<meta http-equiv="cache-control" content="no-cache">
+<meta http-equiv="expires" content="0">  
+<link rel="shortcut icon" href="favicon.ico">
+<link href="/mall/PUBLIC/Admin/css/bootstrap.min.css?v=3.3.5" rel="stylesheet">
+<!-- Data Tables -->
+<link href="/mall/PUBLIC/Admin/css/plugins/dataTables/dataTables.bootstrap.css" rel="stylesheet">
+<link href="/mall/PUBLIC/Admin/css/animate.min.css" rel="stylesheet">
+<link href="/mall/PUBLIC/Admin/css/style.min.css?v=4.0.0" rel="stylesheet">
+<link href="/mall/PUBLIC/Admin/css/page.css?v=4.0.0" rel="stylesheet">
+
+	<style>
+	      #addGoods{
+	        background:#fff;
+	        overflow:hidden;
+	        padding-right:1.4%;
+	      }
+	 </style>
+	 <script>
+	    	var ThinkPHP={
+	    		'CheckType':'<?php echo U("GoodType/checkType");?>',
+	    		'INDEX':'<?php echo U("GoodType/Index");?>',
+	    		'DELETE':'<?php echo U("GoodType/delType");?>'
+	    	}
+	  </script>
+
+</head>  
+<body>
+	
     <div  class="wrapper wrapper-content animated fadeInRight">
         <div class="row">
             <div class="col-sm-12">
                 <div class="ibox float-e-margins">
                     <div class="ibox-title">
                         <ol class="breadcrumb">
-                              <li>商品管理</li>
+                              <li><a href="<?php echo U('GoodType/index');?>">商品管理</a></li>
                               <li class="active">商品类型</li>
                        </ol>
                     </div>
@@ -63,11 +66,11 @@
 	                                    <td><?php echo ($i); ?></td>
 	                                    <td><?php echo ($type["type_name"]); ?></td>
 	                                    <td>
-	                                    	<button type="button" class="btn btn-primary btn-xs">
+	                                    	<button type="button" class="btn btn-primary btn-xs param_btn" data-url="/mall/Admin/GoodType/typeAttr/typeid/<?php echo ($type["goods_type_id"]); ?>/name/<?php echo ($type["type_name"]); ?>/type/0">
                                                  <span class="glyphicon  glyphicon-list" aria-hidden="true"></span>
                                                                                                                            参数
                                             </button>
-                                            <button type="button" class="btn btn-primary btn-xs">
+                                            <button type="button" class="btn btn-primary btn-xs Spec_btn" data-url="/mall/Admin/GoodType/typeAttr/typeid/<?php echo ($type["goods_type_id"]); ?>/name/<?php echo ($type["type_name"]); ?>/type/1">
                                                  <span class="glyphicon glyphicon-th" aria-hidden="true"></span> 
                                                                                                                             规格
                                             </button>  
@@ -112,14 +115,17 @@
                   </div>
                 </form>
             </div>
-    </div>
-    <script src="/mall/PUBLIC/Admin/js/jquery.min.js?v=2.1.4"></script>
-    <script src="/mall/PUBLIC/Admin/js/bootstrap.min.js?v=3.3.5"></script>
-    <script src="/mall/PUBLIC/Admin/js/plugins/layer/layer.min.js"></script>
-    <script src="/mall/PUBLIC/Admin/js/plugins/jeditable/jquery.jeditable.js"></script>
-    <script src="/mall/PUBLIC/Admin/js/plugins/dataTables/jquery.dataTables.js"></script>
-    <script src="/mall/PUBLIC/Admin/js/plugins/dataTables/dataTables.bootstrap.js"></script>
-    <script src="/mall/PUBLIC/Admin/js/bootstrapValidator.min.js"></script>
-    <script src="/mall/PUBLIC/Admin/js/type.js"></script>
- </body>
-<html>
+       </div>
+
+	<script src="/mall/PUBLIC/Admin/js/jquery.min.js?v=2.1.4"></script>
+<script src="/mall/PUBLIC/Admin/js/bootstrap.min.js?v=3.3.5"></script>
+<script src="/mall/PUBLIC/Admin/js/plugins/layer/layer.min.js"></script>
+<script src="/mall/PUBLIC/Admin/js/plugins/jeditable/jquery.jeditable.js"></script>
+<script src="/mall/PUBLIC/Admin/js/plugins/dataTables/jquery.dataTables.js"></script>
+<script src="/mall/PUBLIC/Admin/js/plugins/dataTables/dataTables.bootstrap.js"></script>
+<script src="/mall/PUBLIC/Admin/js/bootstrapValidator.min.js"></script>
+
+	<script src="/mall/PUBLIC/Admin/js/type.js"></script>
+
+</body>
+</html>

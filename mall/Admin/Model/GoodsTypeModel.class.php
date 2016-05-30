@@ -28,8 +28,13 @@ class GoodsTypeModel extends Model  {
        return $this->create($data)?1:$this->getError();
     }
     //获取所有类型
-    public  function  allType ($page,$rows) {
-        return  $this->field('goods_type_id,type_name')->limit($rows*($page-1),$rows)->select();
+    public  function  allType ($page=null,$rows=null) {
+        if(!empty($page)){
+            return  $this->field('goods_type_id,type_name')->limit($rows*($page-1),$rows)->select();
+        }else{
+            return  $this->field('goods_type_id,type_name')->select();
+        }
+       
     }
     //删除类型
     public  function delType ($uid) {

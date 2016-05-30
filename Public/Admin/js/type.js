@@ -94,5 +94,12 @@ $(function(){
         		    }
         		});        	   
            })            
-                       
+     $(".param_btn").on('click',function(){
+    	 var data_url=$(this).attr('data-url');
+    	 window.location.href=data_url;
+     })    
+     $(".Spec_btn").on('click',function(){
+    	 var data_url=$(this).attr('data-url');
+    	 window.location.href=data_url;
+     })
    })

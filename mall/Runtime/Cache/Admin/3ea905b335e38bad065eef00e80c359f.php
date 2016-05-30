@@ -5,6 +5,6 @@
 <title>Insert title here</title>
 </head>
 <body>
-商品列表
+ <a href="<?php echo U('GoodType/index');?>">商品</a>
 </body>
 </html>
