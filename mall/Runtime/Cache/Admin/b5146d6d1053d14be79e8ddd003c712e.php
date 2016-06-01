@@ -8,7 +8,10 @@
     <title>电商后台</title>
     <meta name="keywords" content="">
     <meta name="description" content="">
-    <link rel="shortcut icon" href="favicon.ico">
+    <meta http-equiv="pragma" content="no-cache">
+<meta http-equiv="cache-control" content="no-cache">
+<meta http-equiv="expires" content="0">  
+<link rel="shortcut icon" href="favicon.ico">
 <link href="/mall/PUBLIC/Admin/css/bootstrap.min.css?v=3.3.5" rel="stylesheet">
 <!-- Data Tables -->
 <link href="/mall/PUBLIC/Admin/css/plugins/dataTables/dataTables.bootstrap.css" rel="stylesheet">
@@ -21,9 +24,6 @@
 	        background:#fff;
 	        overflow:hidden;
 	        padding-right:1.4%;
-	      }
-	      .error_info{
-	      	 color:#c90000;
 	      }
 	 </style>
 	 <script>
@@ -70,7 +70,7 @@
                                                  <span class="glyphicon  glyphicon-list" aria-hidden="true"></span>
                                                                                                                            参数
                                             </button>
-                                            <button type="button" class="btn btn-primary btn-xs">
+                                            <button type="button" class="btn btn-primary btn-xs Spec_btn" data-url="/mall/Admin/GoodType/typeAttr/typeid/<?php echo ($type["goods_type_id"]); ?>/name/<?php echo ($type["type_name"]); ?>/type/1">
                                                  <span class="glyphicon glyphicon-th" aria-hidden="true"></span> 
                                                                                                                             规格
                                             </button>  
@@ -99,14 +99,12 @@
         			        <h4 class="modal-title" id="myModalLabel">添加类型</h4>
         			      </div>
         			      <div class="modal-body">
-                              <form>
                                 <div class="form-group">
                                     <label for="type_name">类型名称</label>
                                      <input type="text" class="form-control" id="type_name"  name="type_name"  
                                      autocomplete="off" placeholder="类型名称">
                                 </div>
                                 <div id="errors" style="color:#c90000;"></div>
-                              </form>
         			      </div>
         			      <div class="modal-footer">
         			        <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
@@ -115,7 +113,7 @@
                   </div>
                 </form>
             </div>
-          </div>
+       </div>
 
 	<script src="/mall/PUBLIC/Admin/js/jquery.min.js?v=2.1.4"></script>
 <script src="/mall/PUBLIC/Admin/js/bootstrap.min.js?v=3.3.5"></script>

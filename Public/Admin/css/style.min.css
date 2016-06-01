@@ -8,3 +8,9 @@ h1,h2,h3,h4,h5,h6{font-weight:100}h1{font-size:30px}h2{font-size:24px}h3{font-si
 .label{
 	 font-size:12px;
 }
+#brand_logo-button{
+	 background:#1ab394;
+	 border:none;
+	 border-radius:5px;
+	
+}

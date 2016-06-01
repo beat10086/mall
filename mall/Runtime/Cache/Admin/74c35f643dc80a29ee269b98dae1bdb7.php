@@ -99,14 +99,12 @@
         			        <h4 class="modal-title" id="myModalLabel">添加类型</h4>
         			      </div>
         			      <div class="modal-body">
-                              <form>
                                 <div class="form-group">
                                     <label for="type_name">类型名称</label>
                                      <input type="text" class="form-control" id="type_name"  name="type_name"  
                                      autocomplete="off" placeholder="类型名称">
                                 </div>
                                 <div id="errors" style="color:#c90000;"></div>
-                              </form>
         			      </div>
         			      <div class="modal-footer">
         			        <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>

@@ -27,7 +27,7 @@ $(function(){
                                    },
                                    remote:{
                                 	  type: 'POST',
-                                   	  url: ThinkPHP.CheckType,
+                                   	  url: ThinkPHP.CheckBrand,
                                    	  message:'类型名称已添加',
                                    	  delay: 1000
                                    }

@@ -6,6 +6,10 @@ return array(
 		'__CSS__'=>__ROOT__.'/PUBLIC/'.MODULE_NAME.'/css',
 		'__JS__'=>__ROOT__.'/PUBLIC/'.MODULE_NAME.'/js',
 		'__IMG__'=>__ROOT__.'/PUBLIC/'.MODULE_NAME.'/img',
+	    '__UPLOADIFY__'=>__ROOT__.'/PUBLIC/'.MODULE_NAME.'/uploadify',
 	),
-    'PAGE_SIZE'=>10
+    'PAGE_SIZE'=>10,
+    //图片上传路径
+    'UPLOAD_PATH'=>'./Uploads/',
+    'LOGO_PATH'=>'./logo/',
 );

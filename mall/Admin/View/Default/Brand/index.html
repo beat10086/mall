@@ -1,27 +1,8 @@
-<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="renderer" content="webkit">
-    <meta http-equiv="Cache-Control" content="no-siteapp" />
-    <title>电商后台</title>
-    <meta name="keywords" content="">
-    <meta name="description" content="">
-    <meta http-equiv="pragma" content="no-cache">
-<meta http-equiv="cache-control" content="no-cache">
-<meta http-equiv="expires" content="0">  
-<link rel="shortcut icon" href="favicon.ico">
-<link href="/mall/PUBLIC/Admin/css/bootstrap.min.css?v=3.3.5" rel="stylesheet">
-<!-- Data Tables -->
-<link href="/mall/PUBLIC/Admin/css/plugins/dataTables/dataTables.bootstrap.css" rel="stylesheet">
-<link href="/mall/PUBLIC/Admin/css/animate.min.css" rel="stylesheet">
-<link href="/mall/PUBLIC/Admin/css/style.min.css?v=4.0.0" rel="stylesheet">
-<link href="/mall/PUBLIC/Admin/css/page.css?v=4.0.0" rel="stylesheet">
-
-	<link href="/mall/PUBLIC/Admin/css/uploadify.css" rel="stylesheet">
-	<link rel="stylesheet" href="/mall/PUBLIC/Admin/uploadify/jquery.uploadify.min.js">
-	<link rel="stylesheet" href="/mall/PUBLIC/Admin/uploadify/uploadify.css">
+<extend name="Base/common"/>
+<block name="head">
+	<link href="__CSS__/uploadify.css" rel="stylesheet">
+	<link rel="stylesheet" href="__UPLOADIFY__/jquery.uploadify.min.js">
+	<link rel="stylesheet" href="__UPLOADIFY__/uploadify.css">
 	<style type="text/css">
 		 .show_status{
 		 	  cursor:pointer;
@@ -29,17 +10,15 @@
 	</style>
 	<script>
 	    var Think={
-	    	  'uploadify':'/mall/PUBLIC/Admin/uploadify',
-	    	  'IMAGEURL' :'<?php echo U("File/image");?>',
-	    	  'checkBrand':'<?php echo U("Brand/check_brand");?>',
-	    	  'editBrand':'<?php echo U("Brand/editBrand");?>',
-	    	  'delBrand':'<?php echo U("Brand/delBrand");?>'
+	    	  'uploadify':'__UPLOADIFY__',
+	    	  'IMAGEURL' :'{:U("File/image")}',
+	    	  'checkBrand':'{:U("Brand/check_brand")}',
+	    	  'editBrand':'{:U("Brand/editBrand")}',
+	    	  'delBrand':'{:U("Brand/delBrand")}'
 	    }
 	</script>
-
-</head>  
-<body>
-	
+</block>
+<block name="main">
     <div  class="wrapper wrapper-content animated fadeInRight">
         <div class="row">
             <div class="col-sm-12">
@@ -69,22 +48,25 @@
                                 </tr>
                             </thead>
                             <tbody>
-                               <?php if(is_array($brand)): $i = 0; $__LIST__ = $brand;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$brand): $mod = ($i % 2 );++$i;?><tr data-brand-id="<?php echo ($brand["brand_id"]); ?>">
-	                                    <td><?php echo ($i); ?></td>
-	                                    <td><?php echo ($brand["brand_name"]); ?></td>
+                               <volist name="brand" id="brand">
+	                                <tr data-brand-id="{$brand.brand_id}">
+	                                    <td>{$i}</td>
+	                                    <td>{$brand.brand_name}</td>
 	                                    <td>
-	                                       <img src="/mall<?php echo ($brand["brand_logo"]); ?>" />	
+	                                       <img src="__ROOT__{$brand.brand_logo}" />	
                                         </td>
                                         <td>
-                                        	<?php echo (mb_substr($brand["desc"],0,120)); ?>
+                                        	{$brand.desc|mb_substr=0,120}
                                         </td>
                                         <td>
-                                        	  <input type="text" class="form-control" autocomplete="off" value="<?php echo ($brand["sort"]); ?>">
+                                        	  <input type="text" class="form-control" autocomplete="off" value="{$brand.sort}">
                                         </td>
                                         <td>
-                                        	<?php if($brand["status"] == 1): ?><span class="label label-primary show_status" data-status="<?php echo ($brand["status"]); ?>">显示</span>
-                                        		 <?php else: ?>
-                                        		   <span class="label label-primary show_status" data-status="<?php echo ($brand["status"]); ?>">隐藏</span><?php endif; ?>
+                                        	<if condition="$brand.status eq 1">
+                                        		   <span class="label label-primary show_status" data-status="{$brand.status}">显示</span>
+                                        		 <else/>
+                                        		   <span class="label label-primary show_status" data-status="{$brand.status}">隐藏</span>
+                                            </if>
                                         </td>
                                         <td>
                                         	<button type="button" class="btn btn-primary btn-xs edit_brand_btn">
@@ -94,7 +76,8 @@
                                                 <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>删除
                                             </button>
                                         </td>
-	                                </tr><?php endforeach; endif; else: echo "" ;endif; ?>
+	                                </tr> 
+                                </volist>
                             </tbody>
                           </table>
                     </div>
@@ -104,7 +87,7 @@
     </div>
     <div class="modal fade" id="brandmodel" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
             <div class="modal-dialog" role="document">
-                  <form action='<?php echo U("Brand/addBrand");?>' method="POST" id="brandForm" class="form-horizontal" enctype="multipart/form-data">
+                  <form action='{:U("Brand/addBrand")}' method="POST" id="brandForm" class="form-horizontal" enctype="multipart/form-data">
                     <div class="modal-content">
         			      <div class="modal-header">
         			        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -168,17 +151,8 @@
                 </form>
             </div>
        </div>
-
-	<script src="/mall/PUBLIC/Admin/js/jquery.min.js?v=2.1.4"></script>
-<script src="/mall/PUBLIC/Admin/js/bootstrap.min.js?v=3.3.5"></script>
-<script src="/mall/PUBLIC/Admin/js/plugins/layer/layer.min.js"></script>
-<script src="/mall/PUBLIC/Admin/js/plugins/jeditable/jquery.jeditable.js"></script>
-<script src="/mall/PUBLIC/Admin/js/plugins/dataTables/jquery.dataTables.js"></script>
-<script src="/mall/PUBLIC/Admin/js/plugins/dataTables/dataTables.bootstrap.js"></script>
-<script src="/mall/PUBLIC/Admin/js/bootstrapValidator.min.js"></script>
-
-	<script src="/mall/PUBLIC/Admin/js/jquery.uploadify.min.js"></script>
-	<script src="/mall/PUBLIC/Admin/js/brand.js"></script>
-
-</body>
-</html>
+</block>
+<block name="foot">
+	<script src="__JS__/jquery.uploadify.min.js"></script>
+	<script src="__JS__/brand.js"></script>
+</block> 

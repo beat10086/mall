@@ -1,33 +1,12 @@
-<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="renderer" content="webkit">
-    <meta http-equiv="Cache-Control" content="no-siteapp" />
-    <title>电商后台</title>
-    <meta name="keywords" content="">
-    <meta name="description" content="">
-    <meta http-equiv="pragma" content="no-cache">
-<meta http-equiv="cache-control" content="no-cache">
-<meta http-equiv="expires" content="0">  
-<link rel="shortcut icon" href="favicon.ico">
-<link href="/mall/PUBLIC/Admin/css/bootstrap.min.css?v=3.3.5" rel="stylesheet">
-<!-- Data Tables -->
-<link href="/mall/PUBLIC/Admin/css/plugins/dataTables/dataTables.bootstrap.css" rel="stylesheet">
-<link href="/mall/PUBLIC/Admin/css/animate.min.css" rel="stylesheet">
-<link href="/mall/PUBLIC/Admin/css/style.min.css?v=4.0.0" rel="stylesheet">
-<link href="/mall/PUBLIC/Admin/css/page.css?v=4.0.0" rel="stylesheet">
-
+<extend name="Base/common"/>
+<block name="head">
 <script>
 	 var ThinkPHP={
-	 	  'CheckCategory':'<?php echo U("Category/CheckCategory");?>'
+	 	  'CheckCategory':'{:U("Category/CheckCategory")}'
 	 }
 </script>
-
-</head>  
-<body>
-	
+</block>
+<block name="main">
     <div  class="wrapper wrapper-content animated fadeInRight">
         <div class="row">
             <div class="col-sm-12">
@@ -63,7 +42,7 @@
     </div>
     <div class="modal fade" id="goodCategorymodel" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
             <div class="modal-dialog" role="document">
-                 <form action="<?php echo U('Category/addCategory');?>" method="POST" id="goodCategoryForm" class="form-horizontal">
+                 <form action="{:U('Category/addCategory')}" method="POST" id="goodCategoryForm" class="form-horizontal">
                     <div class="modal-content">
         			      <div class="modal-header">
         			        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
@@ -92,12 +71,19 @@
                                       <div class="col-sm-9">
                                            <select name="pid"  class="form-control">
                                            	   <option value="0" path="0">上级分类</option>	
-                                           	   <?php if(is_array($category)): $i = 0; $__LIST__ = $category;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$category): $mod = ($i % 2 );++$i;?><option value="<?php echo ($category["category_id"]); ?>" path="<?php echo ($category["path"]); ?>">
-                                           	   	   	 <?php if($category["path"] == '0' ): ?>├─<?php echo ($category["category_name"]); ?>111
-                                           	   	   	 <?php else: ?>
+                                           	   <volist name="category" id="category"> 
+                                           	   	   <option value="{$category.category_id}" path="{$category.path}">
+                                           	   	   	 <if condition="$category.path eq '0' ">
+                                           	   	   	     ├─{$category.category_name}111
+                                           	   	   	 <else/>
                                            	   	   	     <?php
- $nums=substr_count($category['path'],'-'); echo str_repeat('&nbsp;&nbsp;&nbsp;&nbsp;',$nums).'└'; echo str_repeat('─',$nums).$category['category_name']; endif; ?>
-                                           	   	   </option><?php endforeach; endif; else: echo "" ;endif; ?>   
+                                           	   	   	       $nums=substr_count($category['path'],'-');
+                                           	   	   	       echo str_repeat('&nbsp;&nbsp;&nbsp;&nbsp;',$nums).'└';
+                                           	   	   	       echo str_repeat('─',$nums).$category['category_name'];
+                                           	   	   	     ?>
+                                           	   	   	 </if>
+                                           	   	   </option>
+                                           	   </volist>   
                                            </select>
                                            <input type="text" name="path" id="path" value="0" />
                                       </div>
@@ -107,7 +93,9 @@
                                       <div class="col-sm-9">
                                            <select name="goods_type"  class="form-control">
                                            	   <option value="">请选择</option>
-                                           	   <?php if(is_array($type)): $i = 0; $__LIST__ = $type;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$type): $mod = ($i % 2 );++$i;?><option value="<?php echo ($type["goods_type_id"]); ?>"><?php echo ($type["type_name"]); ?></option><?php endforeach; endif; else: echo "" ;endif; ?> 
+                                           	   <volist name="type" id="type">
+                                           	   	   <option value="{$type.goods_type_id}">{$type.type_name}</option>	 
+                                           	   </volist> 
                                            </select>
                                       </div>
                                   </div>
@@ -166,16 +154,7 @@
                 </form>
             </div>
     </div>
-
-	<script src="/mall/PUBLIC/Admin/js/jquery.min.js?v=2.1.4"></script>
-<script src="/mall/PUBLIC/Admin/js/bootstrap.min.js?v=3.3.5"></script>
-<script src="/mall/PUBLIC/Admin/js/plugins/layer/layer.min.js"></script>
-<script src="/mall/PUBLIC/Admin/js/plugins/jeditable/jquery.jeditable.js"></script>
-<script src="/mall/PUBLIC/Admin/js/plugins/dataTables/jquery.dataTables.js"></script>
-<script src="/mall/PUBLIC/Admin/js/plugins/dataTables/dataTables.bootstrap.js"></script>
-<script src="/mall/PUBLIC/Admin/js/bootstrapValidator.min.js"></script>
-
-	<script src="/mall/PUBLIC/Admin/js/category.js"></script>
-
-</body>
-</html>
+</block>
+<block name="foot">
+	<script src="__JS__/category.js"></script>
+</block>
