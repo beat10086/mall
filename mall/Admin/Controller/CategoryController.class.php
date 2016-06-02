@@ -6,8 +6,16 @@ class CategoryController extends CommonController{
     public  function  index () {
          $type=D('Goods_type');
          $category=D('Category');
+         $pid=isset($_GET['cid'])?$_GET['cid']:'';
+         if($pid != "" ){
+             $sonId=$category->sonCategoryId($pid);
+             $where=implode(',',$sonId)?'where category_id in ('.implode(',',$sonId).')': 'where pid="'.$pid.'"';
+             $this->assign('category',$category->showCategory($where));
+         }else{
+             $this->assign('category',$category->showCategory());
+         }
          $this->assign('type',$type->allType());
-         $this->assign('category',$category->showCategory('category_id,category_name,path'));
+         $this->assign('categoryOne',$category->showCategory());
          $this->display();
     }
     //添加栏目
@@ -41,4 +49,63 @@ class CategoryController extends CommonController{
               'valid' => $valid,
           ));
     }
+    //删除栏目
+    public  function DeleCategory () {
+        //判断是否有子栏目,判断这个栏目下是否有商品
+        if(IS_AJAX){
+            $category=D('Category');
+            $sonId=$category->sonCategoryId(I('post.data_id'));
+            if(empty($sonId)){
+                $cate_id=$category->DeleCategory(I('post.data_id'));
+                if($cate_id>0){
+                    $result=array(
+                        'result'=>true,
+                    );
+                }else{
+                    $result=array(
+                        'result'=>false,
+                        'code'=>-2
+                    );
+                }
+                echo $this->ajaxReturn($result);
+            }else{
+                $result=array(
+                    'result'=>false,
+                    'code'  =>-1
+                );
+                echo $this->ajaxReturn($result);
+            }
+        }else{
+             $this->error('非法操作');
+        }   
+    }
+    //获取属性
+    public  function filter () {
+         if(IS_AJAX){
+             $cid=isset($_GET['cid'])?$_GET['cid']:0;
+             $category=D('Category');
+             $cate=$category->getCategoryOne($cid);
+             $cate_has_filter=array_filter(explode(',',$cate['fiter_attr']));
+             $type_attr=$category->query("select goods_attr_id,attr_name from ts_goods_attr where goods_type_id=".$cate['goods_type_id']);
+             $this->assign('cid',$cid);
+             $this->assign('type_attr',$type_attr);
+             $this->assign('cate_filter',$cate_has_filter);
+             $this->display(); 
+         }else{
+              $this->error('非法操作！');
+         }
+               
+    }
+    public  function  addFilter () {
+        if(IS_AJAX){
+            $category=D('Category');
+            $filter_attr=implode(',',I('post.filter_attr'));
+            echo $cate_id=$category->addFilter(I('post.cid'),$filter_attr);
+        }else{
+            $this->error('非法操作！');
+        }
+        
+        
+    }
+    
 }

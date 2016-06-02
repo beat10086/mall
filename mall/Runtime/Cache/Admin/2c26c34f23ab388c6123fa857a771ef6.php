@@ -21,7 +21,10 @@
 
 <script>
 	 var ThinkPHP={
-	 	  'CheckCategory':'<?php echo U("Category/CheckCategory");?>'
+	 	  'CheckCategory':'<?php echo U("Category/CheckCategory");?>',
+	 	  'CONTROLLER':'/mall/Admin/Category',
+	 	  'DELETE':'<?php echo U("Category/DeleCategory");?>',
+	 	  'filter':'<?php echo U("Category/filter");?>'
 	 }
 </script>
 
@@ -39,6 +42,12 @@
                        </ol>
                     </div>
                     <div id="addGoods">
+                    	  <select id="change-category" class="form-control pull-left" style="width:200px;padding:3px 0;height:25px;font-size:12px;margin-left:10px;">
+	                    	  	     <option value="all">全部</option>
+	                    	  	     <?php if(is_array($categoryOne)): $i = 0; $__LIST__ = $categoryOne;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$category_select): $mod = ($i % 2 );++$i; if($category_select["pid"] == '0' ): ?><option value="<?php echo ($category_select["category_id"]); ?>" <?php if(($category_select["category_id"]) == $_GET['cid']): ?>selected='selected'<?php endif; ?> >
+		                    	  	          	         <?php echo ($category_select["category_name"]); ?>
+		                    	  	          </option><?php endif; endforeach; endif; else: echo "" ;endif; ?>
+	                      </select>
                           <button type="button" class="btn btn-primary btn-xs pull-right" id="addCategory">
                               <span class="glyphicon glyphicon-plus"></span>添加栏目
                           </button>
@@ -47,13 +56,44 @@
                     	 <table class="table table-condensed table-striped table-bordered table-hover">
                             <thead>
                                 <tr>
+                                	<th>序号</th>
                                     <th>栏目名称</th>
                                     <th>状态</th>
                                     <th>导航栏显示</th>
-                                    <th>操作</th>
+                                    <th style="width:190px;">操作</th>
                                 </tr>
                             </thead>
                             <tbody>   
+                            	  <?php if(is_array($category)): $i = 0; $__LIST__ = $category;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$category_show): $mod = ($i % 2 );++$i;?><tr data-category-id="<?php echo ($category_show["category_id"]); ?>">
+                            	  	  <td><?php echo ($i); ?></td>
+                            	  	  <td>
+                            	  	  	<?php if($category_show["pid"] == '0'): ?>├─<?php echo ($category_show["category_name"]); ?>(ID:<?php echo ($category_show["category_id"]); ?>)
+                            	  	      <?php else: ?>
+                            	  	         <?php
+ $nums=substr_count($category_show['path'],'-'); echo str_repeat('&nbsp;&nbsp;&nbsp;&nbsp;',$nums).'└'; echo str_repeat('─',$nums).$category_show['category_name'].'(ID:'.$category_show['category_id'].')'; endif; ?>	
+                            	  	  </td>
+                            	  	  <td>
+                            	  	  	<?php if($category_show["status"] == '1' ): ?><span class="label label-primary ">显示</span>
+                            	  	  		 <?php else: ?>
+                            	  	  		   <span class="label label-danger">隐藏</span><?php endif; ?>
+                            	  	  </td>
+                            	  	  <td>
+                            	  	  	 <?php if($category_show["is_nav"] == '1' ): ?><span class="label label-primary ">显示</span>
+                            	  	  		 <?php else: ?>
+                            	  	  		   <span class="label label-danger">隐藏</span><?php endif; ?>
+                            	  	  </td>
+                            	  	  <td>
+                            	  	  	 <button type="button" class="btn btn-primary btn-xs filter_btn">
+                                                <span class="glyphicon glyphicon-search" aria-hidden="true"></span>筛选条件
+                                          </button>
+                            	  	  	 <button type="button" class="btn btn-primary btn-xs edit_category_btn">
+                                                <span class="glyphicon glyphicon-pencil" aria-hidden="true"></span>编辑
+                                         </button>
+                                         <button type="button" class="btn btn-danger btn-xs del_category_btn">
+                                                <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>删除
+                                         </button>
+                            	  	  </td>
+                            	  	</tr><?php endforeach; endif; else: echo "" ;endif; ?>
                             </tbody>
                           </table>
                     </div>
@@ -92,14 +132,14 @@
                                       <div class="col-sm-9">
                                            <select name="pid"  class="form-control">
                                            	   <option value="0" path="0">上级分类</option>	
-                                           	   <?php if(is_array($category)): $i = 0; $__LIST__ = $category;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$category): $mod = ($i % 2 );++$i;?><option value="<?php echo ($category["category_id"]); ?>" path="<?php echo ($category["path"]); ?>">
-                                           	   	   	 <?php if($category["path"] == '0' ): ?>├─<?php echo ($category["category_name"]); ?>111
+                                           	   <?php if(is_array($categoryOne)): $i = 0; $__LIST__ = $categoryOne;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$categoryadd): $mod = ($i % 2 );++$i;?><option value="<?php echo ($categoryadd["category_id"]); ?>" path="<?php echo ($categoryadd["path"]); ?>">
+                                           	   	   	 <?php if($categoryadd["path"] == '0' ): ?>├─<?php echo ($categoryadd["category_name"]); ?>
                                            	   	   	 <?php else: ?>
                                            	   	   	     <?php
- $nums=substr_count($category['path'],'-'); echo str_repeat('&nbsp;&nbsp;&nbsp;&nbsp;',$nums).'└'; echo str_repeat('─',$nums).$category['category_name']; endif; ?>
+ $nums=substr_count($categoryadd['path'],'-'); echo str_repeat('&nbsp;&nbsp;&nbsp;&nbsp;',$nums).'└'; echo str_repeat('─',$nums).$categoryadd['category_name']; endif; ?>
                                            	   	   </option><?php endforeach; endif; else: echo "" ;endif; ?>   
                                            </select>
-                                           <input type="text" name="path" id="path" value="0" />
+                                           <input type="hidden" name="path" id="path" value="0" />
                                       </div>
                                   </div>
                                   <div class="form-group">
@@ -166,6 +206,25 @@
                 </form>
             </div>
     </div>
+    <div class="modal fade" id="goodCategoryFiltermodel" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+                 <form action="<?php echo U('Category/addFilter');?>" method="POST" id="goodCategoryFilterForm" class="form-horizontal">
+                    <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                      <h4 class="modal-title" id="myModalLabel">筛选属性</h4>
+                    </div>
+                    <div class="modal-body fiter-modal-body">
+                    	 
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+                      <button type="submit" class="btn btn-primary" id="add_good_typeAttr">确定</button>
+                    </div>
+                  </div>
+                </form>
+            </div>
+    </div>
 
 	<script src="/mall/PUBLIC/Admin/js/jquery.min.js?v=2.1.4"></script>
 <script src="/mall/PUBLIC/Admin/js/bootstrap.min.js?v=3.3.5"></script>
@@ -174,6 +233,7 @@
 <script src="/mall/PUBLIC/Admin/js/plugins/dataTables/jquery.dataTables.js"></script>
 <script src="/mall/PUBLIC/Admin/js/plugins/dataTables/dataTables.bootstrap.js"></script>
 <script src="/mall/PUBLIC/Admin/js/bootstrapValidator.min.js"></script>
+<script src="/mall/PUBLIC/Admin/js/common.js"></script>
 
 	<script src="/mall/PUBLIC/Admin/js/category.js"></script>
 

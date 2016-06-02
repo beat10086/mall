@@ -1,0 +1,44 @@
+<if condition='$cate_filter'>
+	<foreach name="cate_filter" item="cate_filter_1">
+		  {$cate_filter_1}
+		  <div class="form-group filter-grounp"> 
+                    	<div class="col-sm-2">
+                    	  	  	  	  <button type="button" class="btn btn-primary del-filter">
+                                          <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+                                      </button>
+                         </div>
+                         <div class="col-sm-10 ">
+                    	  	  	  	  <select name="filter_attr[]" class="form-control filter_attr">
+                    	  	  	  	  	  <option value="">请选择</option>
+                    	  	  	  	  	  <volist name="type_attr" id="type_attr_1">
+                    	  	  	  	  	  	  <option value="{$type_attr_1.goods_attr_id}" <eq name="type_attr_1.goods_attr_id" value="$cate_filter_1">selected='selected'</eq>  >{$type_attr_1.attr_name}</option>
+                    	  	  	  	  	  </volist>
+                    	  	  	  	  </select>
+                    	 </div>
+         </div>
+	</foreach>
+<else/>
+<div class="form-group filter-grounp"> 
+                    	<div class="col-sm-2">
+                    	  	  	  	  <button type="button" class="btn btn-primary del-filter">
+                                          <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+                                      </button>
+                         </div>
+                         <div class="col-sm-10 ">
+                    	  	  	  	  <select name="filter_attr[]" class="form-control filter_attr">
+                    	  	  	  	  	  <option value="">请选择</option>
+                    	  	  	  	  	  <volist name="type_attr" id="type_attr">
+                    	  	  	  	  	  	  <option value="{$type_attr.goods_attr_id}">{$type_attr.attr_name}</option>
+                    	  	  	  	  	  </volist>
+                    	  	  	  	  </select>
+                    	 </div>
+</div>
+</if>
+<div class="form-group fiter_add_div"> 
+                        	<div class="col-sm-12">
+                        		<button type="button" class="btn btn-primary pull-right add-filter">
+                                          <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
+                                </button>
+                        	</div>
+</div>
+<input type="hidden" name="cid" value="{$cid}">

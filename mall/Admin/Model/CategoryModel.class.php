@@ -34,8 +34,44 @@ class CategoryModel extends Model {
          }
     }
     //显示栏目
-    public  function  showCategory ($field) {
-       return  $this->field($field)->select();
+    public  function  showCategory ($where) {
+       if($where != ''){
+           return  $this->query("select category_id,category_name,pid,is_nav,status,CONCAT(path,'-',category_id) as depath,path,goods_type_id from ts_category ".$where." order by depath ASC");
+           //echo $this->getLastSql();
+       }else{
+           return   $this->query("select category_id,category_name,pid,is_nav,status,CONCAT(path,'-',category_id) as depath,path,goods_type_id from ts_category order by depath ASC");
+       }
+       
+     }
+    //栏目的ID
+    public  function  sonCategoryId ($pid) {
+        static  $sonId=array();
+        $cate=$this->field('category_id')->where('pid='.$pid)->find();
+        if($cate){
+            if(is_array($cate)){
+                    $sonId[]=$cate['category_id'];
+                    $this->sonCategoryId($cate['category_id']);
+                }
+        }    
+        return $sonId;
+    }
+    //删除栏目
+    public  function  DeleCategory ($category_id) {
+         $map['category_id']=$category_id;
+         return  $this->where($map)->delete();
+    }
+    //获取某一条栏目
+    public  function getCategoryOne ($cid) {
+        $map['category_id']=$cid;
+        return $this->where($map)->find(); 
+    }
+    public function addFilter ($cid,$filter_attr) {
+         $data=array(
+             'fiter_attr'=>$filter_attr
+         );
+         $map['category_id']=$cid; 
+         return $this->where($map)->save($data);
+        
     }
     
     
