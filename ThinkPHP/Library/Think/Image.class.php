@@ -75,7 +75,7 @@ class Image{
      * @param  string $imgname 图片路径
      * @return Object          当前图片处理库对象
      */
-    public function open($imgname){
+    public function open ($imgname){
         $this->img->open($imgname);
         return $this;
     }

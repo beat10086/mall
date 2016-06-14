@@ -20,7 +20,6 @@
 <link href="/mall/PUBLIC/Admin/css/page.css?v=4.0.0" rel="stylesheet">
 
 	<link href="/mall/PUBLIC/Admin/css/uploadify.css" rel="stylesheet">
-	<link rel="stylesheet" href="/mall/PUBLIC/Admin/uploadify/jquery.uploadify.min.js">
 	<link rel="stylesheet" href="/mall/PUBLIC/Admin/uploadify/uploadify.css">
 	<style type="text/css">
 		 .show_status{

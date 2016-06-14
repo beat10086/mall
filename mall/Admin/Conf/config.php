@@ -7,9 +7,11 @@ return array(
 		'__JS__'=>__ROOT__.'/PUBLIC/'.MODULE_NAME.'/js',
 		'__IMG__'=>__ROOT__.'/PUBLIC/'.MODULE_NAME.'/img',
 	    '__UPLOADIFY__'=>__ROOT__.'/PUBLIC/'.MODULE_NAME.'/uploadify',
+	    '__UEDITOR__'=>__ROOT__.'/PUBLIC/'.MODULE_NAME.'/ueditor',
 	),
     'PAGE_SIZE'=>10,
     //图片上传路径
     'UPLOAD_PATH'=>'./Uploads/',
     'LOGO_PATH'=>'./logo/',
+    'GALLERY_PATH'=>'./gallery/',
 );

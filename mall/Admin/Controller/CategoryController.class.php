@@ -28,6 +28,7 @@ class CategoryController extends CommonController{
                  'status'=>true,
                  'code'  =>$category_id
             );
+            parent::admin_log('添加栏目:'.I('post.category_name').'成功');
         }else{
             $result=array(
                 'status'=>false,
@@ -61,11 +62,13 @@ class CategoryController extends CommonController{
                     $result=array(
                         'result'=>true,
                     );
+                 parent::admin_log('删除栏目成功！');
                 }else{
                     $result=array(
                         'result'=>false,
                         'code'=>-2
                     );
+                 parent::admin_log('删除栏目失败！');
                 }
                 echo $this->ajaxReturn($result);
             }else{

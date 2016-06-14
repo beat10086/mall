@@ -8,14 +8,14 @@ class GoodsAttrModel extends Model  {
                  array('attr_may_value','require',-2)
     );
     //显示类型参数和规格
-    public  function showTypeAttr ($type,$typeId,$page,$rows) {
+    public  function showTypeAttr ($type,$typeId,$page=null,$rows=null) {
          if($type!=""){
              $map['attr_type']=$type;
              $map['goods_type_id']=$typeId;
          }else{
              $map['goods_type_id']=$typeId;
          } 
-         return  $this->where($map)->limit($rows*($page-1),$rows)->order('sort DESC')->select();
+         return  $this->where($map)->limit($rows*($page-1),$rows)->order('sort DESC')->select(); 
     }
     //添加参数或规格
     public  function addTypeAttr ($attr_name,$attr_may_value,$attr_type,$sort,$type) {

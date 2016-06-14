@@ -37,7 +37,6 @@ class CategoryModel extends Model {
     public  function  showCategory ($where) {
        if($where != ''){
            return  $this->query("select category_id,category_name,pid,is_nav,status,CONCAT(path,'-',category_id) as depath,path,goods_type_id from ts_category ".$where." order by depath ASC");
-           //echo $this->getLastSql();
        }else{
            return   $this->query("select category_id,category_name,pid,is_nav,status,CONCAT(path,'-',category_id) as depath,path,goods_type_id from ts_category order by depath ASC");
        }

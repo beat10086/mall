@@ -1,5 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); if($cate_filter): if(is_array($cate_filter)): foreach($cate_filter as $key=>$cate_filter_1): echo ($cate_filter_1); ?>
-		  <div class="form-group filter-grounp"> 
+<?php if (!defined('THINK_PATH')) exit(); if($cate_filter): if(is_array($cate_filter)): foreach($cate_filter as $key=>$cate_filter_1): ?><div class="form-group filter-grounp"> 
                     	<div class="col-sm-2">
                     	  	  	  	  <button type="button" class="btn btn-primary del-filter">
                                           <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>

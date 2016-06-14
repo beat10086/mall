@@ -9,6 +9,12 @@ class CommonController extends Controller  {
            $this->redirect('Login/index');
        }    
     }
+    /* 写入日志 */
+    public  function  admin_log ($con) {
+        $adminlog=D('AdminLog');
+        $adminlog->add_admin_log($con);  
+    }
+    
     
 }
 ?>

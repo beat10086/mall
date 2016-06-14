@@ -193,6 +193,7 @@
 <script src="/mall/PUBLIC/Admin/js/plugins/dataTables/jquery.dataTables.js"></script>
 <script src="/mall/PUBLIC/Admin/js/plugins/dataTables/dataTables.bootstrap.js"></script>
 <script src="/mall/PUBLIC/Admin/js/bootstrapValidator.min.js"></script>
+<script src="/mall/PUBLIC/Admin/js/common.js"></script>
 
 	<script src="/mall/PUBLIC/Admin/js/typeattr.js"></script>
 
