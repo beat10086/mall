@@ -1,0 +1,116 @@
+<extend name="Base/common"/>
+<block name="head">
+	 <script>
+	    var Thinkphp={
+	    	   'updateProduct':'{:U("Goods/updateProduct")}'
+	    }
+	 </script>
+	 <style>
+	     
+	 </style>
+</block>
+<block name="main">
+	   <div  class="wrapper wrapper-content animated fadeInRight">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="ibox float-e-margins">
+                    <div class="ibox-title">
+                        <ol class="breadcrumb">
+                              <li>商品管理</li>
+                              <li class="active">商品货号</li>
+                       </ol>
+                    </div>
+                     <div>
+                          <a href="{$url}" class="btn btn-primary  pull-right">
+                              <span class="glyphicon glyphicon-backward"></span>返回
+                          </a>
+                    </div>
+                    <div id="addGoods"></div>
+                    <div class="ibox-content" id="goods" style="margin-top:20px;border:none;">
+                    	 <div id="product-list">
+                    	  <table class="table table-condensed table-striped table-bordered table-hover">
+                    	  	  <tr colspan='5'>
+                    	  	  	  <p class="text-info">商品名称：{$goods.goods_name}</p>
+                    	  	  </tr>
+                    	  	  <tr>
+					            <th>规格组合</th>
+					            <th>编号</th>
+					            <th>价格</th>
+					            <th>库存</th>
+					            <th>操作</th>
+					        </tr>
+					        <volist name="products" id="product">
+						        <tr product-id="{$product.product_id}">
+						            <td>
+						                {$product.spec}
+						            </td>
+						            <td>
+						                <input type="text" name="goods_sn" class="form-control" value="{$product.goods_sn}" />
+						            </td>
+						            <td>
+						                <input type="text" name="goods_price" class="form-control" value="{$product.goods_price}" />
+						            </td>
+						            <td>
+						                <input type="text" name="sku" class="form-control" value="{$product.SKU}" />
+						            </td>
+						            <td>
+						                <a href="" class="del"><i class="icon-trash"></i> 删除</a>
+						            </td>
+						        </tr>
+						     </volist>
+                          </table>
+                        </div>
+                        <div id="add-product">
+                        	 <table class="table table-condensed table-striped table-bordered table-hover">
+                        	    <tr>
+                        	      <td>
+                                     <b>添加新货品</b>
+                                  </td>
+                                 </tr>
+                                 <tr>
+                                 	  <volist name="specs " id="specs1">
+                                 	     <th>{$specs1.attr_name}</th>
+                                 	  </volist>
+                                 	  <th>编号</th><th>价格</th><th>库存</th>
+                                 </tr>
+                                 <tr>
+	                                 	  <volist name="specs" id="specs2">
+	                                 	 	 <td>
+		                                 	 	 <select name="spec[0][spec_id][{$specs2.goods_attr_id}]" id="" class="form-control">
+		                                 	 	    <option value="">请选择</option>
+		                                 	 	    <?php
+		                                 	 	      $option='';
+		                                 	 	      $specs2['attr_may_value']=str_replace("，",",",$specs2['attr_may_value']);
+		                                 	 	      $attr_may_value=explode(',',$specs2['attr_may_value']);
+		                                 	 	      if(is_array($attr_may_value)){
+		                                 	 	      	  foreach($attr_may_value as $v){
+		                                 	 	      	  	$option.='<option value="'.$v.'">'.$v.'</option>';
+		                                 	 	      	  }
+		                                 	 	      }
+		                                 	 	      echo $option;
+		                                 	 	    ?>
+		                                 	 	 </select>
+	                                 	 	 </td> 
+	                                 	  </volist>
+	                                 	  <td><input type="text" name="spec[0][goods_sn]" id="" class="form-control"></td>
+	                                 	  <td><input type="text" name="spec[0][goods_price]" id="" class="form-control"></td>
+	                                 	  </td>
+	                                 	  <td><input type="text" name="spec[0][goods_SKU]" id="" class="form-control"></td>  
+                                 </tr>
+                                 <tr>
+                                 	 <td colspan="<?php echo count($specs)+3;?>">
+                                          <a href="javascript:void(0)" id="add-product"><i class="icon-plus"></i> 增加一项</a>
+                                          <input type="submit" value="添加货品" class="btn btn-primary" />
+                                     </td>
+                                 </tr>
+                        	 </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</block>
+<block name="foot">
+	  <script src="__JS__/goodsproduct.js"></script>
+</block>	

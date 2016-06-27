@@ -1,0 +1,211 @@
+<extend name="Base/common"/>
+<block name="header">
+	<title>{$goodsOne.goods_name}</title>
+	<meta name="keywords" content="{$goods_info.keywords}">
+	<meta name="description" content="{$goods_info.description}">
+	<link href="__CSS__/base.css" rel="stylesheet">
+	<link href="__CSS__/public.css" rel="stylesheet">
+	<link href="__CSS__/goods.css" rel="stylesheet">
+	<link href="__CSS__/zoom/base.css" rel="stylesheet">
+    <style>
+      ul#thumblist li a{
+      	  border:2px solid #fff;
+      }
+    </style>
+    <script>
+    	var Thinkphp={
+    		  'getProduct':'{:U("Detail/getProduct")}',
+    		  'goods_id':'{$Think.get.id}',
+    		  'addToCart':'{:U("Cart/addToCart")}'
+    	}
+    </script>
+</block>
+<block name="main">
+	<div class="hd-w">
+        <div class="site-here">
+            <strong><a href="__ROOT__">首页</a></strong> &gt;
+            <volist name="ur_here" id="ur_here_1">
+              <a href="{:U('List/index',array('id'=>$ur_here_1['category_id']))}" >{$ur_here_1.category_name}</a> &gt;
+            </volist>
+            <a href="__SELF__">{$goodsOne.goods_name}</a>
+       </div>
+<div id="goods-info">
+<!--相册-->
+<div id="gallery">
+    <div class="clearfix" style="margin-bottom: 5px;" >
+    	<div id="preview" class="spec-preview">
+           <span class="jqzoom">
+           	  <img src="__ROOT__/{$goodsOne.thunb_pic.unfold}" class="jqzoom-change-small" jqimg="__ROOT__/{$goodsOne.thunb_pic.big}" style="border: 1px solid #DDD">   
+           </span>
+        </div>
+    </div>
+    <div class="clearfix" id="small-thumb">
+        <div class="gallery-move moveL"></div>
+        <ul id="thumblist" class="clearfix" >
+            <li >
+                <img src='__ROOT__/{$goodsOne.thunb_pic.thumb}' class="zoomThumbActive" onmousemove="preview(this);" smallImage="__ROOT__/{$goodsOne.thunb_pic.unfold}" largeimage="__ROOT__/{$goodsOne.thunb_pic.big}">
+            </li>
+            <volist name="gallery" id="pic">
+              <li>
+                <img src='__ROOT__/{$pic.gallery_pic.thumb}' onmousemove="preview(this);" smallImage="__ROOT__/{$pic.gallery_pic.unfold}" largeimage="__ROOT__/{$pic.gallery_pic.big}">
+              </li> 
+            </volist>
+        </ul>
+        <div class="gallery-move moveR"></div>
+    </div>
+</div>
+<!--/相册-->
+<div id="goods">
+    <div class="goods_name">
+        <h2>{$goodsOne.goods_name}</h2>
+        <strong>{$goodsOne.promote_word}</strong>
+    </div>
+    <div class="goods-info">
+        <ul class="info-list">
+            <li>
+                <div class="title">
+                                        商品编号：
+                </div>
+                <div class="con" id="goods-sn">
+                {$goodsOne.goods_sn}
+                </div>
+            </li>
+            <li>
+                <div class="title">
+                                         商店价：
+                </div>
+                <div class="con shop-price">
+                    &yen;{$goodsOne.goods_price}
+                </div>
+            </li>
+            <if condition="$goodsOne.is_promote eq 1 && $goodsOne.promote_stime lt time() &&  $goodsOne.promote_etime  gt time()">
+	            <li>
+	                <div class="title">
+	                                        促销信息：
+	                </div>
+	                <div class="con">
+	                    <span class="down-price">直降</span>
+	                    <span>{$goodsOne.promote_price}</span>
+	                </div>
+	            </li>
+            </if>
+        </ul>
+        <br />
+        <ul class="goods_kc">
+            <li>
+                <div class="title">
+                	 库存：
+                </div>
+                <div class="con">
+                    <span id="SKU">{$goodsOne.sku}</span>{$goodsOne.unit}
+                </div>
+            </li>
+            <li>
+                <div class="title">服务：</div>
+                <div class="con">由后盾提供强大的技术支持</div>
+            </li>
+        </ul>
+        <ul class="goods-spec">
+        	<volist name="specs" id="specs" key="key">
+	            <li class="spec-item">
+	                <div class="title">
+	                	 {$specs.spec_name}:
+	                </div>
+	                <div class="con">
+	                    <foreach name="specs.spec_value" item="vo" key="k">
+		                    <a href="javascript:void(0)" class="spec" title="{$vo}">
+		                        <b></b>{$vo}
+		                        <input type="hidden" name="spec[{$key}]" value="{$k}" />
+		                    </a>
+	                    </foreach>
+	                </div>
+	            </li>
+            </volist>
+            <li class="buy-number">
+                <div class="title">
+                                         购买数量：
+                </div>
+                <div class="con changePrice" max="9">
+                    <span type="minues">-</span><input type="text" id="buy-number" value="1" /><span type="plus">+</span>
+                </div>
+            </li>
+            <li>
+                <div class="seletc-spec">
+                    <span>已选择 </span><strong></strong>
+                </div>
+                <div class="buy-button">
+                    <a href="" class="buy-goods"></a>
+                    <a href="javascript:void(0);" class="join-cart" onclick="addToCart(Thinkphp.goods_id)"></a>
+                </div>
+                <a href="" class="fav-goods">收藏商品</a>
+            </li>
+        </ul>
+    </div>
+</div>
+</div>
+<div id="con">
+<div id="con-left">
+    <div class="module">
+        <div class="md-title">
+            <h2>同类分类</h2>
+        </div>
+        <div class="md-content">
+            <ul class="item-list">
+                <li><a href="__WEB__/category/index/id/{$related.category_id}"></a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="module">
+        <div class="md-title">
+            <h2>同类其他品牌</h2>
+        </div>
+        <div class="md-content">
+            <ul class="item-list">
+                <li><a href="__ROOT__/brand/index/id/{$brand.brand_id}">{$brand.brand_name}</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div id="con-right">
+    <div class="goods-attr">
+        <table width="100%" class="goods_table">
+            <tr>
+                <th>商品名称：</th>
+                <td>{$goodsOne.goods_name}</td>
+                <th>商品编号：</th>
+                <td>{$goodsOne.goods_sn}</td>
+                <th>品牌：</th>
+                <td>
+                    {$goodsOne.brand_name.brand_name}
+                </td>
+            </tr>
+            <tr>
+            <volist name="attrs" id="attrs" key="k">
+            	  <eq name="k%3" value="0"> 
+            	  	      <th>{$attrs.attr_name}：</th>
+                          <td>{$attrs.attr_value}</td>
+	             	     <tr/>
+	             	     <tr>
+                      <else/>
+                        <th>{$attrs.attr_name}：</th>
+                        <td>{$attrs.attr_value}</td>
+                  </eq>
+            </volist>
+            </tr>
+        </table>
+    </div>
+    <div id="good-con">
+    	   {$goods_info.content}
+    </div>
+</div>
+</div>
+</div>	
+</block>
+<block name="foot">
+	<script src="__JS__/jquery-1.7.2.min.js"></script> 
+ 	<!--<script src="__JS__/jqzoom/jquery.jqzoom-core-pack.js"></script>-->
+ 	<script src="__JS__/zoom/jquery.jqzoom.js"></script>
+	<script src="__JS__/common.js"></script>
+	<script src="__JS__/goods.js"></script>
+	<script src="__JS__/public.js"></script>
+</block>

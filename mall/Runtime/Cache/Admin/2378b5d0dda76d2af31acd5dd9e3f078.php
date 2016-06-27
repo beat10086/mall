@@ -57,9 +57,12 @@
 	                    	  	    <option  value="0" <?php if(($type) == "0"): ?>selected='selected'<?php endif; ?>>参数</option>
 	                    	  	    <option  value="1" <?php if(($type) == "1"): ?>selected='selected'<?php endif; ?>>规格</option>
 	                    	  </select>
-	                          <button type="button" class="btn btn-primary btn-xs pull-right" id="addGoodTypeAttr">
+	                    	  <a href="<?php echo ($url); ?>" class="btn btn-primary  pull-right" style="margin-left:20px;margin-right:10px;">
+	                              <span class="glyphicon glyphicon-backward"></span>返回
+	                          </a>
+	                          <button type="button" class="btn btn-primary  pull-right" id="addGoodTypeAttr">
 	                              <span class="glyphicon glyphicon-plus"></span>添加参数
-	                          </button>
+	                          </button>  
 	                    </div>
 	                    <div class="ibox-content">
 	                     <?php if($typeAttr): ?><table class="table table-condensed table-striped table-bordered table-hover">

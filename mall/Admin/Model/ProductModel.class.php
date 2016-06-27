@@ -17,5 +17,18 @@ class ProductModel extends Model{
               } 
           }
     }
+    //获取货号
+    public function findAll ($goods_id) {
+        $map['good_id']=$goods_id;
+        return $this->where($map)->select();
+    }
+    //更新货号
+    public  function updateProduct ($product_id,$filed,$value) {
+         $data=array(
+             $filed=>$value
+         );
+         $map['product_id']=$product_id;
+         return $this->where($map)->save($data);
+    }
     
 }

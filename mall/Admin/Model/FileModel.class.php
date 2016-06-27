@@ -38,9 +38,13 @@ class FileModel extends Model {
             $Image->open($imgPath);
             $unfoldPath = C('UPLOAD_PATH').'350_'.$saveName;
             $Image->thumb(350,350,\Think\Image::IMAGE_THUMB_CENTER)->save($unfoldPath);
+            $Image->open($imgPath);
+            $bigPath = C('UPLOAD_PATH').'800_'.$saveName;
+            $Image->thumb(800,800,\Think\Image::IMAGE_THUMB_CENTER)->save($bigPath);
             $imageArr = array(
                 'thumb'=>$thumbPath,
                 'unfold'=>$unfoldPath,
+                'big'   =>$bigPath,
                 'source'=>$imgPath
             );
             return $imageArr;
@@ -66,9 +70,13 @@ class FileModel extends Model {
              $Image->open($imgPath);
              $unfoldPath = C('UPLOAD_PATH').'gallery/'.'350_'.$saveName;
              $Image->thumb(350,350,\Think\Image::IMAGE_THUMB_CENTER)->save($unfoldPath);
+             $Image->open($imgPath);
+             $bigPath = C('UPLOAD_PATH').'gallery/'.'800_'.$saveName;
+             $Image->thumb(800,800,\Think\Image::IMAGE_THUMB_CENTER)->save($bigPath);
              $imageArr = array(
                  'thumb'=>$thumbPath,
                  'unfold'=>$unfoldPath,
+                 'big'   =>$bigPath,
                  'source'=>$imgPath
              );
              return $imageArr;

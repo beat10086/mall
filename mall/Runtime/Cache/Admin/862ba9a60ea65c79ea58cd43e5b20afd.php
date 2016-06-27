@@ -30,7 +30,7 @@
 	     .hide{
 	     	  display:none;
 	     }
-	     #brand_logo-button{
+	     #show_pic-button{
 				 background:#1ab394;
 				 border:none;
 				 border-radius:5px;
@@ -46,7 +46,7 @@
         }
         .mall_pic_box{
 			min-width:350px;
-			max-width:460px;
+			max-width:520px;
 			overflow: hidden;
 			background: none repeat scroll 0 0 white;
         }
@@ -66,8 +66,8 @@
         	overflow:hidden;
         }
         .weibo_pic_content{
-        	 width:100px;
-			height:100px;
+        	width:150px;
+			height:150px;
 			float:left;
 			border:1px solid #eee;
 			margin:-5px 4px 15px 4px;
@@ -76,25 +76,25 @@
         }
         .weibo_pic_content .remove{
         	display:none;
-			width:100px;
+			width:100%;
 			height:25px;
 			background:#000;
 			position:absolute;
-			top:75px;
 			left:0;
 			z-index:2;
 			opacity:0.7;
 			filter:alpha(opacity=70);
 			cursor:pointer;
+			bottom:0;
         }
         .weibo_pic_content .text{
         	display:none;
-			width:100px;
+			width:100%;
 			height:25px;
 			line-height:25px;
 			text-align:center;
 			position:absolute;
-			top:75px;
+			bottom:0;
 			left:0;
 			z-index:3;
 			cursor:pointer;
@@ -109,6 +109,7 @@
         }
 	  </style>
 	  <script type="text/javascript" charset="utf-8">
+	      var flage_type=true;
 		  var Thinkphp={
 		  	    ROOT:'/mall',
 		  	    getTypeAttr:'<?php echo U("Goods/getTypeAttr");?>',
@@ -259,8 +260,8 @@
                                                        <i class="glyphicon glyphicon-calendar"></i>
                                                    </span>
                                                    <input id="reservation" class="form-control" autocomplete="off" type="text"  value="" name="reservation"  style="width: 200px" readonly="readonly">
-                                                   <input type="text" name="promote_stime" autocomplete="off">
-                                                   <input type="text" name="promote_etime" autocomplete="off">
+                                                   <input type="hidden" name="promote_stime" autocomplete="off">
+                                                   <input type="hidden" name="promote_etime" autocomplete="off">
                                               </div>
 	                                    </div>
                                      </div>
@@ -284,7 +285,7 @@
 	                                    	  <input type="file" name="show_pic" id="show_pic"/>
 	                                    	  <img src="/mall/PUBLIC/Admin/img/thumb.jpg"  class="thumb_img" width="170" height="170"/>
 	                                    	  <br/>
-	                                    	  <input type="text" name="thunb_pic" autocomplete="off"/>
+	                                    	  <input type="hidden" name="thunb_pic" autocomplete="off"/>
 	                                    </div>
                                      </div>
                                      <div class="form-group">
@@ -325,7 +326,7 @@
 						                <tr id="product-th">
 						                </tr>
 						                <tr class="well">
-						                    <td colspan="6">
+						                    <td colspan="7">
 						                        <a href="javascript:void(0)" id="add-product"><i class="icon-plus"></i> 增加一项</a>
 						                    </td>
 						                </tr>

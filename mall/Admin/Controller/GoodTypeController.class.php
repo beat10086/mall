@@ -76,6 +76,7 @@ class GoodTypeController extends CommonController{
           $this->assign('type',$type);
           $this->assign('good_type',$goods_type->allType());
           $this->assign('page',$show);// 赋值分页输出
+          $this->assign('url',PREV_URL());
           $this->display();
     }
     //添加商品类型参数和规格

@@ -1,0 +1,81 @@
+<script>
+   var think={
+   	    'getCart':'{:U("Cart/getCart")}',
+   	     'ROOT':'__ROOT__',
+   	     'Detail':'/mall/Detail/index',
+   	     'delCartGoods':'{:U("Cart/delCartGoods")}',
+   }
+</script>
+<div class="hd-w">
+    <div id="header">
+        <div id="logo">
+            <a href="__ROOT__">
+                <img src="" alt="">
+            </a>
+            <div class="logo-ads">
+                <a href="">
+                </a>
+            </div>
+        </div>
+        <div id="search">
+            <form action="" method="post">
+                <div id="search-form">
+                    <div class="search-form-left"></div>
+                    <div class="search-form-center">
+                        <input type="text" name="keyword" default="后盾网、人人做后盾" value="后盾网、人人做后盾" id="keyword">
+                    </div>
+                    <div class="search-form-right"></div>
+                    <div class="search-button">
+                        <input type="button" value="搜索">
+                    </div>
+                </div>
+            </form>
+            <div id="hot-keyword">
+                <span>热门搜索：</span>
+                <a href="###" class="hot-words">新一代APU</a>
+                <a href="###">跑步机</a>
+                <a href="###">老板烟机</a>
+                <a href="###">和田新枣</a>
+                <a href="###">华为Y210</a>
+                <a href="###">聚焦十八大</a>
+                <a href="###">诺基亚800</a>
+            </div>
+        </div>
+        <div id="header-cart">
+            <div id="shopping-cart" >
+                <dl>
+                    <dt >
+                    	<i class="ci-left"></i>
+	                    <i class="icon-account">
+	                        <span>{$cateNum}</span>
+	                    </i>
+                         <a href='{:U("Cart/index")}'>我的购物车</a>
+                         <i class="icon-dropdown"></i>
+                    </dt>
+                    <dd></dd>
+                </dl>
+            </div>
+        </div>
+    </div>
+    <div id="nav">
+        <div id="nav-bg-left"></div>
+        <div id="cate">
+            <div id="cate-all-btn"><h2><a href="">全部商品分类</a></h2></div>
+            <div id="cate-list" class="fn-hide">
+                <ul id="cate-list-show">
+                </ul>
+                <div class="cate-all-link">
+                    <a href="">全部商品分类</a>
+                </div>
+            </div>
+        </div>
+        <ul id="nav-list">
+            <li class="nav-activate" activate="true"><a href="__ROOT__">首页</a></li>
+            
+        </ul>
+        <div id="nav-bg-right"></div>
+        <div id="nav-ads">
+        </div>
+    </div>
+</div>
+<block name="head"></block>

@@ -1,0 +1,93 @@
+#shortcut{
+    width: 990px;
+}
+#cart-step{
+    float: right;
+    margin-top: 28px;
+}
+#cart-step li{
+    width: 162px;
+    height: 25px;
+    float: left;
+    color: #999;
+    line-height: 25px;
+    font-weight: 700;
+    text-align: center;
+    background-color: #f1f1f1;
+}
+#cart-step li.stepping{
+    color: #f60;
+    background-color: #ffe6bc;
+}
+#cart-step li b {
+    width: 22px;
+    height: 25px;
+    display: block;
+    float: right;
+    background: url(../images/progress_bg.png) no-repeat;
+}
+#cart-step li.stepping b{
+    background-position: 0px -25px;
+}
+#orderInfoMain{
+    width: 930px;
+    margin: 10px auto;
+}
+#info-header{
+    background: #AACDED;
+    height: 28px;
+    line-height: 28px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+#info-header h2{
+    font-weight: bolder;
+    color: #000;
+    padding-left: 18px;
+}
+#order-info{
+    border: solid #AACDED;
+    border-width:3px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    height: auto;
+    overflow: hidden;
+    padding-bottom: 10px;
+}
+.sub-order{
+    float: right;
+    margin-right: 20px;
+}
+#order-info .item{
+    border-bottom: #ccc dotted 2px;
+    padding: 5px;
+}
+#order-info .item-nav h2{
+    color: #000;
+    font-weight: bold;
+    font-size: 14px;
+    margin: 8px 15px;
+}
+#order-info .item-nav h2 a{
+    font-weight: normal;
+    color:#185D94;
+}
+#order-info table{
+    margin-left: 40px;
+}
+#order-info table tr{
+    height: 30px;
+}
+#order-info table.title-l th{
+    text-align: right;
+}
+ul.address-list{
+    margin-left: 35px;
+}
+.table-form input{
+    padding-left: 8px;
+}
+#settle-accounts {
+padding-left: 40px;
+font-size: 14px;
+}

@@ -27,8 +27,11 @@ $(function(){
 	$('#add-product').click(function(){
         var _tr=$(this).parents('tr'),
         _index = $('#product tr').length-2;
-        new_tr = _tr.prev().html().replace(/name="spec\[\d+\]/g,'name="spec\['+_index+'\]');
+         new_tr = _tr.prev().html().replace(/name="spec\[\d+\]/g,'name="spec\['+_index+'\]');
         _tr.before('<tr class="spec_list">'+new_tr+'</tr>');
+        var len=$(".spec_list").length;
+        $(".spec_list").eq(len-1).find('input').val("");
+        $(".spec_list").eq(len-1).find('select option').removeAttr("selected");
         return false;
     });
 	//上传缩略图
@@ -88,8 +91,11 @@ $(function(){
                  }
             }, 'json');  
         })
-	change_promote ();
-	show_arg($("select[name=goods_type_id]"));
+    
+    change_promote ();
+	if(flage_type){
+	   show_arg($("select[name=goods_type_id]"));
+	}
 })
 
 $(document).on('change','.arg-select',function(){

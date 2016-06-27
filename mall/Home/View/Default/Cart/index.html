@@ -1,0 +1,94 @@
+<extend name="Base/common"/>
+<block name="header">
+	<title>我的购物车</title>
+	<meta name="keywords" content="{$goods_info.keywords}">
+	<meta name="description" content="{$goods_info.description}">
+	<link href="__CSS__/base.css" rel="stylesheet">
+	<link href="__CSS__/public.css" rel="stylesheet">
+	<link href="__CSS__/cart.css" rel="stylesheet">
+</block>
+<block name="main">
+	  <div class="h hd-wm">
+            <div id="header">
+                <div id="logo">
+                    <a href="__ROOT__">
+                        <img src="" alt="">
+                    </a>
+                </div>
+                <div id="cart-step">
+                    <ul>
+                        <li class="step-1 stepping"><b></b>1.我的购物车</li>
+                        <li class="step-2"><b></b>2.填写核对订单信息</li>
+                        <li class="step-3">3.成功提交订单</li>
+                    </ul>
+                </div>
+            </div>
+           <if condition="$cart_info">
+           	 <div id="cart-list">
+                <div class="head">
+                    <div class="opt-checked">
+                        <input type="checkbox" class="checkbox select-all" checked="checked" />
+                        <label for="select-all">全选</label>
+                    </div>
+                    <div class="head-goods">商品</div>
+                    <div class="head-price">单价(元)</div>
+                    <div class="head-nums">数量</div>
+                    <div >小计(元)</div>
+                    <div class="opt">操作</div>
+                </div>
+                <div class="cart-content">	
+	                  <volist name="cart_info" id="cart_info">
+	                    <div class="cart-item checked" cart-id="{$key}">
+	                        <div class="cart-item-checked">
+	                            <input type="checkbox" name="select-name"  checked="checked" />
+	                        </div>
+	                        <div class="cart-goods">
+	                            <div class="goods-img">
+	                                <a href="">
+	                                	 <img src="__ROOT__/{$cart_info.goods_thumb}" alt="" width="49" height="49" />
+	                                </a>
+	                            </div>
+	                            <div class="goods-name">
+	                                <a href="__APP__/goods/index/id/{$cart.goods_id}">
+	                                	{$cart_info.goods_name}
+	                                </a>
+	                            </div>
+	                        </div>
+	                        <div class="goods-price" style="width:90px;">
+	                        	    {$cart_info.price}
+	                        </div>
+	                        <div class="goods-nums" >
+	                            <a href="###" class="num-btn minus"></a>
+	                            <input type="text" name="" class="item-nums" old-nums="{$cart_info.nums}" value="{$cart_info.nums}" />
+	                            <a href="###" class="num-btn plus"></a>
+	                        </div>
+	                        <div class="goods-total">
+	                        	{$cart_info['price']*$cart_info['nums']}
+	                        </div>
+	                        <div class="goods-opt">
+	                            <a href="" class="del">删除</a>
+	                        </div>
+	                    </div>
+                      </volist>
+                     </div>
+                   <else/>
+                                                            购物车内暂时没有商品，登录后将显示您之前加入的商品
+                   </if>
+            </div>
+            <div class="total-price">
+                <p>
+                    <strong>总价：</strong>
+                    <span>￥<b>{$Think.session.total_price}</b>元</span>
+                </p>
+            </div>
+            <div class="cart-btn">
+                <a href="__CONTROL__/orderInfo" class="fn-right go-order">去结算</a>
+            </div>
+        </div>
+</block>
+<block name="foot">
+	<script src="__JS__/jquery-1.7.2.min.js"></script> 
+	<script src="__JS__/common.js"></script>
+	<script src="__JS__/public.js"></script>
+	<script src="__JS__/cart.js"></script>
+</block>

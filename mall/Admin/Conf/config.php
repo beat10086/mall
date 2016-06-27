@@ -14,4 +14,5 @@ return array(
     'UPLOAD_PATH'=>'./Uploads/',
     'LOGO_PATH'=>'./logo/',
     'GALLERY_PATH'=>'./gallery/',
+    'UPLOAD_NUM' =>8
 );

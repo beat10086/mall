@@ -30,7 +30,7 @@ $(function(){
 						  $("#gallery_pic").uploadify('cancel');
 						  parent.layer.alert('限制为8张...'); 
 						}else{
-							$(".mall_pic_list").append('<div class="weibo_pic_content"><span class="remove"></span><span class="text">删除</span><img src="' + Thinkphp['IMG'] + '/loading_100.png" class="weibo_pic_img"></div>');
+							$(".mall_pic_list").append('<div class="weibo_pic_content"><span class="remove"></span><span class="text">删除</span><img src="' + Thinkphp['IMG'] + '/loading_100.png" width="150" height="150" class="weibo_pic_img"></div>');
 						}	
 					},
 					onUploadSuccess:function(file, data, response){
@@ -54,11 +54,11 @@ $(function(){
 				var len = img.length;
 				$(img[len - 1]).attr('src',Thinkphp['ROOT'] + src).hide();
 				setTimeout(function () {
-					if ($(img[len - 1]).width() > 100) {
-						$(img[len - 1]).css('left', -($(img[len - 1]).width() - 100) / 2);
+					if ($(img[len - 1]).width() > 150) {
+						$(img[len - 1]).css('left', -($(img[len - 1]).width() - 150) / 2);
 					}
-					if ($(img[len - 1]).height() > 100) {
-						$(img[len - 1]).css('top', -($(img[len - 1]).height() - 100) / 2);
+					if ($(img[len - 1]).height() > 150) {
+						$(img[len - 1]).css('top', -($(img[len - 1]).height() - 150) / 2);
 					}
 					$(img[len - 1]).attr('src', Thinkphp['ROOT'] + src).fadeIn();
 				}, 50);
@@ -66,29 +66,76 @@ $(function(){
 			hover:function(){
 				var content = $('.weibo_pic_content');
 				var len = content.length;
-				$(content[len - 1]).hover(function () {
-					$(this).find('.remove').show();
-					$(this).find('.text').show();
-				}, function () {
-					$(this).find('.remove').hide();
-					$(this).find('.text').hide();
-				});
+				$.each(content,function(k){
+					content.eq(k).hover(function () {
+						$(this).find('.remove').show();
+						$(this).find('.text').show();
+					}, function () {
+						$(this).find('.remove').hide();
+						$(this).find('.text').hide();
+					});
+				})
 			},
 			remove:function(){
 				var remove = $('.weibo_pic_content .text');
 				var len = remove.length;
-				$(remove[len - 1]).on('click',function(){
-					$(this).parent().next('input[name="images"]').remove();
-					$(this).parent().remove();
-					galler_pic.uploadTotal--;
-					galler_pic.uploadLimit++;
-					$('.weibo_pic_total').text(galler_pic.uploadTotal);
-					$('.weibo_pic_limit').text(galler_pic.uploadLimit);
-				})	
+                $(remove[len - 1]).on('click',function(){
+						var gallery_id=$(this).parent().attr('data-gallery');
+						var _that=$(this);
+						if(gallery_id > 0){
+					    	$.post(Thinkphp.delgallery,{"gallery_id":gallery_id },function(data){
+					    		if(data>0){
+					    			_that.parent().next('input[name="images[]"]').remove();
+					    			_that.parent().remove();
+					    		}else{
+					    			return false;
+					    		}
+					    	},'json');
+					    }else{
+					    	$(this).parent().next('input[name="images[]"]').remove();
+					    	$(this).parent().remove();
+				}
+				galler_pic.uploadTotal--;
+				galler_pic.uploadLimit++;
+				$('.weibo_pic_total').text(galler_pic.uploadTotal);
+				$('.weibo_pic_limit').text(galler_pic.uploadLimit);
+			  })	
 			},
 			init:function(){
+				var remove = $('.weibo_pic_content .text');
+				if(remove.length>0){
+					for(var i=0;i<remove.length;i++){
+					   $(remove[i]).on('click',function(){
+						   var gallery_id=$(this).parent().attr('data-gallery');
+						   var _that=$(this);
+						   if(gallery_id > 0){
+							   $.post(Thinkphp.delgallery,{"gallery_id":gallery_id },function(data){
+						    		if(data>0){
+						    			_that.parent().next('input[name="images[]"]').remove();
+						    			_that.parent().remove();
+						    			galler_pic.uploadTotal--;
+										galler_pic.uploadLimit++;
+										$('.weibo_pic_total').text(galler_pic.uploadTotal);
+										$('.weibo_pic_limit').text(galler_pic.uploadLimit);
+						    		}else{
+						    			return false;
+						    		}
+						    	},'json');    
+						   }
+					   })
+					}
+				}
 				galler_pic.uploadify();
+				galler_pic.hover();
 			}	
 	}
-	galler_pic.init();	 
+	galler_pic.init();
+	window.uploadCount={
+			uploadTotal:function (limit) {
+				galler_pic.uploadTotal=limit;
+			},
+			uploadLimit:function(total){
+				galler_pic.uploadLimit=total;
+			}
+	}
 })

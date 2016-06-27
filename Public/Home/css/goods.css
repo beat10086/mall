@@ -1,0 +1,286 @@
+/*
+    Document   : goods
+    Created on : 2013-1-8, 22:50:40
+    Author     : gnahz
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/*图片放大镜*/
+#small-thumb{height:60px;overflow: hidden;position: relative;}
+#small-thumb .gallery-move{
+    width: 17px;
+    height: 58px;
+    position: absolute;
+    background: #FFF url('../images/a.png') no-repeat;
+    cursor: pointer;
+    z-index: 99;
+}
+#small-thumb .moveL{
+    left: 0px;
+    background-position: -68px -139px;
+}
+#small-thumb .moveR{
+    right: 0px;
+    background-position: -85px -139px;
+}
+.clearfix:after{clear:both;content:".";display:block;font-size:0;height:0;line-height:0;visibility:hidden;}
+.clearfix{display:block;zoom:1}
+ul#thumblist{display:block;width:800px;overflow: hidden;height: 60px;position: absolute;left: 20px;}
+ul#thumblist li{float:left;margin:0px 3px;list-style:none;}
+ul#thumblist li a{display:block;width: 54px;height:52px;border:1px solid #CECFCE;overflow: hidden;}
+ul#thumblist li img{width: 54px;height: 52px;border:2px solid #fff;}
+ul#thumblist li img.zoomThumbActive{
+    border:2px solid #C00;
+}
+
+.jqzoom{
+
+    text-decoration:none;
+    float:left;
+}
+
+.zoomPad{
+    position:relative;
+    float:left;
+    z-index:99;
+    cursor:crosshair;
+}
+
+
+.zoomPreload{
+    -moz-opacity:0.8;
+    opacity: 0.8;
+    filter: alpha(opacity = 80);
+    color: #333;
+    font-size: 12px;
+    font-family: Tahoma;
+    text-decoration: none;
+    border: 1px solid #CCC;
+    background-color: white;
+    padding: 8px;
+    text-align:center;
+    background-image: url(../images/zoomloader.gif);
+    background-repeat: no-repeat;
+    background-position: 43px 30px;
+    z-index:110;
+    width:90px;
+    height:43px;
+    position:absolute;
+    top:0px;
+    left:0px;
+    * width:100px;
+    * height:49px;
+}
+
+
+.zoomPup{
+    overflow:hidden;
+    background-color: #FFF;
+    -moz-opacity:0.6;
+    opacity: 0.6;
+    filter: alpha(opacity = 60);
+    z-index:120;
+    position:absolute;
+    border:1px solid #CCC;
+    z-index:101;
+    cursor:crosshair;
+}
+
+.zoomOverlay{
+    position:absolute;
+    left:0px;
+    top:0px;
+    background:#FFF;
+    /*opacity:0.5;*/
+    z-index:5000;
+    width:100%;
+    height:100%;
+    display:none;
+    z-index:101;
+}
+
+.zoomWindow{
+    position:absolute;
+    left:110%;
+    top:40px;
+    background:#FFF;
+    z-index:6000;
+    height:auto;
+    z-index:10000;
+    z-index:110;
+}
+.zoomWrapper{
+    position:relative;
+    border:1px solid #999;
+    z-index:110;
+}
+.zoomWrapperTitle{
+    display:block;
+    background:#999;
+    color:#FFF;
+    height:18px;
+    line-height:18px;
+    width:100%;
+    overflow:hidden;
+    text-align:center;
+    font-size:10px;
+    position:absolute;
+    top:0px;
+    left:0px;
+    z-index:120;
+    -moz-opacity:0.6;
+    opacity: 0.6;
+    filter: alpha(opacity = 60);
+}
+.zoomWrapperImage{
+    display:block;
+    position:relative;
+    overflow:hidden;
+    z-index:110;
+}
+.zoomWrapperImage img{
+    border:0px;
+    display:block;
+    position:absolute;
+    z-index:101;
+}
+
+.zoomIframe{
+    z-index: -1;
+    filter:alpha(opacity=0);
+    -moz-opacity: 0.80;
+    opacity: 0.80;
+    position:absolute;
+    display:block;
+}
+#goods-info{
+    height: auto;
+    margin-top: 15px;
+}
+#gallery{
+    width: 352px;
+    height: 428px;
+    float: left;
+}
+#goods{
+    width: 835px;
+    /*border: 1px #f00 solid;*/
+    float: right;
+}
+#goods .goods_name{
+    padding: 3px 0px 4px;
+    border-bottom: 1px #CECFCE dashed;
+}
+#goods .goods_name h2{
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+}
+#goods .goods_name strong{
+    color: #C00;
+    font-size: 16px;
+}
+
+.goods-info li{
+    padding: 6px;
+    height: auto;
+    overflow: hidden;
+}
+#goods .goods-info .title{
+    height: auto;
+    overflow: hidden;
+    float: left;
+    width: 72px;
+    text-align: right;
+}
+#goods .goods-info .con{
+    width: 500px;
+    float: left;
+}
+.goods-info .shop-price{
+    font-size: 17px;
+    font-weight: bold;
+    color: #c00;
+    font-family:sans-serif;
+}
+.down-price{
+    padding: 3px 2px;
+    color: #FFF;
+    background-color: #C00;
+    border-radius: 2px;
+}
+.goods-spec .buy-button{
+    padding: 2px 0px;
+}
+.goods-spec .buy-button a{
+    display: inline-block;
+    float: left;
+    background: url('../images/a.png') no-repeat;
+    margin-right: 3px;
+}
+.goods-spec .buy-button .join-cart{
+    width: 137px;
+    height: 38px;
+}
+.goods-spec .buy-button .buy-goods{
+    width: 132px;
+    height: 38px;
+    background: url('../images/tmall.png') no-repeat;
+}
+.buy-number span{
+    padding: 2px 4px;
+    border: 1px #ccc solid;
+    cursor: pointer;
+}
+.buy-number input{
+    border: 1px #ccc solid;
+    margin: 0px 4px;
+    padding: 2px 0px;
+    width: 32px;
+    text-align: center;
+}
+#con{
+    clear: both;
+    height: auto;
+    overflow: hidden;
+}
+#con-left{
+    width: 210px;
+    height: 1000px;
+    float: left;
+    margin-right: 8px;
+    /*border:1px solid #ccc;*/
+}
+#con-right{
+    width: 990px;
+    float: left;
+}
+.module .md-title h2{
+    font-weight: bold;
+}
+.module .md-content{
+    padding-bottom: 8px;
+}
+.module .item-list li{
+    float: left;
+    line-height: 28px;
+    width: 80px;
+    height: 18px;
+    padding: 3px 6px 3px 10px;
+    overflow: hidden;
+}
+.goods_table{
+	 margin-bottom:10px;
+}
+.goods_table tr td,.goods_table tr th{
+	 border:1px solid #ddd;
+	 font-size:13px;
+	 padding:3px 4px;
+	 color:#666;
+}
+.goods_table tr th{
+	 background:#f5fafe;
+}
+
+

@@ -21,7 +21,6 @@ class GoodsAttrListModel extends Model{
          }
 
     }
-
 }
 
 ?>

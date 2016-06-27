@@ -40,9 +40,12 @@
 	                    	  	    <option  value="0" <eq name="type" value="0">selected='selected'</eq>>参数</option>
 	                    	  	    <option  value="1" <eq name="type" value="1">selected='selected'</eq>>规格</option>
 	                    	  </select>
-	                          <button type="button" class="btn btn-primary btn-xs pull-right" id="addGoodTypeAttr">
+	                    	  <a href="{$url}" class="btn btn-primary  pull-right" style="margin-left:20px;margin-right:10px;">
+	                              <span class="glyphicon glyphicon-backward"></span>返回
+	                          </a>
+	                          <button type="button" class="btn btn-primary  pull-right" id="addGoodTypeAttr">
 	                              <span class="glyphicon glyphicon-plus"></span>添加参数
-	                          </button>
+	                          </button>  
 	                    </div>
 	                    <div class="ibox-content">
 	                     <if condition="$typeAttr">
