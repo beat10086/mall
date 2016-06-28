@@ -1,0 +1,116 @@
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
+<html>
+    <head>
+        <title>用户注册-后盾商城</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta http-equiv="pragma" content="no-cache" />
+        <meta http-equiv="Cache-Control" content="no-cache,must-revalidate" />
+        <link href="/mall/PUBLIC/Home/css/base.css" rel="stylesheet">
+        <link href="/mall/PUBLIC/Home/css/public.css" rel="stylesheet">
+        <link href="/mall/PUBLIC/Home/css/jquery.ui.css" rel="stylesheet">
+        <link href="/mall/PUBLIC/Home/css/register.css" rel="stylesheet">
+        <script src="/mall/PUBLIC/Home/js/jquery.js"></script> 
+        <script src="/mall/PUBLIC/Home/js/jquery.ui.js"></script>
+        <script src="/mall/PUBLIC/Home/js/jquery.form.js"></script>
+        <script src="/mall/PUBLIC/Home/js/jquery.validate.js"></script>
+        <script src="/mall/PUBLIC/Home/js/register.js"></script>
+        <style>
+          #register #form input.txt{
+          	 display:inline-block;
+          	 width:215px;
+          	 height:30px;
+          	 padding-left:10px;
+          	 color:#999;
+          }
+          #register #form input#code{
+          	width:85px;
+          	height:30px;
+          	float:left;
+          }
+        </style>
+        <script type="text/javascript">
+			var ThinkPHP = {
+				'MODULE' : '/mall/Home',
+				'IMG' : '/mall/Public/<?php echo MODULE_NAME;?>/images',
+				'INDEX' : '<?php echo U("Index/index");?>',
+				'PREV_URL':'<?php echo ($PREV_URL); ?>'
+			};
+      </script>
+    </head>
+    <body>
+        <div class="hd-w">
+            <div id="header">
+                <div id="logo">
+                    <a href="">
+                        <img src="" alt="">
+                    </a>
+                    <div class="logo-ads">
+                        <a href="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="module" >
+                <h2 class="md-title">
+                    <span>商城注册</span>
+                    <a href="<?php echo U('Auth/login');?>">已有帐号？立即登录</a>
+                </h2>
+                <div class="md-content">
+                    <form id="register">
+                    	<ol class="register_errors"></ol>
+                        <table id="form">
+                            <tr>
+                                <th>
+                                	<label for="username">用户名：</label>
+                                </th>
+                                <td>
+                                	<input type="text" class="txt" value="" name="username" id="username"  autocomplete="off" placeholder="你的账号名和登录名"/>
+                                    <span class="star">*</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>
+                                	<label>密码：</label>
+                                </th>
+                                <td>
+                                	<input type="password" class="txt"   name="passwd" id="passwd"  autocomplete="off" placeholder="密码，不小于6位！"/>
+                                    <span class="star">*</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th><label>确认密码：</label></th>
+                                <td>
+                                	<input type="password" class="txt"  name="repasswd" id="repasswd" placeholder="密码和密码确认必须一致！" />
+                                    <span class="star">*</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th><label>Email：</label></th>
+                                <td>
+                                	<input type="text" class="txt" autocomplete="off" name="email" id="email" placeholder="电子邮件，用于找回密码！接受订单相关信息"/>
+                                    <span class="star">*</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th><label>验证码：</label></th>
+                                <td>
+                                    <input type="text" name="code" id="code" autocomplete="off"/>
+                                    <span>
+                                        <img src="<?php echo U('Auth/verity');?>"  id="captcha" class="captcha txt" width="145" height="35" style="cursor:pointer;" alt=""/>                                                             
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th></th>
+                                <td>
+                                    <input type="submit" class="btn-reg" style="cursor:pointer;" value="同意以下协议，提交" />
+                                </td>
+                            </tr>
+                        </table>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div id="loading">数据交互中...</div>
+    </body>
+</html>

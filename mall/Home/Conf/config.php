@@ -9,4 +9,8 @@ return array(
 	    '__UPLOADIFY__'=>__ROOT__.'/PUBLIC/'.MODULE_NAME.'/uploadify',
 	    '__UEDITOR__'=>__ROOT__.'/PUBLIC/'.MODULE_NAME.'/ueditor',
 	),
+    //页面Trace
+    'SHOW_PAGE_TRACE'=>true,
+    //COOKIE密钥
+    'COOKIE_key'=>'www.ycku.com',
 );

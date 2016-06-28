@@ -32,3 +32,14 @@ function db_create_in ($arr) {
     }
     return substr($str,0,strlen($str)-1);
 }
+//cookie加密
+function encryption($username, $type = 0) {
+    $key = sha1(C('COOKIE_key'));
+
+    if (!$type) {
+        return base64_encode($username ^ $key);
+    }
+
+    $username = base64_decode($username);
+    return $username ^ $key;
+}

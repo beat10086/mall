@@ -163,7 +163,44 @@ class CartController extends CommonController {
            $this->error('非法操作！');
       }
   }  
-  
+  //更新购物车
+  public  function updateCartNums () {
+       if(IS_AJAX){
+          $cart_id=I('post.cart_id');
+          $nums=I('post.nums');
+          //购物车中有此货品
+          if(isset($_SESSION['cart'][$cart_id])){
+              //判断是否有规格
+              $spec = $_SESSION['cart'][$cart_id]['spec'];
+              $goods_id = $_SESSION['cart'][$cart_id]['goods_id'];
+              $product = D('product');
+              if(!empty($spec)){
+                  $sku=$product->field('sku')->where('good_id='.$goods_id)->find();
+              }else{
+                  $sku=$product->table('ts_goods')->field('sku')->where('goods_id='.$goods_id)->find();
+              }
+              if($nums>$sku['sku']){
+                  $result=array(
+                       'status'=>false,
+                       'code'=>1,
+                       'message'=>"库存不足!",
+                       'sku'=> $sku['sku']
+                  );
+                $this->ajaxReturn($result);
+              }else{
+                  $_SESSION['cart'][$cart_id]['nums'] = $nums;
+                  $this->cartTotalPrice();
+                  $this->cartTotalItem();
+                  $result=array(
+                      'status'=>true,
+                      'total_price'=>$_SESSION['total_price']
+                  );
+                  $this->ajaxReturn($result);
+              }
+              
+          }
+       }
+  }
   private function cartTotalPrice() {
       $price = 0;
       if (isset($_SESSION['cart'])) {

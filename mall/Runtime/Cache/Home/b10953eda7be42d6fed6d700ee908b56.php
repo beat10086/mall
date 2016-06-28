@@ -40,11 +40,15 @@
         </div>
         <div id="shortcut-right" class="fn-right">
             <ul>
-                <li>您好，！<a href="__WEB__/user"></a></li>
-                <li><a href="__WEB__/auth/logout">[注销]</a></li>
-
-                <!-- <li>您好，欢迎来到后盾商城！<a href="__WEB__/auth/login">[登录]</a></li>
-                <li><a href="__WEB__/auth/register">[免费注册]</a></li> -->
+            	<?php if($_SESSION['user_auth']['id']): ?><li>您好，！
+	                	<a href="__WEB__/user">
+	                    <?php echo $_SESSION['user_auth']['username'];?>
+	                   </a>
+	                 </li>
+	                <li><a href="<?php echo U('Auth/layout');?>">[注销]</a></li>
+                <?php else: ?>
+	                <li>您好，欢迎来到后盾商城！<a href="<?php echo U('Auth/login');?>">[登录]</a></li>
+	                <li><a href="<?php echo U('Auth/register');?>">[免费注册]</a></li><?php endif; ?>
                 <li><a href="">我的订单</a></li>
                 <!--  li-activate 鼠标放上去加上此class -->
                 <li class="icon-li li-dropdown">

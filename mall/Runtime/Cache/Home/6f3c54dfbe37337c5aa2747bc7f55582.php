@@ -12,6 +12,12 @@
 	<link href="/mall/PUBLIC/Home/css/base.css" rel="stylesheet">
 	<link href="/mall/PUBLIC/Home/css/public.css" rel="stylesheet">
 	<link href="/mall/PUBLIC/Home/css/cart.css" rel="stylesheet">
+	<script>
+	  var Thinkphp={
+	  	    'updateCartNums':'<?php echo U("Cart/updateCartNums");?>',
+	  	    'delCartGoods':'<?php echo U("Cart/delCartGoods");?>'
+	  }
+	</script>
 
 </head>  
 <body>
@@ -27,11 +33,10 @@
         </div>
         <div id="shortcut-right" class="fn-right">
             <ul>
-                <li>您好，！<a href="__WEB__/user"></a></li>
-                <li><a href="__WEB__/auth/logout">[注销]</a></li>
-
-                <!-- <li>您好，欢迎来到后盾商城！<a href="__WEB__/auth/login">[登录]</a></li>
-                <li><a href="__WEB__/auth/register">[免费注册]</a></li> -->
+                <!--<li>您好，！<a href="__WEB__/user"></a></li>
+                <li><a href="__WEB__/auth/logout">[注销]</a></li>-->
+                <li>您好，欢迎来到后盾商城！<a href="<?php echo U('Auth/login');?>">[登录]</a></li>
+                <li><a href="<?php echo U('Auth/register');?>">[免费注册]</a></li>
                 <li><a href="">我的订单</a></li>
                 <!--  li-activate 鼠标放上去加上此class -->
                 <li class="icon-li li-dropdown">
@@ -199,29 +204,29 @@
 	                        </div>
 	                        <div class="goods-nums" >
 	                            <a href="###" class="num-btn minus"></a>
-	                            <input type="text" name="" class="item-nums" old-nums="<?php echo ($cart_info["nums"]); ?>" value="<?php echo ($cart_info["nums"]); ?>" />
+	                            <input type="text" name="" class="item-nums" autocomplete="off" old-nums="<?php echo ($cart_info["nums"]); ?>" value="<?php echo ($cart_info["nums"]); ?>" />
 	                            <a href="###" class="num-btn plus"></a>
 	                        </div>
 	                        <div class="goods-total">
 	                        	<?php echo ($cart_info['price']*$cart_info['nums']); ?>
 	                        </div>
 	                        <div class="goods-opt">
-	                            <a href="" class="del">删除</a>
+	                            <a href="javascript:void(0)" class="del">删除</a>
 	                        </div>
 	                    </div><?php endforeach; endif; else: echo "" ;endif; ?>
                      </div>
                    <?php else: ?>
                                                             购物车内暂时没有商品，登录后将显示您之前加入的商品<?php endif; ?>
             </div>
-            <div class="total-price">
-                <p>
-                    <strong>总价：</strong>
-                    <span>￥<b><?php echo (session('total_price')); ?></b>元</span>
-                </p>
-            </div>
-            <div class="cart-btn">
-                <a href="__CONTROL__/orderInfo" class="fn-right go-order">去结算</a>
-            </div>
+            <?php if($cart_info): ?><div class="total-price">
+	                <p>
+	                    <strong>总价：</strong>
+	                    <span>￥<b><?php echo (session('total_price')); ?></b>元</span>
+	                </p>
+	            </div>
+	            <div class="cart-btn">
+	                <a href="__CONTROL__/orderInfo" class="fn-right go-order">去结算</a>
+	            </div><?php endif; ?>
         </div>
 
 	<div id="link" class="hd-w">

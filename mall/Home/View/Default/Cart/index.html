@@ -6,6 +6,12 @@
 	<link href="__CSS__/base.css" rel="stylesheet">
 	<link href="__CSS__/public.css" rel="stylesheet">
 	<link href="__CSS__/cart.css" rel="stylesheet">
+	<script>
+	  var Thinkphp={
+	  	    'updateCartNums':'{:U("Cart/updateCartNums")}',
+	  	    'delCartGoods':'{:U("Cart/delCartGoods")}'
+	  }
+	</script>
 </block>
 <block name="main">
 	  <div class="h hd-wm">
@@ -59,14 +65,14 @@
 	                        </div>
 	                        <div class="goods-nums" >
 	                            <a href="###" class="num-btn minus"></a>
-	                            <input type="text" name="" class="item-nums" old-nums="{$cart_info.nums}" value="{$cart_info.nums}" />
+	                            <input type="text" name="" class="item-nums" autocomplete="off" old-nums="{$cart_info.nums}" value="{$cart_info.nums}" />
 	                            <a href="###" class="num-btn plus"></a>
 	                        </div>
 	                        <div class="goods-total">
 	                        	{$cart_info['price']*$cart_info['nums']}
 	                        </div>
 	                        <div class="goods-opt">
-	                            <a href="" class="del">删除</a>
+	                            <a href="javascript:void(0)" class="del">删除</a>
 	                        </div>
 	                    </div>
                       </volist>
@@ -75,15 +81,17 @@
                                                             购物车内暂时没有商品，登录后将显示您之前加入的商品
                    </if>
             </div>
-            <div class="total-price">
-                <p>
-                    <strong>总价：</strong>
-                    <span>￥<b>{$Think.session.total_price}</b>元</span>
-                </p>
-            </div>
-            <div class="cart-btn">
-                <a href="__CONTROL__/orderInfo" class="fn-right go-order">去结算</a>
-            </div>
+            <if condition="$cart_info">
+	            <div class="total-price">
+	                <p>
+	                    <strong>总价：</strong>
+	                    <span>￥<b>{$Think.session.total_price}</b>元</span>
+	                </p>
+	            </div>
+	            <div class="cart-btn">
+	                <a href="__CONTROL__/orderInfo" class="fn-right go-order">去结算</a>
+	            </div>
+	        </if>
         </div>
 </block>
 <block name="foot">

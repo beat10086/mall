@@ -90,3 +90,27 @@
     background: url(../images/pwdstrength.gif) no-repeat right 0px;
     margin-left: 5px;
 }
+/*添加样式*/
+span.star {
+	color:red;
+}
+span.succ {
+	width:28px;
+	height:20px;
+	display:inline-block;
+	background:url(../images/success.gif) no-repeat bottom;
+}
+span.loading {
+	width:28px;
+	display:inline-block;
+	background:url(../images/loading_form.gif) no-repeat left 70%;
+}
+#loading {
+	background:url(../images/loading.gif) no-repeat 20px center;
+	font-size:14px;
+	font-weight:bold;
+	color:#666;
+	line-height:25px;
+	text-indent:40px;
+}
+
