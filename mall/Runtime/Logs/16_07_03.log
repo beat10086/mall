@@ -1,0 +1,2462 @@
+[ 2016-07-03T11:39:47+08:00 ] 127.0.0.1 /mall/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+
+[ 2016-07-03T11:39:52+08:00 ] 127.0.0.1 /mall/admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-03T11:39:52+08:00 ] 127.0.0.1 /mall/Admin/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-03T11:39:52+08:00 ] 127.0.0.1 /mall/Admin/Login/verity.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-03T11:39:58+08:00 ] 127.0.0.1 /mall/Admin/Login/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: DESCRIBE ts_admin [ RunTime:0.007000s ]
+SQL: SELECT `user_id`,`username`,`passwd` FROM `ts_admin` WHERE ( `username` = 'admin' ) AND ( `passwd` = 'e10adc3949ba59abbe56e057f20f883e' ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: UPDATE `ts_admin` SET `last_login`=1467517198,`last_ip`=2130706433 WHERE ( `user_id` = 1 ) [ RunTime:0.001000s ]
+
+[ 2016-07-03T11:39:58+08:00 ] 127.0.0.1 /mall/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-03T11:39:58+08:00 ] 127.0.0.1 /mall/Admin/Index/main.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-03T11:39:58+08:00 ] 127.0.0.1 /mall/PUBLIC/Admin/js/plugins/layer/extend/layer.ext.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-07-03T11:40:03+08:00 ] 127.0.0.1 /mall/Admin/Goods/index.html?v=4.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: DESCRIBE ts_category [ RunTime:0.005000s ]
+SQL: select category_id,category_name,pid,is_nav,status,CONCAT(path,'-',category_id) as depath,path,goods_type_id from ts_category where status=1 order by depath ASC [ RunTime:0.003000s ]
+SQL: DESCRIBE ts_brand [ RunTime:0.004000s ]
+SQL: SELECT * FROM `ts_brand` ORDER BY sort DESC  [ RunTime:0.001000s ]
+SQL: DESCRIBE ts_goods [ RunTime:0.006000s ]
+SQL: SELECT `goods_id`,`goods_name`,`goods_price`,`goods_sn`,`is_on_sale`,`is_hot`,`is_well`,`is_first`,`sku` FROM `ts_goods` ORDER BY created DESC  [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: category_id D:\wamp\www\mall\mall\Runtime\Cache\Admin\3ea905b335e38bad065eef00e80c359f.php 第 53 行.
+NOTIC: [8] Undefined variable: category_id D:\wamp\www\mall\mall\Runtime\Cache\Admin\3ea905b335e38bad065eef00e80c359f.php 第 53 行.
+NOTIC: [8] Undefined variable: category_id D:\wamp\www\mall\mall\Runtime\Cache\Admin\3ea905b335e38bad065eef00e80c359f.php 第 53 行.
+NOTIC: [8] Undefined variable: category_id D:\wamp\www\mall\mall\Runtime\Cache\Admin\3ea905b335e38bad065eef00e80c359f.php 第 53 行.
+NOTIC: [8] Undefined variable: category_id D:\wamp\www\mall\mall\Runtime\Cache\Admin\3ea905b335e38bad065eef00e80c359f.php 第 53 行.
+NOTIC: [8] Undefined variable: category_id D:\wamp\www\mall\mall\Runtime\Cache\Admin\3ea905b335e38bad065eef00e80c359f.php 第 53 行.
+NOTIC: [8] Undefined variable: category_id D:\wamp\www\mall\mall\Runtime\Cache\Admin\3ea905b335e38bad065eef00e80c359f.php 第 53 行.
+NOTIC: [8] Undefined variable: category_id D:\wamp\www\mall\mall\Runtime\Cache\Admin\3ea905b335e38bad065eef00e80c359f.php 第 53 行.
+NOTIC: [8] Undefined variable: category_id D:\wamp\www\mall\mall\Runtime\Cache\Admin\3ea905b335e38bad065eef00e80c359f.php 第 53 行.
+NOTIC: [8] Undefined variable: category_id D:\wamp\www\mall\mall\Runtime\Cache\Admin\3ea905b335e38bad065eef00e80c359f.php 第 53 行.
+NOTIC: [8] Undefined variable: category_id D:\wamp\www\mall\mall\Runtime\Cache\Admin\3ea905b335e38bad065eef00e80c359f.php 第 53 行.
+NOTIC: [8] Undefined variable: category_id D:\wamp\www\mall\mall\Runtime\Cache\Admin\3ea905b335e38bad065eef00e80c359f.php 第 53 行.
+NOTIC: [8] Undefined variable: category_id D:\wamp\www\mall\mall\Runtime\Cache\Admin\3ea905b335e38bad065eef00e80c359f.php 第 53 行.
+NOTIC: [8] Undefined variable: category_id D:\wamp\www\mall\mall\Runtime\Cache\Admin\3ea905b335e38bad065eef00e80c359f.php 第 53 行.
+NOTIC: [8] Undefined variable: category_id D:\wamp\www\mall\mall\Runtime\Cache\Admin\3ea905b335e38bad065eef00e80c359f.php 第 53 行.
+NOTIC: [8] Undefined variable: category_id D:\wamp\www\mall\mall\Runtime\Cache\Admin\3ea905b335e38bad065eef00e80c359f.php 第 53 行.
+NOTIC: [8] Undefined variable: category_id D:\wamp\www\mall\mall\Runtime\Cache\Admin\3ea905b335e38bad065eef00e80c359f.php 第 53 行.
+NOTIC: [8] Undefined variable: category_id D:\wamp\www\mall\mall\Runtime\Cache\Admin\3ea905b335e38bad065eef00e80c359f.php 第 53 行.
+NOTIC: [8] Undefined variable: category_id D:\wamp\www\mall\mall\Runtime\Cache\Admin\3ea905b335e38bad065eef00e80c359f.php 第 53 行.
+NOTIC: [8] Undefined variable: category_id D:\wamp\www\mall\mall\Runtime\Cache\Admin\3ea905b335e38bad065eef00e80c359f.php 第 53 行.
+NOTIC: [8] Undefined variable: category_id D:\wamp\www\mall\mall\Runtime\Cache\Admin\3ea905b335e38bad065eef00e80c359f.php 第 53 行.
+NOTIC: [8] Undefined variable: category_id D:\wamp\www\mall\mall\Runtime\Cache\Admin\3ea905b335e38bad065eef00e80c359f.php 第 53 行.
+NOTIC: [8] Undefined variable: category_id D:\wamp\www\mall\mall\Runtime\Cache\Admin\3ea905b335e38bad065eef00e80c359f.php 第 53 行.
+NOTIC: [8] Undefined variable: category_id D:\wamp\www\mall\mall\Runtime\Cache\Admin\3ea905b335e38bad065eef00e80c359f.php 第 53 行.
+NOTIC: [8] Undefined variable: category_id D:\wamp\www\mall\mall\Runtime\Cache\Admin\3ea905b335e38bad065eef00e80c359f.php 第 53 行.
+NOTIC: [8] Undefined variable: category_id D:\wamp\www\mall\mall\Runtime\Cache\Admin\3ea905b335e38bad065eef00e80c359f.php 第 53 行.
+NOTIC: [8] Undefined variable: category_id D:\wamp\www\mall\mall\Runtime\Cache\Admin\3ea905b335e38bad065eef00e80c359f.php 第 53 行.
+NOTIC: [8] Undefined variable: category_id D:\wamp\www\mall\mall\Runtime\Cache\Admin\3ea905b335e38bad065eef00e80c359f.php 第 53 行.
+NOTIC: [8] Undefined variable: category_id D:\wamp\www\mall\mall\Runtime\Cache\Admin\3ea905b335e38bad065eef00e80c359f.php 第 53 行.
+NOTIC: [8] Undefined variable: category_id D:\wamp\www\mall\mall\Runtime\Cache\Admin\3ea905b335e38bad065eef00e80c359f.php 第 53 行.
+NOTIC: [8] Undefined variable: show_brand D:\wamp\www\mall\mall\Runtime\Cache\Admin\3ea905b335e38bad065eef00e80c359f.php 第 64 行.
+NOTIC: [8] Undefined variable: show_brand D:\wamp\www\mall\mall\Runtime\Cache\Admin\3ea905b335e38bad065eef00e80c359f.php 第 64 行.
+NOTIC: [8] Undefined variable: show_brand D:\wamp\www\mall\mall\Runtime\Cache\Admin\3ea905b335e38bad065eef00e80c359f.php 第 64 行.
+NOTIC: [8] Undefined variable: show_brand D:\wamp\www\mall\mall\Runtime\Cache\Admin\3ea905b335e38bad065eef00e80c359f.php 第 64 行.
+NOTIC: [8] Undefined variable: show_brand D:\wamp\www\mall\mall\Runtime\Cache\Admin\3ea905b335e38bad065eef00e80c359f.php 第 64 行.
+NOTIC: [8] Undefined variable: show_brand D:\wamp\www\mall\mall\Runtime\Cache\Admin\3ea905b335e38bad065eef00e80c359f.php 第 64 行.
+NOTIC: [8] Undefined variable: show_brand D:\wamp\www\mall\mall\Runtime\Cache\Admin\3ea905b335e38bad065eef00e80c359f.php 第 64 行.
+NOTIC: [8] Undefined variable: promote_type D:\wamp\www\mall\mall\Runtime\Cache\Admin\3ea905b335e38bad065eef00e80c359f.php 第 70 行.
+NOTIC: [8] Undefined variable: promote_type D:\wamp\www\mall\mall\Runtime\Cache\Admin\3ea905b335e38bad065eef00e80c359f.php 第 71 行.
+NOTIC: [8] Undefined variable: promote_type D:\wamp\www\mall\mall\Runtime\Cache\Admin\3ea905b335e38bad065eef00e80c359f.php 第 72 行.
+NOTIC: [8] Undefined variable: is_on_sale D:\wamp\www\mall\mall\Runtime\Cache\Admin\3ea905b335e38bad065eef00e80c359f.php 第 78 行.
+NOTIC: [8] Undefined variable: is_on_sale D:\wamp\www\mall\mall\Runtime\Cache\Admin\3ea905b335e38bad065eef00e80c359f.php 第 79 行.
+NOTIC: [8] Undefined variable: keywords D:\wamp\www\mall\mall\Runtime\Cache\Admin\3ea905b335e38bad065eef00e80c359f.php 第 85 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-03T11:40:05+08:00 ] 127.0.0.1 /mall/Admin/Goods/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: DESCRIBE ts_category [ RunTime:0.004000s ]
+SQL: select category_id,category_name,pid,is_nav,status,CONCAT(path,'-',category_id) as depath,path,goods_type_id from ts_category where status=1 order by depath ASC [ RunTime:0.001000s ]
+SQL: DESCRIBE ts_brand [ RunTime:0.003000s ]
+SQL: SELECT * FROM `ts_brand` ORDER BY sort DESC  [ RunTime:0.001000s ]
+SQL: DESCRIBE ts_goods [ RunTime:0.004000s ]
+SQL: SELECT `goods_id`,`goods_name`,`goods_price`,`goods_sn`,`is_on_sale`,`is_hot`,`is_well`,`is_first`,`sku` FROM `ts_goods` ORDER BY created DESC  [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: category_id D:\wamp\www\mall\mall\Runtime\Cache\Admin\3ea905b335e38bad065eef00e80c359f.php 第 53 行.
+NOTIC: [8] Undefined variable: category_id D:\wamp\www\mall\mall\Runtime\Cache\Admin\3ea905b335e38bad065eef00e80c359f.php 第 53 行.
+NOTIC: [8] Undefined variable: category_id D:\wamp\www\mall\mall\Runtime\Cache\Admin\3ea905b335e38bad065eef00e80c359f.php 第 53 行.
+NOTIC: [8] Undefined variable: category_id D:\wamp\www\mall\mall\Runtime\Cache\Admin\3ea905b335e38bad065eef00e80c359f.php 第 53 行.
+NOTIC: [8] Undefined variable: category_id D:\wamp\www\mall\mall\Runtime\Cache\Admin\3ea905b335e38bad065eef00e80c359f.php 第 53 行.
+NOTIC: [8] Undefined variable: category_id D:\wamp\www\mall\mall\Runtime\Cache\Admin\3ea905b335e38bad065eef00e80c359f.php 第 53 行.
+NOTIC: [8] Undefined variable: category_id D:\wamp\www\mall\mall\Runtime\Cache\Admin\3ea905b335e38bad065eef00e80c359f.php 第 53 行.
+NOTIC: [8] Undefined variable: category_id D:\wamp\www\mall\mall\Runtime\Cache\Admin\3ea905b335e38bad065eef00e80c359f.php 第 53 行.
+NOTIC: [8] Undefined variable: category_id D:\wamp\www\mall\mall\Runtime\Cache\Admin\3ea905b335e38bad065eef00e80c359f.php 第 53 行.
+NOTIC: [8] Undefined variable: category_id D:\wamp\www\mall\mall\Runtime\Cache\Admin\3ea905b335e38bad065eef00e80c359f.php 第 53 行.
+NOTIC: [8] Undefined variable: category_id D:\wamp\www\mall\mall\Runtime\Cache\Admin\3ea905b335e38bad065eef00e80c359f.php 第 53 行.
+NOTIC: [8] Undefined variable: category_id D:\wamp\www\mall\mall\Runtime\Cache\Admin\3ea905b335e38bad065eef00e80c359f.php 第 53 行.
+NOTIC: [8] Undefined variable: category_id D:\wamp\www\mall\mall\Runtime\Cache\Admin\3ea905b335e38bad065eef00e80c359f.php 第 53 行.
+NOTIC: [8] Undefined variable: category_id D:\wamp\www\mall\mall\Runtime\Cache\Admin\3ea905b335e38bad065eef00e80c359f.php 第 53 行.
+NOTIC: [8] Undefined variable: category_id D:\wamp\www\mall\mall\Runtime\Cache\Admin\3ea905b335e38bad065eef00e80c359f.php 第 53 行.
+NOTIC: [8] Undefined variable: category_id D:\wamp\www\mall\mall\Runtime\Cache\Admin\3ea905b335e38bad065eef00e80c359f.php 第 53 行.
+NOTIC: [8] Undefined variable: category_id D:\wamp\www\mall\mall\Runtime\Cache\Admin\3ea905b335e38bad065eef00e80c359f.php 第 53 行.
+NOTIC: [8] Undefined variable: category_id D:\wamp\www\mall\mall\Runtime\Cache\Admin\3ea905b335e38bad065eef00e80c359f.php 第 53 行.
+NOTIC: [8] Undefined variable: category_id D:\wamp\www\mall\mall\Runtime\Cache\Admin\3ea905b335e38bad065eef00e80c359f.php 第 53 行.
+NOTIC: [8] Undefined variable: category_id D:\wamp\www\mall\mall\Runtime\Cache\Admin\3ea905b335e38bad065eef00e80c359f.php 第 53 行.
+NOTIC: [8] Undefined variable: category_id D:\wamp\www\mall\mall\Runtime\Cache\Admin\3ea905b335e38bad065eef00e80c359f.php 第 53 行.
+NOTIC: [8] Undefined variable: category_id D:\wamp\www\mall\mall\Runtime\Cache\Admin\3ea905b335e38bad065eef00e80c359f.php 第 53 行.
+NOTIC: [8] Undefined variable: category_id D:\wamp\www\mall\mall\Runtime\Cache\Admin\3ea905b335e38bad065eef00e80c359f.php 第 53 行.
+NOTIC: [8] Undefined variable: category_id D:\wamp\www\mall\mall\Runtime\Cache\Admin\3ea905b335e38bad065eef00e80c359f.php 第 53 行.
+NOTIC: [8] Undefined variable: category_id D:\wamp\www\mall\mall\Runtime\Cache\Admin\3ea905b335e38bad065eef00e80c359f.php 第 53 行.
+NOTIC: [8] Undefined variable: category_id D:\wamp\www\mall\mall\Runtime\Cache\Admin\3ea905b335e38bad065eef00e80c359f.php 第 53 行.
+NOTIC: [8] Undefined variable: category_id D:\wamp\www\mall\mall\Runtime\Cache\Admin\3ea905b335e38bad065eef00e80c359f.php 第 53 行.
+NOTIC: [8] Undefined variable: category_id D:\wamp\www\mall\mall\Runtime\Cache\Admin\3ea905b335e38bad065eef00e80c359f.php 第 53 行.
+NOTIC: [8] Undefined variable: category_id D:\wamp\www\mall\mall\Runtime\Cache\Admin\3ea905b335e38bad065eef00e80c359f.php 第 53 行.
+NOTIC: [8] Undefined variable: category_id D:\wamp\www\mall\mall\Runtime\Cache\Admin\3ea905b335e38bad065eef00e80c359f.php 第 53 行.
+NOTIC: [8] Undefined variable: show_brand D:\wamp\www\mall\mall\Runtime\Cache\Admin\3ea905b335e38bad065eef00e80c359f.php 第 64 行.
+NOTIC: [8] Undefined variable: show_brand D:\wamp\www\mall\mall\Runtime\Cache\Admin\3ea905b335e38bad065eef00e80c359f.php 第 64 行.
+NOTIC: [8] Undefined variable: show_brand D:\wamp\www\mall\mall\Runtime\Cache\Admin\3ea905b335e38bad065eef00e80c359f.php 第 64 行.
+NOTIC: [8] Undefined variable: show_brand D:\wamp\www\mall\mall\Runtime\Cache\Admin\3ea905b335e38bad065eef00e80c359f.php 第 64 行.
+NOTIC: [8] Undefined variable: show_brand D:\wamp\www\mall\mall\Runtime\Cache\Admin\3ea905b335e38bad065eef00e80c359f.php 第 64 行.
+NOTIC: [8] Undefined variable: show_brand D:\wamp\www\mall\mall\Runtime\Cache\Admin\3ea905b335e38bad065eef00e80c359f.php 第 64 行.
+NOTIC: [8] Undefined variable: show_brand D:\wamp\www\mall\mall\Runtime\Cache\Admin\3ea905b335e38bad065eef00e80c359f.php 第 64 行.
+NOTIC: [8] Undefined variable: promote_type D:\wamp\www\mall\mall\Runtime\Cache\Admin\3ea905b335e38bad065eef00e80c359f.php 第 70 行.
+NOTIC: [8] Undefined variable: promote_type D:\wamp\www\mall\mall\Runtime\Cache\Admin\3ea905b335e38bad065eef00e80c359f.php 第 71 行.
+NOTIC: [8] Undefined variable: promote_type D:\wamp\www\mall\mall\Runtime\Cache\Admin\3ea905b335e38bad065eef00e80c359f.php 第 72 行.
+NOTIC: [8] Undefined variable: is_on_sale D:\wamp\www\mall\mall\Runtime\Cache\Admin\3ea905b335e38bad065eef00e80c359f.php 第 78 行.
+NOTIC: [8] Undefined variable: is_on_sale D:\wamp\www\mall\mall\Runtime\Cache\Admin\3ea905b335e38bad065eef00e80c359f.php 第 79 行.
+NOTIC: [8] Undefined variable: keywords D:\wamp\www\mall\mall\Runtime\Cache\Admin\3ea905b335e38bad065eef00e80c359f.php 第 85 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-03T11:40:09+08:00 ] 127.0.0.1 /mall/Admin/User/index.html?v=4.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: DESCRIBE ts_user [ RunTime:0.005000s ]
+NOTIC: [8] Undefined variable: username D:\wamp\www\mall\mall\Admin\Controller\UserController.class.php 第 19 行.
+NOTIC: [8] Undefined variable: created_start D:\wamp\www\mall\mall\Admin\Controller\UserController.class.php 第 19 行.
+NOTIC: [8] Undefined variable: created_end D:\wamp\www\mall\mall\Admin\Controller\UserController.class.php 第 19 行.
+NOTIC: [8] Undefined variable: map D:\wamp\www\mall\mall\Admin\Model\UserModel.class.php 第 35 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `ts_user` LIMIT 1   [ RunTime:0.001000s ]
+NOTIC: [8] Use of undefined constant PAGE_SIZE - assumed 'PAGE_SIZE' D:\wamp\www\mall\mall\Admin\Controller\UserController.class.php 第 20 行.
+NOTIC: [8] Use of undefined constant PAGE_SIZE - assumed 'PAGE_SIZE' D:\wamp\www\mall\mall\Admin\Controller\UserController.class.php 第 23 行.
+NOTIC: [8] Undefined variable: username D:\wamp\www\mall\mall\Admin\Controller\UserController.class.php 第 27 行.
+NOTIC: [8] Undefined variable: created_start D:\wamp\www\mall\mall\Admin\Controller\UserController.class.php 第 27 行.
+NOTIC: [8] Undefined variable: created_end D:\wamp\www\mall\mall\Admin\Controller\UserController.class.php 第 27 行.
+NOTIC: [8] Use of undefined constant PAGE_SIZE - assumed 'PAGE_SIZE' D:\wamp\www\mall\mall\Admin\Controller\UserController.class.php 第 27 行.
+NOTIC: [8] Undefined variable: map D:\wamp\www\mall\mall\Admin\Model\UserModel.class.php 第 15 行.
+SQL: SELECT * FROM `ts_user` ORDER BY last_login desc,created desc LIMIT 0,10   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: value D:\wamp\www\mall\mall\Admin\Model\UserModel.class.php 第 23 行.
+NOTIC: [8] Undefined variable: value D:\wamp\www\mall\mall\Admin\Model\UserModel.class.php 第 23 行.
+NOTIC: [8] Undefined variable: value D:\wamp\www\mall\mall\Admin\Model\UserModel.class.php 第 23 行.
+NOTIC: [8] Undefined variable: value D:\wamp\www\mall\mall\Admin\Model\UserModel.class.php 第 23 行.
+NOTIC: [8] Undefined variable: value D:\wamp\www\mall\mall\Admin\Model\UserModel.class.php 第 23 行.
+NOTIC: [8] Undefined variable: value D:\wamp\www\mall\mall\Admin\Model\UserModel.class.php 第 23 行.
+NOTIC: [8] Undefined variable: value D:\wamp\www\mall\mall\Admin\Model\UserModel.class.php 第 23 行.
+NOTIC: [8] Undefined variable: value D:\wamp\www\mall\mall\Admin\Model\UserModel.class.php 第 23 行.
+NOTIC: [8] Undefined variable: value D:\wamp\www\mall\mall\Admin\Model\UserModel.class.php 第 23 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: username D:\wamp\www\mall\mall\Runtime\Cache\Admin\fa6e8a7730a1e51256a4ed9fc01c4285.php 第 53 行.
+NOTIC: [8] Undefined variable: created_start D:\wamp\www\mall\mall\Runtime\Cache\Admin\fa6e8a7730a1e51256a4ed9fc01c4285.php 第 60 行.
+NOTIC: [8] Undefined variable: created_start D:\wamp\www\mall\mall\Runtime\Cache\Admin\fa6e8a7730a1e51256a4ed9fc01c4285.php 第 63 行.
+NOTIC: [8] Undefined variable: created_end D:\wamp\www\mall\mall\Runtime\Cache\Admin\fa6e8a7730a1e51256a4ed9fc01c4285.php 第 64 行.
+NOTIC: [8] Undefined variable: good D:\wamp\www\mall\mall\Runtime\Cache\Admin\fa6e8a7730a1e51256a4ed9fc01c4285.php 第 103 行.
+NOTIC: [8] Undefined variable: good D:\wamp\www\mall\mall\Runtime\Cache\Admin\fa6e8a7730a1e51256a4ed9fc01c4285.php 第 103 行.
+NOTIC: [8] Undefined variable: good D:\wamp\www\mall\mall\Runtime\Cache\Admin\fa6e8a7730a1e51256a4ed9fc01c4285.php 第 103 行.
+NOTIC: [8] Undefined variable: good D:\wamp\www\mall\mall\Runtime\Cache\Admin\fa6e8a7730a1e51256a4ed9fc01c4285.php 第 103 行.
+NOTIC: [8] Undefined variable: good D:\wamp\www\mall\mall\Runtime\Cache\Admin\fa6e8a7730a1e51256a4ed9fc01c4285.php 第 103 行.
+NOTIC: [8] Undefined variable: good D:\wamp\www\mall\mall\Runtime\Cache\Admin\fa6e8a7730a1e51256a4ed9fc01c4285.php 第 103 行.
+NOTIC: [8] Undefined variable: good D:\wamp\www\mall\mall\Runtime\Cache\Admin\fa6e8a7730a1e51256a4ed9fc01c4285.php 第 103 行.
+NOTIC: [8] Undefined variable: good D:\wamp\www\mall\mall\Runtime\Cache\Admin\fa6e8a7730a1e51256a4ed9fc01c4285.php 第 103 行.
+NOTIC: [8] Undefined variable: good D:\wamp\www\mall\mall\Runtime\Cache\Admin\fa6e8a7730a1e51256a4ed9fc01c4285.php 第 103 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-03T11:40:33+08:00 ] 127.0.0.1 /mall/Detail/index/id/96
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-03T11:40:36+08:00 ] 127.0.0.1 /mall/Cart/addToCart.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: DESCRIBE ts_cart [ RunTime:0.002000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ts_cart` WHERE ( user_id=6 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: DESCRIBE ts_goods [ RunTime:0.003000s ]
+SQL: SELECT * FROM `ts_goods` WHERE ( goods_id=96 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Array to string conversion D:\wamp\www\mall\mall\Home\Controller\CartController.class.php 第 79 行.
+SQL: DESCRIBE ts_cart [ RunTime:0.002000s ]
+SQL: SELECT * FROM `ts_cart` WHERE ( goods_attr='Array,96' AND user_id=6 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: UPDATE `ts_cart` SET `nums`=nums+1 WHERE ( goods_attr='Array,96' AND user_id=6 ) [ RunTime:0.003000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ts_cart` WHERE ( user_id=6 ) LIMIT 1   [ RunTime:0.000000s ]
+
+[ 2016-07-03T11:40:38+08:00 ] 127.0.0.1 /mall/Cart/getCart.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: DESCRIBE ts_cart [ RunTime:0.003000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ts_cart` WHERE ( user_id=6 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `goods_id`,`user_id`,`spec`,`nums`,`price`,`goods_name`,`goods_thumb`,`spec_desc`,`goods_attr` FROM `ts_cart` WHERE ( user_id=6 )  [ RunTime:0.000000s ]
+
+[ 2016-07-03T11:40:41+08:00 ] 127.0.0.1 /mall/Cart/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-03T11:40:43+08:00 ] 127.0.0.1 /mall/Cart/orderInfo/act/cart.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-03T11:44:41+08:00 ] 127.0.0.1 /mall/Cart/orderInfo/act/cart.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-03T11:45:01+08:00 ] 127.0.0.1 /mall/Cart/orderInfo/act/cart.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-03T11:45:32+08:00 ] 127.0.0.1 /mall/Cart/orderInfo/act/cart.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-03T11:47:01+08:00 ] 127.0.0.1 /mall/Cart/orderInfo/act/cart.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-03T11:47:17+08:00 ] 127.0.0.1 /mall/Cart/orderInfo/act/cart.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-03T11:47:31+08:00 ] 127.0.0.1 /mall/Cart/orderInfo/act/cart.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-03T11:47:44+08:00 ] 127.0.0.1 /mall/Cart/orderInfo/act/cart.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.010000s ]
+
+[ 2016-07-03T11:48:10+08:00 ] 127.0.0.1 /mall/Cart/orderInfo/act/cart.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-03T11:48:28+08:00 ] 127.0.0.1 /mall/Cart/orderInfo/act/cart.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-03T11:48:43+08:00 ] 127.0.0.1 /mall/Cart/orderInfo/act/cart.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-03T11:49:34+08:00 ] 127.0.0.1 /mall/Cart/orderInfo/act/cart.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-03T11:51:45+08:00 ] 127.0.0.1 /mall/Cart/orderInfo/act/cart.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-03T11:51:57+08:00 ] 127.0.0.1 /mall/Cart/orderInfo/act/cart.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-03T12:09:38+08:00 ] 127.0.0.1 /mall/Cart/orderInfo/act/cart.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-03T12:09:40+08:00 ] 127.0.0.1 /mall/Cart/orderInfo/act/__CONTROL__/addOrder
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-03T12:11:10+08:00 ] 127.0.0.1 /mall/Cart/orderInfo/act/cart.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-03T12:11:12+08:00 ] 127.0.0.1 /mall/Cart/orderInfo/act/__CONTROL__/addOrder
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-03T12:11:19+08:00 ] 127.0.0.1 /mall/Cart/orderInfo/act/cart.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-03T12:11:21+08:00 ] 127.0.0.1 /mall/Cart/orderInfo/act/__CONTROL__/addOrder
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-03T12:13:08+08:00 ] 127.0.0.1 /mall/Cart/orderInfo/act/cart.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-03T12:13:20+08:00 ] 127.0.0.1 /mall/Cart/orderInfo/act/cart.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-03T12:13:53+08:00 ] 127.0.0.1 /mall/Cart/orderInfo/act/cart.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-03T12:17:04+08:00 ] 127.0.0.1 /mall/Cart/orderInfo/act/cart.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-03T12:18:38+08:00 ] 127.0.0.1 /mall/Cart/orderInfo/act/cart.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-03T12:18:55+08:00 ] 127.0.0.1 /mall/Cart/orderInfo/act/cart.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-03T12:18:57+08:00 ] 127.0.0.1 /mall/Cart/addOrder.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: DESCRIBE ts_cart [ RunTime:0.004000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ts_cart` WHERE ( user_id=6 ) LIMIT 1   [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-03T12:19:43+08:00 ] 127.0.0.1 /mall/Cart/orderInfo/act/cart.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-03T12:19:50+08:00 ] 127.0.0.1 /mall/Cart/addOrder.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: DESCRIBE ts_cart [ RunTime:0.003000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ts_cart` WHERE ( user_id=6 ) LIMIT 1   [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-03T12:27:38+08:00 ] 127.0.0.1 /mall/Cart/orderInfo/act/cart.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-03T12:27:42+08:00 ] 127.0.0.1 /mall/Cart/addOrder.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: DESCRIBE ts_cart [ RunTime:0.003000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ts_cart` WHERE ( user_id=6 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: user_id D:\wamp\www\mall\mall\Home\Controller\CartController.class.php 第 446 行.
+SQL: DESCRIBE ts_user_address [ RunTime:0.003000s ]
+SQL: SELECT * FROM `ts_user_address` WHERE ( addres_id=6 ) LIMIT 1   [ RunTime:0.000000s ]
+ERR: 1054:Champ 'addres_id' inconnu dans where clause
+ [ SQL语句 ] : SELECT * FROM `ts_user_address` WHERE ( addres_id=6 ) LIMIT 1  
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-03T12:28:24+08:00 ] 127.0.0.1 /mall/Cart/orderInfo/act/cart.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-03T12:28:25+08:00 ] 127.0.0.1 /mall/Cart/addOrder.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: DESCRIBE ts_cart [ RunTime:0.003000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ts_cart` WHERE ( user_id=6 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: user_id D:\wamp\www\mall\mall\Home\Controller\CartController.class.php 第 446 行.
+SQL: DESCRIBE ts_user_address [ RunTime:0.003000s ]
+SQL: SELECT * FROM `ts_user_address` WHERE ( addres_id=6 ) LIMIT 1   [ RunTime:0.000000s ]
+ERR: 1054:Champ 'addres_id' inconnu dans where clause
+ [ SQL语句 ] : SELECT * FROM `ts_user_address` WHERE ( addres_id=6 ) LIMIT 1  
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-03T12:28:38+08:00 ] 127.0.0.1 /mall/Cart/getCart.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: DESCRIBE ts_cart [ RunTime:0.003000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ts_cart` WHERE ( user_id=6 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT `goods_id`,`user_id`,`spec`,`nums`,`price`,`goods_name`,`goods_thumb`,`spec_desc`,`goods_attr` FROM `ts_cart` WHERE ( user_id=6 )  [ RunTime:0.001000s ]
+
+[ 2016-07-03T12:29:02+08:00 ] 127.0.0.1 /mall/Cart/orderInfo/act/cart.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-03T12:29:53+08:00 ] 127.0.0.1 /mall/Cart/orderInfo/act/cart.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-03T12:29:56+08:00 ] 127.0.0.1 /mall/Cart/addOrder.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: DESCRIBE ts_cart [ RunTime:0.003000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ts_cart` WHERE ( user_id=6 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: user_id D:\wamp\www\mall\mall\Home\Controller\CartController.class.php 第 447 行.
+SQL: DESCRIBE ts_user_address [ RunTime:0.003000s ]
+SQL: SELECT * FROM `ts_user_address` WHERE ( address_id=6 ) LIMIT 1   [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-03T12:37:15+08:00 ] 127.0.0.1 /mall/Cart/orderInfo/act/cart.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-03T12:37:53+08:00 ] 127.0.0.1 /mall/Cart/orderInfo/act/cart.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-03T12:37:56+08:00 ] 127.0.0.1 /mall/Cart/addOrder.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: DESCRIBE ts_cart [ RunTime:0.002000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ts_cart` WHERE ( user_id=6 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: user_id D:\wamp\www\mall\mall\Home\Controller\CartController.class.php 第 467 行.
+SQL: DESCRIBE ts_user_address [ RunTime:0.002000s ]
+SQL: SELECT * FROM `ts_user_address` WHERE ( address_id=6 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: total_price D:\wamp\www\mall\mall\Home\Controller\CartController.class.php 第 456 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-03T12:38:56+08:00 ] 127.0.0.1 /mall/Cart/orderInfo/act/cart.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-03T12:38:59+08:00 ] 127.0.0.1 /mall/Cart/addOrder.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: DESCRIBE ts_cart [ RunTime:0.003000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ts_cart` WHERE ( user_id=6 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: user_id D:\wamp\www\mall\mall\Home\Controller\CartController.class.php 第 468 行.
+SQL: DESCRIBE ts_user_address [ RunTime:0.003000s ]
+SQL: SELECT * FROM `ts_user_address` WHERE ( address_id=6 ) LIMIT 1   [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-03T12:39:10+08:00 ] 127.0.0.1 /mall/Cart/orderInfo/act/cart.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-03T12:39:12+08:00 ] 127.0.0.1 /mall/Cart/addOrder.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: DESCRIBE ts_cart [ RunTime:0.003000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ts_cart` WHERE ( user_id=6 ) LIMIT 1   [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: user_id D:\wamp\www\mall\mall\Home\Controller\CartController.class.php 第 469 行.
+SQL: DESCRIBE ts_user_address [ RunTime:0.003000s ]
+SQL: SELECT * FROM `ts_user_address` WHERE ( address_id=6 ) LIMIT 1   [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-03T12:39:45+08:00 ] 127.0.0.1 /mall/Cart/orderInfo/act/cart.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-03T12:39:48+08:00 ] 127.0.0.1 /mall/Cart/addOrder.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: DESCRIBE ts_cart [ RunTime:0.003000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ts_cart` WHERE ( user_id=6 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: user_id D:\wamp\www\mall\mall\Home\Controller\CartController.class.php 第 470 行.
+SQL: DESCRIBE ts_user_address [ RunTime:0.003000s ]
+SQL: SELECT * FROM `ts_user_address` WHERE ( address_id=6 ) LIMIT 1   [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-03T12:43:37+08:00 ] 127.0.0.1 /mall/Cart/orderInfo/act/cart.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-03T12:43:40+08:00 ] 127.0.0.1 /mall/Cart/addOrder.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: DESCRIBE ts_cart [ RunTime:0.003000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ts_cart` WHERE ( user_id=6 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: user_id D:\wamp\www\mall\mall\Home\Controller\CartController.class.php 第 484 行.
+SQL: DESCRIBE ts_user_address [ RunTime:0.002000s ]
+SQL: SELECT * FROM `ts_user_address` WHERE ( address_id=6 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `goods_id`,`price`,`spec`,`nums`,`goods_name`,`goods_thumb`,`spec_desc`,`sel`,`goods_attr`,`goods_sn` FROM `ts_cart` WHERE ( user_id=6 AND sel=1 )  [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-03T12:51:05+08:00 ] 127.0.0.1 /mall/Cart/orderInfo/act/cart.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-03T12:51:07+08:00 ] 127.0.0.1 /mall/Cart/addOrder.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: DESCRIBE ts_cart [ RunTime:0.003000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ts_cart` WHERE ( user_id=6 ) LIMIT 1   [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: user_id D:\wamp\www\mall\mall\Home\Controller\CartController.class.php 第 485 行.
+SQL: DESCRIBE ts_user_address [ RunTime:0.003000s ]
+SQL: SELECT * FROM `ts_user_address` WHERE ( address_id=6 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `goods_id`,`price`,`spec`,`nums`,`goods_name`,`goods_thumb`,`spec_desc`,`sel`,`goods_attr`,`goods_sn` FROM `ts_cart` WHERE ( user_id=6 AND sel=1 )  [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant HAS_MANY - assumed 'HAS_MANY' D:\wamp\www\mall\ThinkPHP\Common\functions.php 第 465 行.
+SQL: DESCRIBE ts_order [ RunTime:0.003000s ]
+NOTIC: [2] Missing argument 1 for Home\Model\OrderModel::addOrder(), called in D:\wamp\www\mall\mall\Home\Controller\CartController.class.php on line 478 and defined D:\wamp\www\mall\mall\Home\Model\OrderModel.class.php 第 12 行.
+NOTIC: [8] Undefined variable: data D:\wamp\www\mall\mall\Home\Model\OrderModel.class.php 第 13 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-03T12:51:42+08:00 ] 127.0.0.1 /mall/Cart/orderInfo/act/cart.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-03T12:51:44+08:00 ] 127.0.0.1 /mall/Cart/addOrder.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: DESCRIBE ts_cart [ RunTime:0.004000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ts_cart` WHERE ( user_id=6 ) LIMIT 1   [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: user_id D:\wamp\www\mall\mall\Home\Controller\CartController.class.php 第 485 行.
+SQL: DESCRIBE ts_user_address [ RunTime:0.002000s ]
+SQL: SELECT * FROM `ts_user_address` WHERE ( address_id=6 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `goods_id`,`price`,`spec`,`nums`,`goods_name`,`goods_thumb`,`spec_desc`,`sel`,`goods_attr`,`goods_sn` FROM `ts_cart` WHERE ( user_id=6 AND sel=1 )  [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant HAS_MANY - assumed 'HAS_MANY' D:\wamp\www\mall\ThinkPHP\Common\functions.php 第 465 行.
+SQL: DESCRIBE ts_order [ RunTime:0.003000s ]
+SQL: INSERT INTO `ts_order` (`order_sn`,`created`,`confirm_time`,`pay_time`,`order_status`,`pay_status`,`ship_status`,`ship_id`,`pay_id`,`ship_name`,`pay_name`,`total_price`,`user_id`,`ship_price`,`address_id`,`address_name`,`consignee`,`email`,`province`,`city`,`district`,`address`,`zipcode`,`mobile`,`tele`) VALUES ('146752150498428',1467521504,1467521504,0,2,0,1,1,1,'韵达快递','支付宝','8,400.00','6',0,'6','','曹垒',null,'24','272','2533','成都市中和镇香榭国际',null,'13880186387',null) [ RunTime:0.000000s ]
+ERR: 1054:Champ 'ship_status' inconnu dans field list
+ [ SQL语句 ] : INSERT INTO `ts_order` (`order_sn`,`created`,`confirm_time`,`pay_time`,`order_status`,`pay_status`,`ship_status`,`ship_id`,`pay_id`,`ship_name`,`pay_name`,`total_price`,`user_id`,`ship_price`,`address_id`,`address_name`,`consignee`,`email`,`province`,`city`,`district`,`address`,`zipcode`,`mobile`,`tele`) VALUES ('146752150498428',1467521504,1467521504,0,2,0,1,1,1,'韵达快递','支付宝','8,400.00','6',0,'6','','曹垒',null,'24','272','2533','成都市中和镇香榭国际',null,'13880186387',null)
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-03T12:52:31+08:00 ] 127.0.0.1 /mall/Cart/orderInfo/act/cart.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-03T12:52:32+08:00 ] 127.0.0.1 /mall/Cart/addOrder.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: DESCRIBE ts_cart [ RunTime:0.003000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ts_cart` WHERE ( user_id=6 ) LIMIT 1   [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: user_id D:\wamp\www\mall\mall\Home\Controller\CartController.class.php 第 485 行.
+SQL: DESCRIBE ts_user_address [ RunTime:0.004000s ]
+SQL: SELECT * FROM `ts_user_address` WHERE ( address_id=6 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT `goods_id`,`price`,`spec`,`nums`,`goods_name`,`goods_thumb`,`spec_desc`,`sel`,`goods_attr`,`goods_sn` FROM `ts_cart` WHERE ( user_id=6 AND sel=1 )  [ RunTime:0.001000s ]
+NOTIC: [8] Use of undefined constant HAS_MANY - assumed 'HAS_MANY' D:\wamp\www\mall\ThinkPHP\Common\functions.php 第 465 行.
+SQL: DESCRIBE ts_order [ RunTime:0.003000s ]
+SQL: INSERT INTO `ts_order` (`order_sn`,`created`,`confirm_time`,`pay_time`,`order_status`,`pay_status`,`ship_status`,`ship_id`,`pay_id`,`ship_name`,`pay_name`,`total_price`,`user_id`,`ship_price`,`address_id`,`address_name`,`consignee`,`email`,`province`,`city`,`district`,`address`,`zipcode`,`mobile`,`tele`) VALUES ('146752155208543',1467521552,1467521552,0,2,0,1,1,1,'韵达快递','支付宝','8,400.00','6',0,'6','','曹垒',null,'24','272','2533','成都市中和镇香榭国际',null,'13880186387',null) [ RunTime:0.000000s ]
+ERR: 1054:Champ 'ship_status' inconnu dans field list
+ [ SQL语句 ] : INSERT INTO `ts_order` (`order_sn`,`created`,`confirm_time`,`pay_time`,`order_status`,`pay_status`,`ship_status`,`ship_id`,`pay_id`,`ship_name`,`pay_name`,`total_price`,`user_id`,`ship_price`,`address_id`,`address_name`,`consignee`,`email`,`province`,`city`,`district`,`address`,`zipcode`,`mobile`,`tele`) VALUES ('146752155208543',1467521552,1467521552,0,2,0,1,1,1,'韵达快递','支付宝','8,400.00','6',0,'6','','曹垒',null,'24','272','2533','成都市中和镇香榭国际',null,'13880186387',null)
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-03T12:59:52+08:00 ] 127.0.0.1 /mall/Cart/orderInfo/act/cart.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-03T12:59:55+08:00 ] 127.0.0.1 /mall/Cart/addOrder.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: DESCRIBE ts_cart [ RunTime:0.003000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ts_cart` WHERE ( user_id=6 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: user_id D:\wamp\www\mall\mall\Home\Controller\CartController.class.php 第 485 行.
+SQL: DESCRIBE ts_user_address [ RunTime:0.003000s ]
+SQL: SELECT * FROM `ts_user_address` WHERE ( address_id=6 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT `goods_id`,`price`,`spec`,`nums`,`goods_name`,`goods_thumb`,`spec_desc`,`sel`,`goods_attr`,`goods_sn` FROM `ts_cart` WHERE ( user_id=6 AND sel=1 )  [ RunTime:0.001000s ]
+NOTIC: [8] Use of undefined constant HAS_MANY - assumed 'HAS_MANY' D:\wamp\www\mall\ThinkPHP\Common\functions.php 第 465 行.
+SQL: DESCRIBE ts_order [ RunTime:0.003000s ]
+SQL: INSERT INTO `ts_order` (`order_sn`,`created`,`confirm_time`,`pay_time`,`order_status`,`pay_status`,`ship_status`,`ship_id`,`pay_id`,`ship_name`,`pay_name`,`total_price`,`user_id`,`ship_price`,`address_id`,`address_name`,`consignee`,`email`,`province`,`city`,`district`,`address`,`zipcode`,`mobile`,`tele`) VALUES ('146752199525442',1467521995,1467521995,0,2,0,1,1,1,'韵达快递','支付宝','8,400.00','6',0,'6','','曹垒',null,'24','272','2533','成都市中和镇香榭国际',null,'13880186387',null) [ RunTime:0.000000s ]
+ERR: 1054:Champ 'address_id' inconnu dans field list
+ [ SQL语句 ] : INSERT INTO `ts_order` (`order_sn`,`created`,`confirm_time`,`pay_time`,`order_status`,`pay_status`,`ship_status`,`ship_id`,`pay_id`,`ship_name`,`pay_name`,`total_price`,`user_id`,`ship_price`,`address_id`,`address_name`,`consignee`,`email`,`province`,`city`,`district`,`address`,`zipcode`,`mobile`,`tele`) VALUES ('146752199525442',1467521995,1467521995,0,2,0,1,1,1,'韵达快递','支付宝','8,400.00','6',0,'6','','曹垒',null,'24','272','2533','成都市中和镇香榭国际',null,'13880186387',null)
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-03T13:08:31+08:00 ] 127.0.0.1 /mall/Cart/orderInfo/act/cart.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-03T13:08:37+08:00 ] 127.0.0.1 /mall/Cart/orderInfo/act/cart.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-03T13:08:41+08:00 ] 127.0.0.1 /mall/Cart/addOrder.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: DESCRIBE ts_cart [ RunTime:0.003000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ts_cart` WHERE ( user_id=6 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: user_id D:\wamp\www\mall\mall\Home\Controller\CartController.class.php 第 487 行.
+SQL: DESCRIBE ts_user_address [ RunTime:0.003000s ]
+SQL: SELECT * FROM `ts_user_address` WHERE ( address_id=6 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT `goods_id`,`price`,`spec`,`nums`,`goods_name`,`goods_thumb`,`spec_desc`,`sel`,`goods_attr`,`goods_sn` FROM `ts_cart` WHERE ( user_id=6 AND sel=1 )  [ RunTime:0.001000s ]
+NOTIC: [8] Use of undefined constant HAS_MANY - assumed 'HAS_MANY' D:\wamp\www\mall\ThinkPHP\Common\functions.php 第 465 行.
+SQL: DESCRIBE ts_order [ RunTime:0.003000s ]
+SQL: INSERT INTO `ts_order` (`order_sn`,`created`,`confirm_time`,`pay_time`,`order_status`,`pay_status`,`ship_status`,`ship_id`,`pay_id`,`ship_name`,`pay_name`,`total_price`,`user_id`,`ship_price`,`ship_time`,`address_id`,`address_name`,`consignee`,`email`,`province`,`city`,`district`,`address`,`zipcode`,`mobile`,`tele`) VALUES ('146752252034666',1467522520,1467522520,0,2,0,1,1,1,'韵达快递','支付宝','8,400.00','6',0,0,'6','','曹垒',null,'24','272','2533','成都市中和镇香榭国际',null,'13880186387',null) [ RunTime:0.000000s ]
+ERR: 1054:Champ 'address_id' inconnu dans field list
+ [ SQL语句 ] : INSERT INTO `ts_order` (`order_sn`,`created`,`confirm_time`,`pay_time`,`order_status`,`pay_status`,`ship_status`,`ship_id`,`pay_id`,`ship_name`,`pay_name`,`total_price`,`user_id`,`ship_price`,`ship_time`,`address_id`,`address_name`,`consignee`,`email`,`province`,`city`,`district`,`address`,`zipcode`,`mobile`,`tele`) VALUES ('146752252034666',1467522520,1467522520,0,2,0,1,1,1,'韵达快递','支付宝','8,400.00','6',0,0,'6','','曹垒',null,'24','272','2533','成都市中和镇香榭国际',null,'13880186387',null)
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-03T13:11:04+08:00 ] 127.0.0.1 /mall/Cart/orderInfo/act/cart.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-03T13:11:06+08:00 ] 127.0.0.1 /mall/Cart/addOrder.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: DESCRIBE ts_cart [ RunTime:0.003000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ts_cart` WHERE ( user_id=6 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: user_id D:\wamp\www\mall\mall\Home\Controller\CartController.class.php 第 487 行.
+SQL: DESCRIBE ts_user_address [ RunTime:0.002000s ]
+SQL: SELECT * FROM `ts_user_address` WHERE ( address_id=6 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT `goods_id`,`price`,`spec`,`nums`,`goods_name`,`goods_thumb`,`spec_desc`,`sel`,`goods_attr`,`goods_sn` FROM `ts_cart` WHERE ( user_id=6 AND sel=1 )  [ RunTime:0.001000s ]
+NOTIC: [8] Use of undefined constant HAS_MANY - assumed 'HAS_MANY' D:\wamp\www\mall\ThinkPHP\Common\functions.php 第 465 行.
+SQL: DESCRIBE ts_order [ RunTime:0.004000s ]
+SQL: INSERT INTO `ts_order` (`order_sn`,`created`,`confirm_time`,`pay_time`,`order_status`,`pay_status`,`ship_status`,`ship_id`,`pay_id`,`ship_name`,`pay_name`,`total_price`,`user_id`,`ship_price`,`ship_time`,`address_id`,`address_name`,`consignee`,`email`,`province`,`city`,`district`,`address`,`zipcode`,`mobile`,`tele`) VALUES ('146752266637325',1467522666,1467522666,0,2,0,1,1,1,'韵达快递','支付宝','8,400.00','6',0,0,'6','','曹垒',null,'24','272','2533','成都市中和镇香榭国际',null,'13880186387',null) [ RunTime:0.000000s ]
+ERR: 1054:Champ 'address_id' inconnu dans field list
+ [ SQL语句 ] : INSERT INTO `ts_order` (`order_sn`,`created`,`confirm_time`,`pay_time`,`order_status`,`pay_status`,`ship_status`,`ship_id`,`pay_id`,`ship_name`,`pay_name`,`total_price`,`user_id`,`ship_price`,`ship_time`,`address_id`,`address_name`,`consignee`,`email`,`province`,`city`,`district`,`address`,`zipcode`,`mobile`,`tele`) VALUES ('146752266637325',1467522666,1467522666,0,2,0,1,1,1,'韵达快递','支付宝','8,400.00','6',0,0,'6','','曹垒',null,'24','272','2533','成都市中和镇香榭国际',null,'13880186387',null)
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-03T13:21:13+08:00 ] 127.0.0.1 /mall/Cart/orderInfo/act/cart.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-03T13:21:14+08:00 ] 127.0.0.1 /mall/Cart/addOrder.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: DESCRIBE ts_cart [ RunTime:0.003000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ts_cart` WHERE ( user_id=6 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: user_id D:\wamp\www\mall\mall\Home\Controller\CartController.class.php 第 487 行.
+SQL: DESCRIBE ts_user_address [ RunTime:0.003000s ]
+SQL: SELECT * FROM `ts_user_address` WHERE ( address_id=6 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT `goods_id`,`price`,`spec`,`nums`,`goods_name`,`goods_thumb`,`spec_desc`,`sel`,`goods_attr`,`goods_sn` FROM `ts_cart` WHERE ( user_id=6 AND sel=1 )  [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant HAS_MANY - assumed 'HAS_MANY' D:\wamp\www\mall\ThinkPHP\Common\functions.php 第 465 行.
+SQL: DESCRIBE ts_order [ RunTime:0.003000s ]
+SQL: INSERT INTO `ts_order` (`order_sn`,`created`,`confirm_time`,`pay_time`,`order_status`,`pay_status`,`ship_status`,`ship_id`,`pay_id`,`ship_name`,`pay_name`,`total_price`,`user_id`,`ship_price`,`ship_time`,`address_id`,`address_name`,`consignee`,`email`,`province`,`city`,`district`,`address`,`zipcode`,`mobile`,`tele`) VALUES ('146752327427030',1467523274,1467523274,0,2,0,1,1,1,'韵达快递','支付宝','8,400.00','6',0,0,'6','','曹垒',null,'24','272','2533','成都市中和镇香榭国际',null,'13880186387',null) [ RunTime:0.001000s ]
+ERR: 1054:Champ 'address_id' inconnu dans field list
+ [ SQL语句 ] : INSERT INTO `ts_order` (`order_sn`,`created`,`confirm_time`,`pay_time`,`order_status`,`pay_status`,`ship_status`,`ship_id`,`pay_id`,`ship_name`,`pay_name`,`total_price`,`user_id`,`ship_price`,`ship_time`,`address_id`,`address_name`,`consignee`,`email`,`province`,`city`,`district`,`address`,`zipcode`,`mobile`,`tele`) VALUES ('146752327427030',1467523274,1467523274,0,2,0,1,1,1,'韵达快递','支付宝','8,400.00','6',0,0,'6','','曹垒',null,'24','272','2533','成都市中和镇香榭国际',null,'13880186387',null)
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-03T13:24:14+08:00 ] 127.0.0.1 /mall/Cart/orderInfo/act/cart.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-03T13:24:16+08:00 ] 127.0.0.1 /mall/Cart/addOrder.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: DESCRIBE ts_cart [ RunTime:0.003000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ts_cart` WHERE ( user_id=6 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: user_id D:\wamp\www\mall\mall\Home\Controller\CartController.class.php 第 489 行.
+SQL: DESCRIBE ts_user_address [ RunTime:0.003000s ]
+ERR: Think\Model:feild方法不存在！
+
+[ 2016-07-03T13:24:36+08:00 ] 127.0.0.1 /mall/Cart/orderInfo/act/cart.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-03T13:24:37+08:00 ] 127.0.0.1 /mall/Cart/addOrder.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: DESCRIBE ts_cart [ RunTime:0.004000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ts_cart` WHERE ( user_id=6 ) LIMIT 1   [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: user_id D:\wamp\www\mall\mall\Home\Controller\CartController.class.php 第 489 行.
+SQL: DESCRIBE ts_user_address [ RunTime:0.003000s ]
+ERR: Think\Model:feild方法不存在！
+
+[ 2016-07-03T13:24:47+08:00 ] 127.0.0.1 /mall/Cart/orderInfo/act/cart.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-03T13:24:48+08:00 ] 127.0.0.1 /mall/Cart/addOrder.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: DESCRIBE ts_cart [ RunTime:0.004000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ts_cart` WHERE ( user_id=6 ) LIMIT 1   [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: user_id D:\wamp\www\mall\mall\Home\Controller\CartController.class.php 第 487 行.
+SQL: DESCRIBE ts_user_address [ RunTime:0.003000s ]
+ERR: Think\Model:feild方法不存在！
+
+[ 2016-07-03T13:25:33+08:00 ] 127.0.0.1 /mall/Cart/orderInfo/act/cart.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-03T13:25:34+08:00 ] 127.0.0.1 /mall/Cart/addOrder.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: DESCRIBE ts_cart [ RunTime:0.003000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ts_cart` WHERE ( user_id=6 ) LIMIT 1   [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: user_id D:\wamp\www\mall\mall\Home\Controller\CartController.class.php 第 489 行.
+SQL: DESCRIBE ts_user_address [ RunTime:0.003000s ]
+SQL: SELECT `consignee`,`province`,`city`,`district`,`address`,`zipcode`,`tele`,`mobile` FROM `ts_user_address` WHERE ( address_id=6 ) LIMIT 1   [ RunTime:0.001000s ]
+ERR: 1054:Champ 'tele' inconnu dans field list
+ [ SQL语句 ] : SELECT `consignee`,`province`,`city`,`district`,`address`,`zipcode`,`tele`,`mobile` FROM `ts_user_address` WHERE ( address_id=6 ) LIMIT 1  
+
+[ 2016-07-03T13:26:31+08:00 ] 127.0.0.1 /mall/Cart/orderInfo/act/cart.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-03T13:26:34+08:00 ] 127.0.0.1 /mall/Cart/getCart.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: DESCRIBE ts_cart [ RunTime:0.004000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ts_cart` WHERE ( user_id=6 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `goods_id`,`user_id`,`spec`,`nums`,`price`,`goods_name`,`goods_thumb`,`spec_desc`,`goods_attr` FROM `ts_cart` WHERE ( user_id=6 )  [ RunTime:0.000000s ]
+
+[ 2016-07-03T13:26:34+08:00 ] 127.0.0.1 /mall/Cart/getCart.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: DESCRIBE ts_cart [ RunTime:0.003000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ts_cart` WHERE ( user_id=6 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `goods_id`,`user_id`,`spec`,`nums`,`price`,`goods_name`,`goods_thumb`,`spec_desc`,`goods_attr` FROM `ts_cart` WHERE ( user_id=6 )  [ RunTime:0.000000s ]
+
+[ 2016-07-03T13:27:33+08:00 ] 127.0.0.1 /mall/Cart/orderInfo/act/cart.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-03T13:27:34+08:00 ] 127.0.0.1 /mall/Cart/addOrder.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: DESCRIBE ts_cart [ RunTime:0.003000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ts_cart` WHERE ( user_id=6 ) LIMIT 1   [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: user_id D:\wamp\www\mall\mall\Home\Controller\CartController.class.php 第 489 行.
+SQL: DESCRIBE ts_user_address [ RunTime:0.003000s ]
+SQL: SELECT `consignee`,`province`,`city`,`district`,`address`,`zipcode`,`tele`,`mobile` FROM `ts_user_address` WHERE ( address_id=6 ) LIMIT 1   [ RunTime:0.000000s ]
+ERR: 1054:Champ 'tele' inconnu dans field list
+ [ SQL语句 ] : SELECT `consignee`,`province`,`city`,`district`,`address`,`zipcode`,`tele`,`mobile` FROM `ts_user_address` WHERE ( address_id=6 ) LIMIT 1  
+
+[ 2016-07-03T13:28:31+08:00 ] 127.0.0.1 /mall/Cart/orderInfo/act/cart.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-03T13:28:32+08:00 ] 127.0.0.1 /mall/Cart/addOrder.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: DESCRIBE ts_cart [ RunTime:0.003000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ts_cart` WHERE ( user_id=6 ) LIMIT 1   [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: user_id D:\wamp\www\mall\mall\Home\Controller\CartController.class.php 第 489 行.
+SQL: DESCRIBE ts_user_address [ RunTime:0.003000s ]
+SQL: SELECT `consignee`,`province`,`city`,`district`,`address`,`zipcode`,`tele`,`mobile`,`user_id` FROM `ts_user_address` WHERE ( address_id=6 ) LIMIT 1   [ RunTime:0.000000s ]
+ERR: 1054:Champ 'tele' inconnu dans field list
+ [ SQL语句 ] : SELECT `consignee`,`province`,`city`,`district`,`address`,`zipcode`,`tele`,`mobile`,`user_id` FROM `ts_user_address` WHERE ( address_id=6 ) LIMIT 1  
+
+[ 2016-07-03T13:30:33+08:00 ] 127.0.0.1 /mall/Cart/orderInfo/act/cart.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-03T13:30:34+08:00 ] 127.0.0.1 /mall/Cart/addOrder.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: DESCRIBE ts_cart [ RunTime:0.003000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ts_cart` WHERE ( user_id=6 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: user_id D:\wamp\www\mall\mall\Home\Controller\CartController.class.php 第 489 行.
+SQL: DESCRIBE ts_user_address [ RunTime:0.003000s ]
+SQL: SELECT `consignee`,`province`,`city`,`district`,`address`,`zipcode`,`tele`,`mobile` FROM `ts_user_address` WHERE ( address_id=6 ) LIMIT 1   [ RunTime:0.000000s ]
+ERR: 1054:Champ 'tele' inconnu dans field list
+ [ SQL语句 ] : SELECT `consignee`,`province`,`city`,`district`,`address`,`zipcode`,`tele`,`mobile` FROM `ts_user_address` WHERE ( address_id=6 ) LIMIT 1  
+
+[ 2016-07-03T13:31:21+08:00 ] 127.0.0.1 /mall/Cart/orderInfo/act/cart.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-03T13:31:23+08:00 ] 127.0.0.1 /mall/Cart/addOrder.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: DESCRIBE ts_cart [ RunTime:0.003000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ts_cart` WHERE ( user_id=6 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: user_id D:\wamp\www\mall\mall\Home\Controller\CartController.class.php 第 491 行.
+SQL: DESCRIBE ts_user_address [ RunTime:0.003000s ]
+SQL: SELECT `consignee`,`province`,`city`,`district`,`address`,`zipcode`,`tele`,`mobile` FROM `ts_user_address` WHERE ( address_id=6 ) LIMIT 1   [ RunTime:0.001000s ]
+ERR: 1054:Champ 'tele' inconnu dans field list
+ [ SQL语句 ] : SELECT `consignee`,`province`,`city`,`district`,`address`,`zipcode`,`tele`,`mobile` FROM `ts_user_address` WHERE ( address_id=6 ) LIMIT 1  
+
+[ 2016-07-03T13:34:46+08:00 ] 127.0.0.1 /mall/Cart/orderInfo/act/cart.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-03T13:34:47+08:00 ] 127.0.0.1 /mall/Cart/addOrder.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: DESCRIBE ts_cart [ RunTime:0.003000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ts_cart` WHERE ( user_id=6 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: user_id D:\wamp\www\mall\mall\Home\Controller\CartController.class.php 第 490 行.
+SQL: DESCRIBE ts_user_address [ RunTime:0.003000s ]
+SQL: SELECT `consignee`,`province`,`city`,`district`,`address`,`zipcode`,`tele`,`mobile` FROM `ts_user_address` WHERE ( address_id=6 ) LIMIT 1   [ RunTime:0.000000s ]
+ERR: 1054:Champ 'tele' inconnu dans field list
+ [ SQL语句 ] : SELECT `consignee`,`province`,`city`,`district`,`address`,`zipcode`,`tele`,`mobile` FROM `ts_user_address` WHERE ( address_id=6 ) LIMIT 1  
+
+[ 2016-07-03T13:37:22+08:00 ] 127.0.0.1 /mall/Cart/orderInfo/act/cart.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-03T13:37:23+08:00 ] 127.0.0.1 /mall/Cart/addOrder.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: DESCRIBE ts_cart [ RunTime:0.003000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ts_cart` WHERE ( user_id=6 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: user_id D:\wamp\www\mall\mall\Home\Controller\CartController.class.php 第 490 行.
+SQL: DESCRIBE ts_user_address [ RunTime:0.002000s ]
+SQL: SELECT `consignee`,`province`,`city`,`district`,`address`,`zipcode`,`mobile` FROM `ts_user_address` WHERE ( address_id=6 ) LIMIT 1   [ RunTime:0.000000s ]
+
+[ 2016-07-03T13:40:21+08:00 ] 127.0.0.1 /mall/Cart/orderInfo/act/cart.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-03T13:40:22+08:00 ] 127.0.0.1 /mall/Cart/addOrder.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: DESCRIBE ts_cart [ RunTime:0.003000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ts_cart` WHERE ( user_id=6 ) LIMIT 1   [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: user_id D:\wamp\www\mall\mall\Home\Controller\CartController.class.php 第 490 行.
+SQL: DESCRIBE ts_user_address [ RunTime:0.004000s ]
+SQL: SELECT `consignee`,`province`,`city`,`district`,`address`,`zipcode`,`tel`,`mobile` FROM `ts_user_address` WHERE ( address_id=6 ) LIMIT 1   [ RunTime:0.000000s ]
+ERR: 1054:Champ 'tel' inconnu dans field list
+ [ SQL语句 ] : SELECT `consignee`,`province`,`city`,`district`,`address`,`zipcode`,`tel`,`mobile` FROM `ts_user_address` WHERE ( address_id=6 ) LIMIT 1  
+
+[ 2016-07-03T13:42:54+08:00 ] 127.0.0.1 /mall/Cart/orderInfo/act/cart.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-03T13:42:55+08:00 ] 127.0.0.1 /mall/Cart/addOrder.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: DESCRIBE ts_cart [ RunTime:0.003000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ts_cart` WHERE ( user_id=6 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: user_id D:\wamp\www\mall\mall\Home\Controller\CartController.class.php 第 490 行.
+SQL: DESCRIBE ts_user_address [ RunTime:0.003000s ]
+SQL: SELECT `consignee`,`province`,`city`,`district`,`address`,`zipcode`,`tele`,`mobile` FROM `ts_user_address` WHERE ( address_id=6 ) LIMIT 1   [ RunTime:0.000000s ]
+ERR: 1054:Champ 'tele' inconnu dans field list
+ [ SQL语句 ] : SELECT `consignee`,`province`,`city`,`district`,`address`,`zipcode`,`tele`,`mobile` FROM `ts_user_address` WHERE ( address_id=6 ) LIMIT 1  
+
+[ 2016-07-03T13:44:22+08:00 ] 127.0.0.1 /mall/Cart/orderInfo/act/cart.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-03T13:44:23+08:00 ] 127.0.0.1 /mall/Cart/addOrder.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: DESCRIBE ts_cart [ RunTime:0.003000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ts_cart` WHERE ( user_id=6 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: user_id D:\wamp\www\mall\mall\Home\Controller\CartController.class.php 第 491 行.
+SQL: DESCRIBE ts_user_address [ RunTime:0.003000s ]
+SQL: SELECT `consignee`,`province`,`city`,`district`,`address`,`zipcode`,`tele`,`mobile` FROM `ts_user_address` WHERE ( address_id=6 ) LIMIT 1   [ RunTime:0.001000s ]
+ERR: 1054:Champ 'tele' inconnu dans field list
+ [ SQL语句 ] : SELECT `consignee`,`province`,`city`,`district`,`address`,`zipcode`,`tele`,`mobile` FROM `ts_user_address` WHERE ( address_id=6 ) LIMIT 1  
+
+[ 2016-07-03T13:46:46+08:00 ] 127.0.0.1 /mall/Cart/orderInfo/act/cart.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-03T13:46:47+08:00 ] 127.0.0.1 /mall/Cart/addOrder.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: DESCRIBE ts_cart [ RunTime:0.003000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ts_cart` WHERE ( user_id=6 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: user_id D:\wamp\www\mall\mall\Home\Controller\CartController.class.php 第 491 行.
+SQL: DESCRIBE ts_user_address [ RunTime:0.003000s ]
+SQL: SELECT `consignee`,`province`,`city`,`district`,`address`,`zipcode`,`tele`,`mobile` FROM `ts_user_address` WHERE ( address_id=6 ) LIMIT 1   [ RunTime:0.001000s ]
+ERR: 1054:Champ 'tele' inconnu dans field list
+ [ SQL语句 ] : SELECT `consignee`,`province`,`city`,`district`,`address`,`zipcode`,`tele`,`mobile` FROM `ts_user_address` WHERE ( address_id=6 ) LIMIT 1  
+
+[ 2016-07-03T13:47:05+08:00 ] 127.0.0.1 /mall/Cart/orderInfo/act/cart.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-03T13:47:06+08:00 ] 127.0.0.1 /mall/Cart/addOrder.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: DESCRIBE ts_cart [ RunTime:0.003000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ts_cart` WHERE ( user_id=6 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: user_id D:\wamp\www\mall\mall\Home\Controller\CartController.class.php 第 491 行.
+SQL: DESCRIBE ts_user_address [ RunTime:0.003000s ]
+SQL: SELECT `consignee`,`province`,`city`,`district`,`address`,`zipcode`,`tel`,`mobile` FROM `ts_user_address` WHERE ( address_id=6 ) LIMIT 1   [ RunTime:0.000000s ]
+ERR: 1054:Champ 'tel' inconnu dans field list
+ [ SQL语句 ] : SELECT `consignee`,`province`,`city`,`district`,`address`,`zipcode`,`tel`,`mobile` FROM `ts_user_address` WHERE ( address_id=6 ) LIMIT 1  
+
+[ 2016-07-03T13:51:35+08:00 ] 127.0.0.1 /mall/Cart/orderInfo/act/cart.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-03T13:51:37+08:00 ] 127.0.0.1 /mall/Cart/addOrder.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: DESCRIBE ts_cart [ RunTime:0.003000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ts_cart` WHERE ( user_id=6 ) LIMIT 1   [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: user_id D:\wamp\www\mall\mall\Home\Controller\CartController.class.php 第 491 行.
+SQL: DESCRIBE ts_user_address [ RunTime:0.003000s ]
+SQL: SELECT `consignee`,`province`,`city`,`district`,`address`,`zipcode`,`telephone`,`mobile` FROM `ts_user_address` WHERE ( address_id=6 ) LIMIT 1   [ RunTime:0.000000s ]
+
+[ 2016-07-03T13:52:19+08:00 ] 127.0.0.1 /mall/Cart/orderInfo/act/cart.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-03T13:52:21+08:00 ] 127.0.0.1 /mall/Cart/addOrder.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: DESCRIBE ts_cart [ RunTime:0.003000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ts_cart` WHERE ( user_id=6 ) LIMIT 1   [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: user_id D:\wamp\www\mall\mall\Home\Controller\CartController.class.php 第 489 行.
+SQL: DESCRIBE ts_user_address [ RunTime:0.003000s ]
+SQL: SELECT `consignee`,`province`,`city`,`district`,`address`,`zipcode`,`telephone`,`mobile` FROM `ts_user_address` WHERE ( address_id=6 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `goods_id`,`price`,`spec`,`nums`,`goods_name`,`goods_thumb`,`spec_desc`,`sel`,`goods_attr`,`goods_sn` FROM `ts_cart` WHERE ( user_id=6 AND sel=1 )  [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant HAS_MANY - assumed 'HAS_MANY' D:\wamp\www\mall\ThinkPHP\Common\functions.php 第 465 行.
+SQL: DESCRIBE ts_order [ RunTime:0.003000s ]
+SQL: INSERT INTO `ts_order` (`order_sn`,`created`,`confirm_time`,`pay_time`,`order_status`,`pay_status`,`ship_status`,`ship_id`,`pay_id`,`ship_name`,`pay_name`,`total_price`,`user_id`,`ship_price`,`ship_time`,`consignee`,`province`,`city`,`district`,`address`,`zipcode`,`telephone`,`mobile`) VALUES ('146752514130063',1467525141,1467525141,0,2,0,1,1,1,'韵达快递','支付宝','8,400.00','6',0,0,'曹垒','24','272','2533','成都市中和镇香榭国际',null,null,'13880186387') [ RunTime:0.005000s ]
+NOTIC: [8] Undefined index: mapping_name D:\wamp\www\mall\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 259 行.
+SQL: DESCRIBE ts_order_goods [ RunTime:0.003000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-03T13:57:00+08:00 ] 127.0.0.1 /mall/Cart/orderInfo/act/cart.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-03T13:57:01+08:00 ] 127.0.0.1 /mall/Cart/addOrder.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: DESCRIBE ts_cart [ RunTime:0.002000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ts_cart` WHERE ( user_id=6 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: user_id D:\wamp\www\mall\mall\Home\Controller\CartController.class.php 第 489 行.
+SQL: DESCRIBE ts_user_address [ RunTime:0.004000s ]
+SQL: SELECT `consignee`,`province`,`city`,`district`,`address`,`zipcode`,`telephone`,`mobile` FROM `ts_user_address` WHERE ( address_id=6 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT `goods_id`,`price`,`spec`,`nums`,`goods_name`,`goods_thumb`,`spec_desc`,`sel`,`goods_attr`,`goods_sn` FROM `ts_cart` WHERE ( user_id=6 AND sel=1 )  [ RunTime:0.001000s ]
+SQL: DESCRIBE ts_order [ RunTime:0.003000s ]
+SQL: INSERT INTO `ts_order` (`order_sn`,`created`,`confirm_time`,`pay_time`,`order_status`,`pay_status`,`ship_status`,`ship_id`,`pay_id`,`ship_name`,`pay_name`,`total_price`,`user_id`,`ship_price`,`ship_time`,`consignee`,`province`,`city`,`district`,`address`,`zipcode`,`telephone`,`mobile`) VALUES ('146752542150074',1467525421,1467525421,0,2,0,1,1,1,'韵达快递','支付宝','8,400.00','6',0,0,'曹垒','24','272','2533','成都市中和镇香榭国际',null,null,'13880186387') [ RunTime:0.005000s ]
+NOTIC: [8] Undefined index: mapping_name D:\wamp\www\mall\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 259 行.
+SQL: DESCRIBE ts_order_goods [ RunTime:0.004000s ]
+SQL: INSERT INTO `ts_order_goods` (`goods_id`,`price`,`attr_list`,`nums`,`goods_name`,`goods_sn`,`spec_value`,`order_id`) VALUES (96,'2200.00',null,'3','Apple iPhone 5s (A1530) 16GB 银色 移动联通4G手机','ECS576ea0921e910','',3) [ RunTime:0.000000s ]
+ERR: 1048:Le champ 'attr_list' ne peut être vide (null)
+ [ SQL语句 ] : INSERT INTO `ts_order_goods` (`goods_id`,`price`,`attr_list`,`nums`,`goods_name`,`goods_sn`,`spec_value`,`order_id`) VALUES (96,'2200.00',null,'3','Apple iPhone 5s (A1530) 16GB 银色 移动联通4G手机','ECS576ea0921e910','',3)
+SQL: INSERT INTO `ts_order_goods` (`goods_id`,`price`,`attr_list`,`nums`,`goods_name`,`goods_sn`,`spec_value`,`order_id`) VALUES (95,'6100.00','307,308','3','Apple iPhone 6s Plus (A1699) 64G 玫瑰金色 移动联通电信4','ECS576e8c51dcff0','<strong>颜色</strong>：蓝色， <strong>套餐</strong>：套餐二',3) [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-03T14:00:36+08:00 ] 127.0.0.1 /mall/Cart/orderInfo/act/cart.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-03T14:00:38+08:00 ] 127.0.0.1 /mall/Cart/addOrder.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: DESCRIBE ts_cart [ RunTime:0.002000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ts_cart` WHERE ( user_id=6 ) LIMIT 1   [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: user_id D:\wamp\www\mall\mall\Home\Controller\CartController.class.php 第 489 行.
+SQL: DESCRIBE ts_user_address [ RunTime:0.004000s ]
+SQL: SELECT `consignee`,`province`,`city`,`district`,`address`,`zipcode`,`telephone`,`mobile` FROM `ts_user_address` WHERE ( address_id=6 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT `goods_id`,`price`,`spec`,`nums`,`goods_name`,`goods_thumb`,`spec_desc`,`sel`,`goods_attr`,`goods_sn` FROM `ts_cart` WHERE ( user_id=6 AND sel=1 )  [ RunTime:0.001000s ]
+
+[ 2016-07-03T14:01:47+08:00 ] 127.0.0.1 /mall/Cart/orderInfo/act/cart.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-03T14:01:49+08:00 ] 127.0.0.1 /mall/Cart/addOrder.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: DESCRIBE ts_cart [ RunTime:0.003000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ts_cart` WHERE ( user_id=6 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: user_id D:\wamp\www\mall\mall\Home\Controller\CartController.class.php 第 489 行.
+SQL: DESCRIBE ts_user_address [ RunTime:0.003000s ]
+SQL: SELECT `consignee`,`province`,`city`,`district`,`address`,`zipcode`,`telephone`,`mobile` FROM `ts_user_address` WHERE ( address_id=6 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT `goods_id`,`price`,`spec`,`nums`,`goods_name`,`goods_thumb`,`spec_desc`,`sel`,`goods_attr`,`goods_sn` FROM `ts_cart` WHERE ( user_id=6 AND sel=1 )  [ RunTime:0.000000s ]
+SQL: DESCRIBE ts_order [ RunTime:0.004000s ]
+SQL: INSERT INTO `ts_order` (`order_sn`,`created`,`confirm_time`,`pay_time`,`order_status`,`pay_status`,`ship_status`,`ship_id`,`pay_id`,`ship_name`,`pay_name`,`total_price`,`user_id`,`ship_price`,`ship_time`,`consignee`,`province`,`city`,`district`,`address`,`zipcode`,`telephone`,`mobile`) VALUES ('146752570933025',1467525709,1467525709,0,2,0,1,1,1,'韵达快递','支付宝','8,400.00','6',0,0,'曹垒','24','272','2533','成都市中和镇香榭国际',null,null,'13880186387') [ RunTime:0.016000s ]
+NOTIC: [8] Undefined index: mapping_name D:\wamp\www\mall\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 259 行.
+SQL: DESCRIBE ts_order_goods [ RunTime:0.004000s ]
+SQL: INSERT INTO `ts_order_goods` (`goods_id`,`price`,`attr_list`,`nums`,`goods_name`,`goods_sn`,`spec_value`,`order_id`) VALUES (96,'2200.00',null,'3','Apple iPhone 5s (A1530) 16GB 银色 移动联通4G手机','ECS576ea0921e910','',4) [ RunTime:0.000000s ]
+ERR: 1048:Le champ 'attr_list' ne peut être vide (null)
+ [ SQL语句 ] : INSERT INTO `ts_order_goods` (`goods_id`,`price`,`attr_list`,`nums`,`goods_name`,`goods_sn`,`spec_value`,`order_id`) VALUES (96,'2200.00',null,'3','Apple iPhone 5s (A1530) 16GB 银色 移动联通4G手机','ECS576ea0921e910','',4)
+SQL: INSERT INTO `ts_order_goods` (`goods_id`,`price`,`attr_list`,`nums`,`goods_name`,`goods_sn`,`spec_value`,`order_id`) VALUES (95,'6100.00','307,308','3','Apple iPhone 6s Plus (A1699) 64G 玫瑰金色 移动联通电信4','ECS576e8c51dcff0','<strong>颜色</strong>：蓝色， <strong>套餐</strong>：套餐二',4) [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-03T14:02:29+08:00 ] 127.0.0.1 /mall/Cart/orderInfo/act/cart.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-03T14:02:38+08:00 ] 127.0.0.1 /mall/Cart/addOrder.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: DESCRIBE ts_cart [ RunTime:0.003000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ts_cart` WHERE ( user_id=6 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: user_id D:\wamp\www\mall\mall\Home\Controller\CartController.class.php 第 489 行.
+SQL: DESCRIBE ts_user_address [ RunTime:0.003000s ]
+SQL: SELECT `consignee`,`province`,`city`,`district`,`address`,`zipcode`,`telephone`,`mobile` FROM `ts_user_address` WHERE ( address_id=6 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `goods_id`,`price`,`spec`,`nums`,`goods_name`,`goods_thumb`,`spec_desc`,`sel`,`goods_attr`,`goods_sn` FROM `ts_cart` WHERE ( user_id=6 AND sel=1 )  [ RunTime:0.001000s ]
+SQL: DESCRIBE ts_order [ RunTime:0.003000s ]
+SQL: INSERT INTO `ts_order` (`order_sn`,`created`,`confirm_time`,`pay_time`,`order_status`,`pay_status`,`ship_status`,`ship_id`,`pay_id`,`ship_name`,`pay_name`,`total_price`,`user_id`,`ship_price`,`ship_time`,`consignee`,`province`,`city`,`district`,`address`,`zipcode`,`telephone`,`mobile`) VALUES ('146752575878103',1467525758,1467525758,0,2,0,1,1,1,'韵达快递','支付宝','8,400.00','6',0,0,'曹垒','24','272','2533','成都市中和镇香榭国际',null,null,'13880186387') [ RunTime:0.003000s ]
+NOTIC: [8] Undefined index: mapping_name D:\wamp\www\mall\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 259 行.
+SQL: DESCRIBE ts_order_goods [ RunTime:0.003000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-03T14:03:18+08:00 ] 127.0.0.1 /mall/Cart/orderInfo/act/cart.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-03T14:03:19+08:00 ] 127.0.0.1 /mall/Cart/addOrder.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: DESCRIBE ts_cart [ RunTime:0.003000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ts_cart` WHERE ( user_id=6 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: user_id D:\wamp\www\mall\mall\Home\Controller\CartController.class.php 第 491 行.
+SQL: DESCRIBE ts_user_address [ RunTime:0.003000s ]
+SQL: SELECT `consignee`,`province`,`city`,`district`,`address`,`zipcode`,`telephone`,`mobile` FROM `ts_user_address` WHERE ( address_id=6 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `goods_id`,`price`,`spec`,`nums`,`goods_name`,`goods_thumb`,`spec_desc`,`sel`,`goods_attr`,`goods_sn` FROM `ts_cart` WHERE ( user_id=6 AND sel=1 )  [ RunTime:0.000000s ]
+
+[ 2016-07-03T14:04:55+08:00 ] 127.0.0.1 /mall/Cart/orderInfo/act/cart.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-03T14:04:57+08:00 ] 127.0.0.1 /mall/Cart/addOrder.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: DESCRIBE ts_cart [ RunTime:0.004000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ts_cart` WHERE ( user_id=6 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: user_id D:\wamp\www\mall\mall\Home\Controller\CartController.class.php 第 491 行.
+SQL: DESCRIBE ts_user_address [ RunTime:0.003000s ]
+SQL: SELECT `consignee`,`province`,`city`,`district`,`address`,`zipcode`,`telephone`,`mobile` FROM `ts_user_address` WHERE ( address_id=6 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT `goods_id`,`price`,`spec`,`nums`,`goods_name`,`goods_thumb`,`spec_desc`,`sel`,`goods_attr`,`goods_sn` FROM `ts_cart` WHERE ( user_id=6 AND sel=1 )  [ RunTime:0.001000s ]
+
+[ 2016-07-03T14:05:24+08:00 ] 127.0.0.1 /mall/Cart/orderInfo/act/cart.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-03T14:05:25+08:00 ] 127.0.0.1 /mall/Cart/addOrder.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: DESCRIBE ts_cart [ RunTime:0.004000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ts_cart` WHERE ( user_id=6 ) LIMIT 1   [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: user_id D:\wamp\www\mall\mall\Home\Controller\CartController.class.php 第 489 行.
+SQL: DESCRIBE ts_user_address [ RunTime:0.003000s ]
+SQL: SELECT `consignee`,`province`,`city`,`district`,`address`,`zipcode`,`telephone`,`mobile` FROM `ts_user_address` WHERE ( address_id=6 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `goods_id`,`price`,`spec`,`nums`,`goods_name`,`goods_thumb`,`spec_desc`,`sel`,`goods_attr`,`goods_sn` FROM `ts_cart` WHERE ( user_id=6 AND sel=1 )  [ RunTime:0.000000s ]
+SQL: DESCRIBE ts_order [ RunTime:0.003000s ]
+SQL: INSERT INTO `ts_order` (`order_sn`,`created`,`confirm_time`,`pay_time`,`order_status`,`pay_status`,`ship_status`,`ship_id`,`pay_id`,`ship_name`,`pay_name`,`total_price`,`user_id`,`ship_price`,`ship_time`,`consignee`,`province`,`city`,`district`,`address`,`zipcode`,`telephone`,`mobile`) VALUES ('146752592521314',1467525925,1467525925,0,2,0,1,1,1,'韵达快递','支付宝','8,400.00','6',0,0,'曹垒','24','272','2533','成都市中和镇香榭国际',null,null,'13880186387') [ RunTime:0.007000s ]
+SQL: DESCRIBE ts_order_goods [ RunTime:0.003000s ]
+SQL: INSERT INTO `ts_order_goods` (`goods_id`,`price`,`attr_list`,`nums`,`goods_name`,`goods_sn`,`spec_value`,`order_id`) VALUES (96,'2200.00',null,'3','Apple iPhone 5s (A1530) 16GB 银色 移动联通4G手机','ECS576ea0921e910','',6) [ RunTime:0.000000s ]
+ERR: 1048:Le champ 'attr_list' ne peut être vide (null)
+ [ SQL语句 ] : INSERT INTO `ts_order_goods` (`goods_id`,`price`,`attr_list`,`nums`,`goods_name`,`goods_sn`,`spec_value`,`order_id`) VALUES (96,'2200.00',null,'3','Apple iPhone 5s (A1530) 16GB 银色 移动联通4G手机','ECS576ea0921e910','',6)
+SQL: INSERT INTO `ts_order_goods` (`goods_id`,`price`,`attr_list`,`nums`,`goods_name`,`goods_sn`,`spec_value`,`order_id`) VALUES (95,'6100.00','307,308','3','Apple iPhone 6s Plus (A1699) 64G 玫瑰金色 移动联通电信4','ECS576e8c51dcff0','<strong>颜色</strong>：蓝色， <strong>套餐</strong>：套餐二',6) [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-03T14:29:15+08:00 ] 127.0.0.1 /mall/Cart/orderInfo/act/cart.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-03T14:29:16+08:00 ] 127.0.0.1 /mall/Cart/addOrder.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: DESCRIBE ts_cart [ RunTime:0.004000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ts_cart` WHERE ( user_id=6 ) LIMIT 1   [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: user_id D:\wamp\www\mall\mall\Home\Controller\CartController.class.php 第 489 行.
+SQL: DESCRIBE ts_user_address [ RunTime:0.003000s ]
+SQL: SELECT `consignee`,`province`,`city`,`district`,`address`,`zipcode`,`telephone`,`mobile` FROM `ts_user_address` WHERE ( address_id=6 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `goods_id`,`price`,`spec`,`nums`,`goods_name`,`goods_thumb`,`spec_desc`,`sel`,`goods_attr`,`goods_sn` FROM `ts_cart` WHERE ( user_id=6 AND sel=1 )  [ RunTime:0.000000s ]
+SQL: DESCRIBE ts_order [ RunTime:0.003000s ]
+SQL: INSERT INTO `ts_order` (`order_sn`,`created`,`confirm_time`,`pay_time`,`order_status`,`pay_status`,`ship_status`,`ship_id`,`pay_id`,`ship_name`,`pay_name`,`total_price`,`user_id`,`ship_price`,`ship_time`,`consignee`,`province`,`city`,`district`,`address`,`zipcode`,`telephone`,`mobile`) VALUES ('146752735611071',1467527356,1467527356,0,2,0,1,1,1,'韵达快递','支付宝','8,400.00','6',0,0,'曹垒','24','272','2533','成都市中和镇香榭国际',null,null,'13880186387') [ RunTime:0.011000s ]
+NOTIC: [8] Undefined index: mapping_name D:\wamp\www\mall\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 259 行.
+SQL: DESCRIBE ts_order_goods [ RunTime:0.003000s ]
+SQL: INSERT INTO `ts_order_goods` (`goods_id`,`price`,`attr_list`,`nums`,`goods_name`,`goods_sn`,`spec_value`,`order_id`) VALUES (96,'2200.00',null,'3','Apple iPhone 5s (A1530) 16GB 银色 移动联通4G手机','ECS576ea0921e910','',7) [ RunTime:0.000000s ]
+ERR: 1048:Le champ 'attr_list' ne peut être vide (null)
+ [ SQL语句 ] : INSERT INTO `ts_order_goods` (`goods_id`,`price`,`attr_list`,`nums`,`goods_name`,`goods_sn`,`spec_value`,`order_id`) VALUES (96,'2200.00',null,'3','Apple iPhone 5s (A1530) 16GB 银色 移动联通4G手机','ECS576ea0921e910','',7)
+SQL: INSERT INTO `ts_order_goods` (`goods_id`,`price`,`attr_list`,`nums`,`goods_name`,`goods_sn`,`spec_value`,`order_id`) VALUES (95,'6100.00','307,308','3','Apple iPhone 6s Plus (A1699) 64G 玫瑰金色 移动联通电信4','ECS576e8c51dcff0','<strong>颜色</strong>：蓝色， <strong>套餐</strong>：套餐二',7) [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-03T14:34:36+08:00 ] 127.0.0.1 /mall/Cart/orderInfo/act/cart.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-03T14:34:39+08:00 ] 127.0.0.1 /mall/Cart/addOrder.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: DESCRIBE ts_cart [ RunTime:0.004000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ts_cart` WHERE ( user_id=6 ) LIMIT 1   [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: user_id D:\wamp\www\mall\mall\Home\Controller\CartController.class.php 第 489 行.
+SQL: DESCRIBE ts_user_address [ RunTime:0.003000s ]
+SQL: SELECT `consignee`,`province`,`city`,`district`,`address`,`zipcode`,`telephone`,`mobile` FROM `ts_user_address` WHERE ( address_id=6 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `goods_id`,`price`,`spec`,`nums`,`goods_name`,`goods_thumb`,`spec_desc`,`sel`,`goods_attr`,`goods_sn` FROM `ts_cart` WHERE ( user_id=6 AND sel=1 )  [ RunTime:0.000000s ]
+SQL: DESCRIBE ts_order [ RunTime:0.003000s ]
+SQL: INSERT INTO `ts_order` (`order_sn`,`created`,`confirm_time`,`pay_time`,`order_status`,`pay_status`,`ship_status`,`ship_id`,`pay_id`,`ship_name`,`pay_name`,`total_price`,`user_id`,`ship_price`,`ship_time`,`consignee`,`province`,`city`,`district`,`address`,`zipcode`,`telephone`,`mobile`) VALUES ('146752767969130',1467527679,1467527679,0,2,0,1,1,1,'韵达快递','支付宝','8,400.00','6',0,0,'曹垒','24','272','2533','成都市中和镇香榭国际',null,null,'13880186387') [ RunTime:0.005000s ]
+SQL: DESCRIBE ts_order_goods [ RunTime:0.003000s ]
+SQL: INSERT INTO `ts_order_goods` (`goods_id`,`price`,`attr_list`,`nums`,`goods_name`,`goods_sn`,`spec_value`,`order_id`) VALUES (96,'2200.00',null,'3','Apple iPhone 5s (A1530) 16GB 银色 移动联通4G手机','ECS576ea0921e910','',8) [ RunTime:0.000000s ]
+ERR: 1048:Le champ 'attr_list' ne peut être vide (null)
+ [ SQL语句 ] : INSERT INTO `ts_order_goods` (`goods_id`,`price`,`attr_list`,`nums`,`goods_name`,`goods_sn`,`spec_value`,`order_id`) VALUES (96,'2200.00',null,'3','Apple iPhone 5s (A1530) 16GB 银色 移动联通4G手机','ECS576ea0921e910','',8)
+SQL: INSERT INTO `ts_order_goods` (`goods_id`,`price`,`attr_list`,`nums`,`goods_name`,`goods_sn`,`spec_value`,`order_id`) VALUES (95,'6100.00','307,308','3','Apple iPhone 6s Plus (A1699) 64G 玫瑰金色 移动联通电信4','ECS576e8c51dcff0','<strong>颜色</strong>：蓝色， <strong>套餐</strong>：套餐二',8) [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-03T14:39:23+08:00 ] 127.0.0.1 /mall/Cart/orderInfo/act/cart.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-03T14:39:24+08:00 ] 127.0.0.1 /mall/Cart/addOrder.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: DESCRIBE ts_cart [ RunTime:0.003000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ts_cart` WHERE ( user_id=6 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: user_id D:\wamp\www\mall\mall\Home\Controller\CartController.class.php 第 492 行.
+SQL: DESCRIBE ts_user_address [ RunTime:0.003000s ]
+SQL: SELECT `consignee`,`province`,`city`,`district`,`address`,`zipcode`,`telephone`,`mobile` FROM `ts_user_address` WHERE ( address_id=6 ) LIMIT 1   [ RunTime:0.000000s ]
+
+[ 2016-07-03T14:41:23+08:00 ] 127.0.0.1 /mall/Cart/orderInfo/act/cart.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-03T14:41:24+08:00 ] 127.0.0.1 /mall/Cart/addOrder.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: DESCRIBE ts_cart [ RunTime:0.003000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ts_cart` WHERE ( user_id=6 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: user_id D:\wamp\www\mall\mall\Home\Controller\CartController.class.php 第 489 行.
+SQL: DESCRIBE ts_user_address [ RunTime:0.003000s ]
+SQL: SELECT `consignee`,`province`,`city`,`district`,`address`,`zipcode`,`telephone`,`mobile` FROM `ts_user_address` WHERE ( address_id=6 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT `goods_id`,`price`,`spec`,`nums`,`goods_name`,`goods_thumb`,`spec_desc`,`sel`,`goods_attr`,`goods_sn` FROM `ts_cart` WHERE ( user_id=6 AND sel=1 )  [ RunTime:0.001000s ]
+SQL: DESCRIBE ts_order [ RunTime:0.003000s ]
+SQL: INSERT INTO `ts_order` (`order_sn`,`created`,`confirm_time`,`pay_time`,`order_status`,`pay_status`,`ship_status`,`ship_id`,`pay_id`,`ship_name`,`pay_name`,`total_price`,`user_id`,`ship_price`,`ship_time`,`consignee`,`province`,`city`,`district`,`address`,`zipcode`,`telephone`,`mobile`) VALUES ('146752808456347',1467528084,1467528084,0,2,0,1,1,1,'韵达快递','支付宝','8,400.00','6',0,0,'曹垒','24','272','2533','成都市中和镇香榭国际',null,null,'13880186387') [ RunTime:0.005000s ]
+NOTIC: [8] Undefined index: mapping_name D:\wamp\www\mall\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 259 行.
+SQL: DESCRIBE ts_order_goods [ RunTime:0.003000s ]
+SQL: INSERT INTO `ts_order_goods` (`goods_id`,`price`,`attr_list`,`nums`,`goods_name`,`goods_sn`,`spec_value`,`order_id`) VALUES (96,'2200.00',null,'3','Apple iPhone 5s (A1530) 16GB 银色 移动联通4G手机','ECS576ea0921e910','',9) [ RunTime:0.001000s ]
+ERR: 1048:Le champ 'attr_list' ne peut être vide (null)
+ [ SQL语句 ] : INSERT INTO `ts_order_goods` (`goods_id`,`price`,`attr_list`,`nums`,`goods_name`,`goods_sn`,`spec_value`,`order_id`) VALUES (96,'2200.00',null,'3','Apple iPhone 5s (A1530) 16GB 银色 移动联通4G手机','ECS576ea0921e910','',9)
+SQL: INSERT INTO `ts_order_goods` (`goods_id`,`price`,`attr_list`,`nums`,`goods_name`,`goods_sn`,`spec_value`,`order_id`) VALUES (95,'6100.00','307,308','3','Apple iPhone 6s Plus (A1699) 64G 玫瑰金色 移动联通电信4','ECS576e8c51dcff0','<strong>颜色</strong>：蓝色， <strong>套餐</strong>：套餐二',9) [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-03T14:42:22+08:00 ] 127.0.0.1 /mall/Cart/orderInfo/act/cart.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-03T14:43:02+08:00 ] 127.0.0.1 /mall/Cart/addOrder.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: DESCRIBE ts_cart [ RunTime:0.003000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ts_cart` WHERE ( user_id=6 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: user_id D:\wamp\www\mall\mall\Home\Controller\CartController.class.php 第 489 行.
+SQL: DESCRIBE ts_user_address [ RunTime:0.002000s ]
+SQL: SELECT `consignee`,`province`,`city`,`district`,`address`,`zipcode`,`telephone`,`mobile` FROM `ts_user_address` WHERE ( address_id=6 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `goods_id`,`price`,`spec`,`nums`,`goods_name`,`goods_thumb`,`spec_desc`,`sel`,`goods_attr`,`goods_sn` FROM `ts_cart` WHERE ( user_id=6 AND sel=1 )  [ RunTime:0.000000s ]
+SQL: DESCRIBE ts_order [ RunTime:0.003000s ]
+SQL: INSERT INTO `ts_order` (`order_sn`,`created`,`confirm_time`,`pay_time`,`order_status`,`pay_status`,`ship_status`,`ship_id`,`pay_id`,`ship_name`,`pay_name`,`total_price`,`user_id`,`ship_price`,`ship_time`,`consignee`,`province`,`city`,`district`,`address`,`zipcode`,`telephone`,`mobile`) VALUES ('146752818231036',1467528182,1467528182,0,2,0,1,1,1,'韵达快递','支付宝','8,400.00','6',0,0,'曹垒','24','272','2533','成都市中和镇香榭国际',null,null,'13880186387') [ RunTime:0.004000s ]
+NOTIC: [8] Undefined index: mapping_name D:\wamp\www\mall\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 259 行.
+SQL: DESCRIBE ts_order_goods [ RunTime:0.002000s ]
+SQL: INSERT INTO `ts_order_goods` (`goods_id`,`price`,`attr_list`,`nums`,`goods_name`,`goods_sn`,`spec_value`,`order_id`) VALUES (96,'2200.00',null,'3','Apple iPhone 5s (A1530) 16GB 银色 移动联通4G手机','ECS576ea0921e910','',10) [ RunTime:0.001000s ]
+ERR: 1048:Le champ 'attr_list' ne peut être vide (null)
+ [ SQL语句 ] : INSERT INTO `ts_order_goods` (`goods_id`,`price`,`attr_list`,`nums`,`goods_name`,`goods_sn`,`spec_value`,`order_id`) VALUES (96,'2200.00',null,'3','Apple iPhone 5s (A1530) 16GB 银色 移动联通4G手机','ECS576ea0921e910','',10)
+SQL: INSERT INTO `ts_order_goods` (`goods_id`,`price`,`attr_list`,`nums`,`goods_name`,`goods_sn`,`spec_value`,`order_id`) VALUES (95,'6100.00','307,308','3','Apple iPhone 6s Plus (A1699) 64G 玫瑰金色 移动联通电信4','ECS576e8c51dcff0','<strong>颜色</strong>：蓝色， <strong>套餐</strong>：套餐二',10) [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-03T14:46:24+08:00 ] 127.0.0.1 /mall/Cart/orderInfo/act/cart.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-03T14:46:26+08:00 ] 127.0.0.1 /mall/Cart/addOrder.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: DESCRIBE ts_cart [ RunTime:0.003000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ts_cart` WHERE ( user_id=6 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: user_id D:\wamp\www\mall\mall\Home\Controller\CartController.class.php 第 491 行.
+SQL: DESCRIBE ts_user_address [ RunTime:0.003000s ]
+SQL: SELECT `consignee`,`province`,`city`,`district`,`address`,`zipcode`,`telephone`,`mobile` FROM `ts_user_address` WHERE ( address_id=6 ) LIMIT 1   [ RunTime:0.000000s ]
+ERR: Think\Model:addOrder方法不存在！
+
+[ 2016-07-03T14:47:04+08:00 ] 127.0.0.1 /mall/Cart/orderInfo/act/cart.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-03T14:47:09+08:00 ] 127.0.0.1 /mall/Cart/addOrder.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: DESCRIBE ts_cart [ RunTime:0.003000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ts_cart` WHERE ( user_id=6 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: user_id D:\wamp\www\mall\mall\Home\Controller\CartController.class.php 第 491 行.
+SQL: DESCRIBE ts_user_address [ RunTime:0.004000s ]
+SQL: SELECT `consignee`,`province`,`city`,`district`,`address`,`zipcode`,`telephone`,`mobile` FROM `ts_user_address` WHERE ( address_id=6 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: DESCRIBE ts_order [ RunTime:0.003000s ]
+SQL: INSERT INTO `ts_order` (`user_id`,`consignee`,`province`,`city`,`district`,`address`,`zipcode`,`telephone`,`mobile`) VALUES (6,'曹垒',24,272,2533,'成都市中和镇香榭国际',null,null,'13880186387') [ RunTime:0.003000s ]
+SQL: SELECT `goods_id`,`price`,`spec`,`nums`,`goods_name`,`goods_thumb`,`spec_desc`,`sel`,`goods_attr`,`goods_sn` FROM `ts_cart` WHERE ( user_id=6 AND sel=1 )  [ RunTime:0.001000s ]
+SQL: DESCRIBE ts_order_goods [ RunTime:0.004000s ]
+SQL: INSERT INTO `ts_order_goods` (`goods_id`,`price`,`nums`,`goods_name`,`goods_sn`) VALUES (96,'2200.00',3,'Apple iPhone 5s (A1530) 16GB 银色 移动联通4G手机','ECS576ea0921e910') [ RunTime:0.002000s ]
+SQL: DESCRIBE ts_order_goods [ RunTime:0.003000s ]
+SQL: INSERT INTO `ts_order_goods` (`goods_id`,`price`,`nums`,`goods_name`,`goods_sn`) VALUES (95,'6100.00',3,'Apple iPhone 6s Plus (A1699) 64G 玫瑰金色 移动联通电信4','ECS576e8c51dcff0') [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-03T14:51:18+08:00 ] 127.0.0.1 /mall/Cart/orderInfo/act/cart.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-03T14:51:19+08:00 ] 127.0.0.1 /mall/Cart/addOrder.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: DESCRIBE ts_cart [ RunTime:0.004000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ts_cart` WHERE ( user_id=6 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: user_id D:\wamp\www\mall\mall\Home\Controller\CartController.class.php 第 493 行.
+SQL: DESCRIBE ts_user_address [ RunTime:0.004000s ]
+SQL: SELECT `consignee`,`province`,`city`,`district`,`address`,`zipcode`,`telephone`,`mobile` FROM `ts_user_address` WHERE ( address_id=6 ) LIMIT 1   [ RunTime:0.001000s ]
+
+[ 2016-07-03T14:51:50+08:00 ] 127.0.0.1 /mall/Cart/orderInfo/act/cart.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-03T14:51:59+08:00 ] 127.0.0.1 /mall/Cart/addOrder.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: DESCRIBE ts_cart [ RunTime:0.004000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ts_cart` WHERE ( user_id=6 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: user_id D:\wamp\www\mall\mall\Home\Controller\CartController.class.php 第 493 行.
+SQL: DESCRIBE ts_user_address [ RunTime:0.002000s ]
+SQL: SELECT `consignee`,`province`,`city`,`district`,`address`,`zipcode`,`telephone`,`mobile` FROM `ts_user_address` WHERE ( address_id=6 ) LIMIT 1   [ RunTime:0.001000s ]
+
+[ 2016-07-03T14:52:22+08:00 ] 127.0.0.1 /mall/Cart/orderInfo/act/cart.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-03T14:52:24+08:00 ] 127.0.0.1 /mall/Cart/addOrder.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: DESCRIBE ts_cart [ RunTime:0.003000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ts_cart` WHERE ( user_id=6 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: user_id D:\wamp\www\mall\mall\Home\Controller\CartController.class.php 第 493 行.
+SQL: DESCRIBE ts_user_address [ RunTime:0.002000s ]
+SQL: SELECT `consignee`,`province`,`city`,`district`,`address`,`zipcode`,`telephone`,`mobile` FROM `ts_user_address` WHERE ( address_id=6 ) LIMIT 1   [ RunTime:0.001000s ]
+
+[ 2016-07-03T14:52:42+08:00 ] 127.0.0.1 /mall/Cart/orderInfo/act/cart.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-03T14:52:45+08:00 ] 127.0.0.1 /mall/Cart/addOrder.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: DESCRIBE ts_cart [ RunTime:0.004000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ts_cart` WHERE ( user_id=6 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: user_id D:\wamp\www\mall\mall\Home\Controller\CartController.class.php 第 493 行.
+SQL: DESCRIBE ts_user_address [ RunTime:0.003000s ]
+SQL: SELECT `consignee`,`province`,`city`,`district`,`address`,`zipcode`,`telephone`,`mobile` FROM `ts_user_address` WHERE ( address_id=6 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: DESCRIBE ts_order [ RunTime:0.003000s ]
+SQL: INSERT INTO `ts_order` (`order_sn`,`created`,`confirm_time`,`pay_time`,`order_status`,`pay_status`,`ship_status`,`ship_id`,`pay_id`,`ship_name`,`pay_name`,`total_price`,`user_id`,`ship_price`,`ship_time`,`consignee`,`province`,`city`,`district`,`address`,`zipcode`,`telephone`,`mobile`) VALUES ('146752876407977',1467528764,1467528764,0,2,0,1,1,1,'韵达快递','支付宝','8,400.00',6,0,0,'曹垒',24,272,2533,'成都市中和镇香榭国际',null,null,'13880186387') [ RunTime:0.003000s ]
+SQL: SELECT `goods_id`,`price`,`spec`,`nums`,`goods_name`,`goods_thumb`,`spec_desc`,`sel`,`goods_attr`,`goods_sn` FROM `ts_cart` WHERE ( user_id=6 AND sel=1 )  [ RunTime:0.000000s ]
+SQL: DESCRIBE ts_order_goods [ RunTime:0.003000s ]
+SQL: INSERT INTO `ts_order_goods` (`goods_id`,`price`,`nums`,`goods_name`,`goods_sn`) VALUES (96,'2200.00',3,'Apple iPhone 5s (A1530) 16GB 银色 移动联通4G手机','ECS576ea0921e910') [ RunTime:0.002000s ]
+SQL: DESCRIBE ts_order_goods [ RunTime:0.004000s ]
+SQL: INSERT INTO `ts_order_goods` (`goods_id`,`price`,`nums`,`goods_name`,`goods_sn`) VALUES (95,'6100.00',3,'Apple iPhone 6s Plus (A1699) 64G 玫瑰金色 移动联通电信4','ECS576e8c51dcff0') [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-03T14:56:44+08:00 ] 127.0.0.1 /mall/Cart/orderInfo/act/cart.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-03T14:56:45+08:00 ] 127.0.0.1 /mall/Cart/addOrder.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: DESCRIBE ts_cart [ RunTime:0.003000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ts_cart` WHERE ( user_id=6 ) LIMIT 1   [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: user_id D:\wamp\www\mall\mall\Home\Controller\CartController.class.php 第 494 行.
+SQL: DESCRIBE ts_user_address [ RunTime:0.003000s ]
+SQL: SELECT `consignee`,`province`,`city`,`district`,`address`,`zipcode`,`telephone`,`mobile` FROM `ts_user_address` WHERE ( address_id=6 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: DESCRIBE ts_order [ RunTime:0.004000s ]
+SQL: INSERT INTO `ts_order` (`order_sn`,`created`,`confirm_time`,`pay_time`,`order_status`,`pay_status`,`ship_status`,`ship_id`,`pay_id`,`ship_name`,`pay_name`,`total_price`,`user_id`,`ship_price`,`ship_time`,`consignee`,`province`,`city`,`district`,`address`,`zipcode`,`telephone`,`mobile`) VALUES ('146752900523128',1467529005,1467529005,0,2,0,1,1,1,'韵达快递','支付宝','8,400.00',6,0,0,'曹垒',24,272,2533,'成都市中和镇香榭国际',null,null,'13880186387') [ RunTime:0.003000s ]
+SQL: SELECT `goods_id`,`price`,`spec`,`nums`,`goods_name`,`goods_thumb`,`spec_desc`,`sel`,`goods_attr`,`goods_sn` FROM `ts_cart` WHERE ( user_id=6 AND sel=1 )  [ RunTime:0.001000s ]
+SQL: DESCRIBE ts_order_goods [ RunTime:0.003000s ]
+SQL: INSERT INTO `ts_order_goods` (`goods_id`,`price`,`nums`,`goods_name`,`goods_sn`) VALUES (96,'2200.00',3,'Apple iPhone 5s (A1530) 16GB 银色 移动联通4G手机','ECS576ea0921e910') [ RunTime:0.001000s ]
+SQL: DESCRIBE ts_order_goods [ RunTime:0.002000s ]
+SQL: INSERT INTO `ts_order_goods` (`goods_id`,`price`,`nums`,`goods_name`,`goods_sn`) VALUES (95,'6100.00',3,'Apple iPhone 6s Plus (A1699) 64G 玫瑰金色 移动联通电信4','ECS576e8c51dcff0') [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-03T14:57:42+08:00 ] 127.0.0.1 /mall/Cart/orderInfo/act/cart.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-03T14:57:45+08:00 ] 127.0.0.1 /mall/Cart/addOrder.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: DESCRIBE ts_cart [ RunTime:0.003000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ts_cart` WHERE ( user_id=6 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: user_id D:\wamp\www\mall\mall\Home\Controller\CartController.class.php 第 495 行.
+SQL: DESCRIBE ts_user_address [ RunTime:0.003000s ]
+SQL: SELECT `consignee`,`province`,`city`,`district`,`address`,`zipcode`,`telephone`,`mobile` FROM `ts_user_address` WHERE ( address_id=6 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: DESCRIBE ts_order [ RunTime:0.003000s ]
+SQL: INSERT INTO `ts_order` (`order_sn`,`created`,`confirm_time`,`pay_time`,`order_status`,`pay_status`,`ship_status`,`ship_id`,`pay_id`,`ship_name`,`pay_name`,`total_price`,`user_id`,`ship_price`,`ship_time`,`consignee`,`province`,`city`,`district`,`address`,`zipcode`,`telephone`,`mobile`) VALUES ('146752906580381',1467529065,1467529065,0,2,0,1,1,1,'韵达快递','支付宝','8,400.00',6,0,0,'曹垒',24,272,2533,'成都市中和镇香榭国际',null,null,'13880186387') [ RunTime:0.008000s ]
+SQL: SELECT `goods_id`,`price`,`spec`,`nums`,`goods_name`,`goods_thumb`,`spec_desc`,`sel`,`goods_attr`,`goods_sn` FROM `ts_cart` WHERE ( user_id=6 AND sel=1 )  [ RunTime:0.000000s ]
+SQL: DESCRIBE ts_order_goods [ RunTime:0.003000s ]
+SQL: INSERT INTO `ts_order_goods` (`goods_id`,`price`,`nums`,`goods_name`,`goods_sn`) VALUES (96,'2200.00',3,'Apple iPhone 5s (A1530) 16GB 银色 移动联通4G手机','ECS576ea0921e910') [ RunTime:0.002000s ]
+SQL: DESCRIBE ts_order_goods [ RunTime:0.003000s ]
+SQL: INSERT INTO `ts_order_goods` (`goods_id`,`price`,`nums`,`goods_name`,`goods_sn`) VALUES (95,'6100.00',3,'Apple iPhone 6s Plus (A1699) 64G 玫瑰金色 移动联通电信4','ECS576e8c51dcff0') [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-03T14:59:35+08:00 ] 127.0.0.1 /mall/Cart/orderInfo/act/cart.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-03T14:59:37+08:00 ] 127.0.0.1 /mall/Cart/addOrder.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: DESCRIBE ts_cart [ RunTime:0.003000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ts_cart` WHERE ( user_id=6 ) LIMIT 1   [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: user_id D:\wamp\www\mall\mall\Home\Controller\CartController.class.php 第 495 行.
+SQL: DESCRIBE ts_user_address [ RunTime:0.003000s ]
+SQL: SELECT `consignee`,`province`,`city`,`district`,`address`,`zipcode`,`telephone`,`mobile` FROM `ts_user_address` WHERE ( address_id=6 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: DESCRIBE ts_order [ RunTime:0.004000s ]
+SQL: INSERT INTO `ts_order` (`order_sn`,`created`,`confirm_time`,`pay_time`,`order_status`,`pay_status`,`ship_status`,`ship_id`,`pay_id`,`ship_name`,`pay_name`,`total_price`,`user_id`,`ship_price`,`ship_time`,`consignee`,`province`,`city`,`district`,`address`,`zipcode`,`telephone`,`mobile`) VALUES ('146752917733590',1467529177,1467529177,0,2,0,1,1,1,'韵达快递','支付宝','8,400.00',6,0,0,'曹垒',24,272,2533,'成都市中和镇香榭国际',null,null,'13880186387') [ RunTime:0.006000s ]
+SQL: SELECT `goods_id`,`price`,`spec`,`nums`,`goods_name`,`goods_thumb`,`spec_desc`,`sel`,`goods_attr`,`goods_sn` FROM `ts_cart` WHERE ( user_id=6 AND sel=1 )  [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant cart - assumed 'cart' D:\wamp\www\mall\mall\Home\Controller\CartController.class.php 第 485 行.
+SQL: DESCRIBE ts_order_goods [ RunTime:0.003000s ]
+SQL: INSERT INTO `ts_order_goods` (`goods_id`,`price`,`nums`,`goods_name`,`goods_sn`) VALUES (96,'2200.00',3,'Apple iPhone 5s (A1530) 16GB 银色 移动联通4G手机','ECS576ea0921e910') [ RunTime:0.002000s ]
+NOTIC: [8] Use of undefined constant cart - assumed 'cart' D:\wamp\www\mall\mall\Home\Controller\CartController.class.php 第 485 行.
+SQL: DESCRIBE ts_order_goods [ RunTime:0.003000s ]
+SQL: INSERT INTO `ts_order_goods` (`goods_id`,`price`,`nums`,`goods_name`,`goods_sn`) VALUES (95,'6100.00',3,'Apple iPhone 6s Plus (A1699) 64G 玫瑰金色 移动联通电信4','ECS576e8c51dcff0') [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-03T14:59:56+08:00 ] 127.0.0.1 /mall/Cart/orderInfo/act/cart.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-03T14:59:57+08:00 ] 127.0.0.1 /mall/Cart/addOrder.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: DESCRIBE ts_cart [ RunTime:0.003000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ts_cart` WHERE ( user_id=6 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: user_id D:\wamp\www\mall\mall\Home\Controller\CartController.class.php 第 494 行.
+SQL: DESCRIBE ts_user_address [ RunTime:0.003000s ]
+SQL: SELECT `consignee`,`province`,`city`,`district`,`address`,`zipcode`,`telephone`,`mobile` FROM `ts_user_address` WHERE ( address_id=6 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: DESCRIBE ts_order [ RunTime:0.004000s ]
+SQL: INSERT INTO `ts_order` (`order_sn`,`created`,`confirm_time`,`pay_time`,`order_status`,`pay_status`,`ship_status`,`ship_id`,`pay_id`,`ship_name`,`pay_name`,`total_price`,`user_id`,`ship_price`,`ship_time`,`consignee`,`province`,`city`,`district`,`address`,`zipcode`,`telephone`,`mobile`) VALUES ('146752919793457',1467529197,1467529197,0,2,0,1,1,1,'韵达快递','支付宝','8,400.00',6,0,0,'曹垒',24,272,2533,'成都市中和镇香榭国际',null,null,'13880186387') [ RunTime:0.002000s ]
+SQL: SELECT `goods_id`,`price`,`spec`,`nums`,`goods_name`,`goods_thumb`,`spec_desc`,`sel`,`goods_attr`,`goods_sn` FROM `ts_cart` WHERE ( user_id=6 AND sel=1 )  [ RunTime:0.001000s ]
+NOTIC: [8] Use of undefined constant cart - assumed 'cart' D:\wamp\www\mall\mall\Home\Controller\CartController.class.php 第 484 行.
+SQL: DESCRIBE ts_order_goods [ RunTime:0.003000s ]
+SQL: INSERT INTO `ts_order_goods` (`goods_id`,`price`,`nums`,`goods_name`,`goods_sn`) VALUES (96,'2200.00',3,'Apple iPhone 5s (A1530) 16GB 银色 移动联通4G手机','ECS576ea0921e910') [ RunTime:0.002000s ]
+NOTIC: [8] Use of undefined constant cart - assumed 'cart' D:\wamp\www\mall\mall\Home\Controller\CartController.class.php 第 484 行.
+SQL: DESCRIBE ts_order_goods [ RunTime:0.003000s ]
+SQL: INSERT INTO `ts_order_goods` (`goods_id`,`price`,`nums`,`goods_name`,`goods_sn`) VALUES (95,'6100.00',3,'Apple iPhone 6s Plus (A1699) 64G 玫瑰金色 移动联通电信4','ECS576e8c51dcff0') [ RunTime:0.006000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-03T15:00:24+08:00 ] 127.0.0.1 /mall/Cart/orderInfo/act/cart.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-03T15:00:26+08:00 ] 127.0.0.1 /mall/Cart/orderInfo/act/cart.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-03T15:00:27+08:00 ] 127.0.0.1 /mall/Cart/addOrder.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: DESCRIBE ts_cart [ RunTime:0.002000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ts_cart` WHERE ( user_id=6 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: user_id D:\wamp\www\mall\mall\Home\Controller\CartController.class.php 第 494 行.
+SQL: DESCRIBE ts_user_address [ RunTime:0.003000s ]
+SQL: SELECT `consignee`,`province`,`city`,`district`,`address`,`zipcode`,`telephone`,`mobile` FROM `ts_user_address` WHERE ( address_id=6 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: DESCRIBE ts_order [ RunTime:0.003000s ]
+SQL: INSERT INTO `ts_order` (`order_sn`,`created`,`confirm_time`,`pay_time`,`order_status`,`pay_status`,`ship_status`,`ship_id`,`pay_id`,`ship_name`,`pay_name`,`total_price`,`user_id`,`ship_price`,`ship_time`,`consignee`,`province`,`city`,`district`,`address`,`zipcode`,`telephone`,`mobile`) VALUES ('146752922727591',1467529227,1467529227,0,2,0,1,1,1,'韵达快递','支付宝','8,400.00',6,0,0,'曹垒',24,272,2533,'成都市中和镇香榭国际',null,null,'13880186387') [ RunTime:0.002000s ]
+SQL: SELECT `goods_id`,`price`,`spec`,`nums`,`goods_name`,`goods_thumb`,`spec_desc`,`sel`,`goods_attr`,`goods_sn` FROM `ts_cart` WHERE ( user_id=6 AND sel=1 )  [ RunTime:0.000000s ]
+SQL: DESCRIBE ts_order_goods [ RunTime:0.004000s ]
+SQL: INSERT INTO `ts_order_goods` (`goods_id`,`price`,`nums`,`goods_name`,`goods_sn`) VALUES (96,'2200.00',3,'Apple iPhone 5s (A1530) 16GB 银色 移动联通4G手机','ECS576ea0921e910') [ RunTime:0.001000s ]
+SQL: DESCRIBE ts_order_goods [ RunTime:0.003000s ]
+SQL: INSERT INTO `ts_order_goods` (`goods_id`,`price`,`nums`,`goods_name`,`goods_sn`) VALUES (95,'6100.00',3,'Apple iPhone 6s Plus (A1699) 64G 玫瑰金色 移动联通电信4','ECS576e8c51dcff0') [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-03T15:04:51+08:00 ] 127.0.0.1 /mall/Cart/orderInfo/act/cart.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-03T15:05:08+08:00 ] 127.0.0.1 /mall/Cart/orderInfo/act/cart.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-03T15:05:10+08:00 ] 127.0.0.1 /mall/Cart/addOrder.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: DESCRIBE ts_cart [ RunTime:0.004000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ts_cart` WHERE ( user_id=6 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: user_id D:\wamp\www\mall\mall\Home\Controller\CartController.class.php 第 494 行.
+SQL: DESCRIBE ts_user_address [ RunTime:0.003000s ]
+SQL: SELECT `consignee`,`province`,`city`,`district`,`address`,`zipcode`,`telephone`,`mobile` FROM `ts_user_address` WHERE ( address_id=6 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: DESCRIBE ts_order [ RunTime:0.003000s ]
+SQL: INSERT INTO `ts_order` (`order_sn`,`created`,`confirm_time`,`pay_time`,`order_status`,`pay_status`,`ship_status`,`ship_id`,`pay_id`,`ship_name`,`pay_name`,`total_price`,`user_id`,`ship_price`,`ship_time`,`consignee`,`province`,`city`,`district`,`address`,`zipcode`,`telephone`,`mobile`) VALUES ('146752951062734',1467529510,1467529510,0,2,0,1,1,1,'韵达快递','支付宝','8,400.00',6,0,0,'曹垒',24,272,2533,'成都市中和镇香榭国际',null,null,'13880186387') [ RunTime:0.003000s ]
+SQL: SELECT `goods_id`,`price`,`spec`,`nums`,`goods_name`,`goods_thumb`,`spec_desc`,`sel`,`goods_attr`,`goods_sn` FROM `ts_cart` WHERE ( user_id=6 AND sel=1 )  [ RunTime:0.001000s ]
+SQL: DESCRIBE ts_order_goods [ RunTime:0.003000s ]
+SQL: INSERT INTO `ts_order_goods` (`goods_id`,`price`,`attr_list`,`nums`,`goods_name`,`goods_sn`,`spec_value`,`order_id`) VALUES (96,'2200.00',null,'3','Apple iPhone 5s (A1530) 16GB 银色 移动联通4G手机','ECS576ea0921e910','',18) [ RunTime:0.001000s ]
+ERR: 1048:Le champ 'attr_list' ne peut être vide (null)
+ [ SQL语句 ] : INSERT INTO `ts_order_goods` (`goods_id`,`price`,`attr_list`,`nums`,`goods_name`,`goods_sn`,`spec_value`,`order_id`) VALUES (96,'2200.00',null,'3','Apple iPhone 5s (A1530) 16GB 银色 移动联通4G手机','ECS576ea0921e910','',18)
+SQL: INSERT INTO `ts_order_goods` (`goods_id`,`price`,`attr_list`,`nums`,`goods_name`,`goods_sn`,`spec_value`,`order_id`) VALUES (95,'6100.00','307,308','3','Apple iPhone 6s Plus (A1699) 64G 玫瑰金色 移动联通电信4','ECS576e8c51dcff0','<strong>颜色</strong>：蓝色， <strong>套餐</strong>：套餐二',18) [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-03T15:08:08+08:00 ] 127.0.0.1 /mall/Cart/orderInfo/act/cart.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-03T15:08:10+08:00 ] 127.0.0.1 /mall/Cart/orderInfo/act/cart.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-03T15:08:12+08:00 ] 127.0.0.1 /mall/Cart/addOrder.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: DESCRIBE ts_cart [ RunTime:0.004000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ts_cart` WHERE ( user_id=6 ) LIMIT 1   [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: user_id D:\wamp\www\mall\mall\Home\Controller\CartController.class.php 第 494 行.
+SQL: DESCRIBE ts_user_address [ RunTime:0.003000s ]
+SQL: SELECT `consignee`,`province`,`city`,`district`,`address`,`zipcode`,`telephone`,`mobile` FROM `ts_user_address` WHERE ( address_id=6 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: DESCRIBE ts_order [ RunTime:0.004000s ]
+SQL: INSERT INTO `ts_order` (`order_sn`,`created`,`confirm_time`,`pay_time`,`order_status`,`pay_status`,`ship_status`,`ship_id`,`pay_id`,`ship_name`,`pay_name`,`total_price`,`user_id`,`ship_price`,`ship_time`,`consignee`,`province`,`city`,`district`,`address`,`zipcode`,`telephone`,`mobile`) VALUES ('146752969272497',1467529692,1467529692,0,2,0,1,1,1,'韵达快递','支付宝','8,400.00',6,0,0,'曹垒',24,272,2533,'成都市中和镇香榭国际',null,null,'13880186387') [ RunTime:0.003000s ]
+SQL: SELECT `goods_id`,`price`,`spec`,`nums`,`goods_name`,`goods_thumb`,`spec_desc`,`sel`,`goods_attr`,`goods_sn` FROM `ts_cart` WHERE ( user_id=6 AND sel=1 )  [ RunTime:0.000000s ]
+SQL: DESCRIBE ts_order_goods [ RunTime:0.003000s ]
+SQL: INSERT INTO `ts_order_goods` (`goods_id`,`price`,`attr_list`,`nums`,`goods_name`,`goods_sn`,`spec_value`,`order_id`) VALUES (96,'2200.00',null,'3','Apple iPhone 5s (A1530) 16GB 银色 移动联通4G手机','ECS576ea0921e910','',19) [ RunTime:0.001000s ]
+ERR: 1048:Le champ 'attr_list' ne peut être vide (null)
+ [ SQL语句 ] : INSERT INTO `ts_order_goods` (`goods_id`,`price`,`attr_list`,`nums`,`goods_name`,`goods_sn`,`spec_value`,`order_id`) VALUES (96,'2200.00',null,'3','Apple iPhone 5s (A1530) 16GB 银色 移动联通4G手机','ECS576ea0921e910','',19)
+SQL: INSERT INTO `ts_order_goods` (`goods_id`,`price`,`attr_list`,`nums`,`goods_name`,`goods_sn`,`spec_value`,`order_id`) VALUES (95,'6100.00','307,308','3','Apple iPhone 6s Plus (A1699) 64G 玫瑰金色 移动联通电信4','ECS576e8c51dcff0','<strong>颜色</strong>：蓝色， <strong>套餐</strong>：套餐二',19) [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-03T15:12:12+08:00 ] 127.0.0.1 /mall/Cart/orderInfo/act/cart.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-03T15:12:13+08:00 ] 127.0.0.1 /mall/Cart/addOrder.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: DESCRIBE ts_cart [ RunTime:0.003000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ts_cart` WHERE ( user_id=6 ) LIMIT 1   [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: user_id D:\wamp\www\mall\mall\Home\Controller\CartController.class.php 第 494 行.
+SQL: DESCRIBE ts_user_address [ RunTime:0.003000s ]
+SQL: SELECT `consignee`,`province`,`city`,`district`,`address`,`zipcode`,`telephone`,`mobile` FROM `ts_user_address` WHERE ( address_id=6 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: DESCRIBE ts_order [ RunTime:0.004000s ]
+SQL: INSERT INTO `ts_order` (`order_sn`,`created`,`confirm_time`,`pay_time`,`order_status`,`pay_status`,`ship_status`,`ship_id`,`pay_id`,`ship_name`,`pay_name`,`total_price`,`user_id`,`ship_price`,`ship_time`,`consignee`,`province`,`city`,`district`,`address`,`zipcode`,`telephone`,`mobile`) VALUES ('146752993366835',1467529933,1467529933,0,2,0,1,1,1,'韵达快递','支付宝','8,400.00',6,0,0,'曹垒',24,272,2533,'成都市中和镇香榭国际',null,null,'13880186387') [ RunTime:0.009000s ]
+SQL: SELECT `goods_id`,`price`,`spec`,`nums`,`goods_name`,`goods_thumb`,`spec_desc`,`sel`,`goods_attr`,`goods_sn` FROM `ts_cart` WHERE ( user_id=6 AND sel=1 )  [ RunTime:0.001000s ]
+SQL: DESCRIBE ts_order_goods [ RunTime:0.003000s ]
+SQL: INSERT INTO `ts_order_goods` (`goods_id`,`price`,`attr_list`,`nums`,`goods_name`,`goods_sn`,`spec_value`,`order_id`) VALUES (96,'2200.00',null,'3','Apple iPhone 5s (A1530) 16GB 银色 移动联通4G手机','ECS576ea0921e910','',20) [ RunTime:0.001000s ]
+ERR: 1048:Le champ 'attr_list' ne peut être vide (null)
+ [ SQL语句 ] : INSERT INTO `ts_order_goods` (`goods_id`,`price`,`attr_list`,`nums`,`goods_name`,`goods_sn`,`spec_value`,`order_id`) VALUES (96,'2200.00',null,'3','Apple iPhone 5s (A1530) 16GB 银色 移动联通4G手机','ECS576ea0921e910','',20)
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-03T15:13:07+08:00 ] 127.0.0.1 /mall/Cart/orderInfo/act/cart.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-03T15:13:11+08:00 ] 127.0.0.1 /mall/Cart/addOrder.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: DESCRIBE ts_cart [ RunTime:0.004000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ts_cart` WHERE ( user_id=6 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: user_id D:\wamp\www\mall\mall\Home\Controller\CartController.class.php 第 494 行.
+SQL: DESCRIBE ts_user_address [ RunTime:0.003000s ]
+SQL: SELECT `consignee`,`province`,`city`,`district`,`address`,`zipcode`,`telephone`,`mobile` FROM `ts_user_address` WHERE ( address_id=6 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: DESCRIBE ts_order [ RunTime:0.003000s ]
+SQL: INSERT INTO `ts_order` (`order_sn`,`created`,`confirm_time`,`pay_time`,`order_status`,`pay_status`,`ship_status`,`ship_id`,`pay_id`,`ship_name`,`pay_name`,`total_price`,`user_id`,`ship_price`,`ship_time`,`consignee`,`province`,`city`,`district`,`address`,`zipcode`,`telephone`,`mobile`) VALUES ('146752999128802',1467529991,1467529991,0,2,0,1,1,1,'韵达快递','支付宝','8,400.00',6,0,0,'曹垒',24,272,2533,'成都市中和镇香榭国际',null,null,'13880186387') [ RunTime:0.003000s ]
+SQL: SELECT `goods_id`,`price`,`spec`,`nums`,`goods_name`,`goods_thumb`,`spec_desc`,`sel`,`goods_attr`,`goods_sn` FROM `ts_cart` WHERE ( user_id=6 AND sel=1 )  [ RunTime:0.000000s ]
+SQL: DESCRIBE ts_order_goods [ RunTime:0.003000s ]
+SQL: INSERT INTO `ts_order_goods` (`goods_id`,`price`,`attr_list`,`nums`,`goods_name`,`goods_sn`,`spec_value`,`order_id`) VALUES (96,'2200.00',null,'3','Apple iPhone 5s (A1530) 16GB 银色 移动联通4G手机','ECS576ea0921e910','',21) [ RunTime:0.001000s ]
+ERR: 1048:Le champ 'attr_list' ne peut être vide (null)
+ [ SQL语句 ] : INSERT INTO `ts_order_goods` (`goods_id`,`price`,`attr_list`,`nums`,`goods_name`,`goods_sn`,`spec_value`,`order_id`) VALUES (96,'2200.00',null,'3','Apple iPhone 5s (A1530) 16GB 银色 移动联通4G手机','ECS576ea0921e910','',21)
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-03T15:13:38+08:00 ] 127.0.0.1 /mall/Cart/orderInfo/act/cart.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-03T15:13:54+08:00 ] 127.0.0.1 /mall/Cart/orderInfo/act/cart.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-03T15:13:55+08:00 ] 127.0.0.1 /mall/Cart/addOrder.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: DESCRIBE ts_cart [ RunTime:0.003000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ts_cart` WHERE ( user_id=6 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: user_id D:\wamp\www\mall\mall\Home\Controller\CartController.class.php 第 495 行.
+SQL: DESCRIBE ts_user_address [ RunTime:0.004000s ]
+SQL: SELECT `consignee`,`province`,`city`,`district`,`address`,`zipcode`,`telephone`,`mobile` FROM `ts_user_address` WHERE ( address_id=6 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: DESCRIBE ts_order [ RunTime:0.004000s ]
+SQL: INSERT INTO `ts_order` (`order_sn`,`created`,`confirm_time`,`pay_time`,`order_status`,`pay_status`,`ship_status`,`ship_id`,`pay_id`,`ship_name`,`pay_name`,`total_price`,`user_id`,`ship_price`,`ship_time`,`consignee`,`province`,`city`,`district`,`address`,`zipcode`,`telephone`,`mobile`) VALUES ('146753003533074',1467530035,1467530035,0,2,0,1,1,1,'韵达快递','支付宝','8,400.00',6,0,0,'曹垒',24,272,2533,'成都市中和镇香榭国际',null,null,'13880186387') [ RunTime:0.004000s ]
+SQL: SELECT `goods_id`,`price`,`spec`,`nums`,`goods_name`,`goods_thumb`,`spec_desc`,`sel`,`goods_attr`,`goods_sn` FROM `ts_cart` WHERE ( user_id=6 AND sel=1 )  [ RunTime:0.001000s ]
+SQL: DESCRIBE ts_order_goods [ RunTime:0.003000s ]
+SQL: INSERT INTO `ts_order_goods` (`goods_id`,`price`,`attr_list`,`nums`,`goods_name`,`goods_sn`,`spec_value`,`order_id`) VALUES (96,'2200.00',null,'3','Apple iPhone 5s (A1530) 16GB 银色 移动联通4G手机','ECS576ea0921e910','',22) [ RunTime:0.000000s ]
+ERR: 1048:Le champ 'attr_list' ne peut être vide (null)
+ [ SQL语句 ] : INSERT INTO `ts_order_goods` (`goods_id`,`price`,`attr_list`,`nums`,`goods_name`,`goods_sn`,`spec_value`,`order_id`) VALUES (96,'2200.00',null,'3','Apple iPhone 5s (A1530) 16GB 银色 移动联通4G手机','ECS576ea0921e910','',22)
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-03T15:17:07+08:00 ] 127.0.0.1 /mall/Cart/orderInfo/act/cart.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-03T15:17:17+08:00 ] 127.0.0.1 /mall/Cart/orderInfo/act/cart.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-03T15:17:18+08:00 ] 127.0.0.1 /mall/Cart/addOrder.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: DESCRIBE ts_cart [ RunTime:0.003000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ts_cart` WHERE ( user_id=6 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: user_id D:\wamp\www\mall\mall\Home\Controller\CartController.class.php 第 482 行.
+SQL: DESCRIBE ts_user_address [ RunTime:0.003000s ]
+SQL: SELECT `consignee`,`province`,`city`,`district`,`address`,`zipcode`,`telephone`,`mobile` FROM `ts_user_address` WHERE ( address_id=6 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: DESCRIBE ts_order [ RunTime:0.003000s ]
+SQL: INSERT INTO `ts_order` (`order_sn`,`created`,`confirm_time`,`pay_time`,`order_status`,`pay_status`,`ship_status`,`ship_id`,`pay_id`,`ship_name`,`pay_name`,`total_price`,`user_id`,`ship_price`,`ship_time`,`consignee`,`province`,`city`,`district`,`address`,`zipcode`,`telephone`,`mobile`) VALUES ('146753023808659',1467530238,1467530238,0,2,0,1,1,1,'韵达快递','支付宝','8,400.00',6,0,0,'曹垒',24,272,2533,'成都市中和镇香榭国际',null,null,'13880186387') [ RunTime:0.004000s ]
+SQL: SELECT `goods_id`,`price`,`spec`,`nums`,`goods_name`,`goods_thumb`,`spec_desc`,`sel`,`goods_attr`,`goods_sn` FROM `ts_cart` WHERE ( user_id=6 AND sel=1 )  [ RunTime:0.001000s ]
+SQL: DESCRIBE ts_order_goods [ RunTime:0.003000s ]
+NOTIC: [8] Undefined variable: order_id D:\wamp\www\mall\mall\Home\Model\OrderGoodsModel.class.php 第 18 行.
+SQL: INSERT INTO `ts_order_goods` (`goods_id`,`price`,`attr_list`,`nums`,`goods_name`,`goods_sn`,`spec_value`,`order_id`) VALUES (96,'2200.00',null,'3','Apple iPhone 5s (A1530) 16GB 银色 移动联通4G手机','ECS576ea0921e910','',null) [ RunTime:0.000000s ]
+ERR: 1048:Le champ 'attr_list' ne peut être vide (null)
+ [ SQL语句 ] : INSERT INTO `ts_order_goods` (`goods_id`,`price`,`attr_list`,`nums`,`goods_name`,`goods_sn`,`spec_value`,`order_id`) VALUES (96,'2200.00',null,'3','Apple iPhone 5s (A1530) 16GB 银色 移动联通4G手机','ECS576ea0921e910','',null)
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-03T15:19:19+08:00 ] 127.0.0.1 /mall/Cart/orderInfo/act/cart.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-03T15:19:21+08:00 ] 127.0.0.1 /mall/Cart/addOrder.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: DESCRIBE ts_cart [ RunTime:0.003000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ts_cart` WHERE ( user_id=6 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: user_id D:\wamp\www\mall\mall\Home\Controller\CartController.class.php 第 482 行.
+SQL: DESCRIBE ts_user_address [ RunTime:0.003000s ]
+SQL: SELECT `consignee`,`province`,`city`,`district`,`address`,`zipcode`,`telephone`,`mobile` FROM `ts_user_address` WHERE ( address_id=6 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: DESCRIBE ts_order [ RunTime:0.004000s ]
+SQL: INSERT INTO `ts_order` (`order_sn`,`created`,`confirm_time`,`pay_time`,`order_status`,`pay_status`,`ship_status`,`ship_id`,`pay_id`,`ship_name`,`pay_name`,`total_price`,`user_id`,`ship_price`,`ship_time`,`consignee`,`province`,`city`,`district`,`address`,`zipcode`,`telephone`,`mobile`) VALUES ('146753036140284',1467530361,1467530361,0,2,0,1,1,1,'韵达快递','支付宝','8,400.00',6,0,0,'曹垒',24,272,2533,'成都市中和镇香榭国际',null,null,'13880186387') [ RunTime:0.004000s ]
+SQL: SELECT `goods_id`,`price`,`spec`,`nums`,`goods_name`,`goods_thumb`,`spec_desc`,`sel`,`goods_attr`,`goods_sn` FROM `ts_cart` WHERE ( user_id=6 AND sel=1 )  [ RunTime:0.001000s ]
+SQL: DESCRIBE ts_order_goods [ RunTime:0.003000s ]
+NOTIC: [8] Undefined variable: order_id D:\wamp\www\mall\mall\Home\Model\OrderGoodsModel.class.php 第 18 行.
+SQL: INSERT INTO `ts_order_goods` (`goods_id`,`price`,`attr_list`,`nums`,`goods_name`,`goods_sn`,`spec_value`,`order_id`) VALUES (96,'2200.00',null,'3','Apple iPhone 5s (A1530) 16GB 银色 移动联通4G手机','ECS576ea0921e910','',null) [ RunTime:0.000000s ]
+ERR: 1048:Le champ 'attr_list' ne peut être vide (null)
+ [ SQL语句 ] : INSERT INTO `ts_order_goods` (`goods_id`,`price`,`attr_list`,`nums`,`goods_name`,`goods_sn`,`spec_value`,`order_id`) VALUES (96,'2200.00',null,'3','Apple iPhone 5s (A1530) 16GB 银色 移动联通4G手机','ECS576ea0921e910','',null)
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-03T15:22:10+08:00 ] 127.0.0.1 /mall/Cart/orderInfo/act/cart.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-03T15:22:11+08:00 ] 127.0.0.1 /mall/Cart/addOrder.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: DESCRIBE ts_cart [ RunTime:0.003000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ts_cart` WHERE ( user_id=6 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: user_id D:\wamp\www\mall\mall\Home\Controller\CartController.class.php 第 482 行.
+SQL: DESCRIBE ts_user_address [ RunTime:0.003000s ]
+SQL: SELECT `consignee`,`province`,`city`,`district`,`address`,`zipcode`,`telephone`,`mobile` FROM `ts_user_address` WHERE ( address_id=6 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: DESCRIBE ts_order [ RunTime:0.004000s ]
+SQL: INSERT INTO `ts_order` (`order_sn`,`created`,`confirm_time`,`pay_time`,`order_status`,`pay_status`,`ship_status`,`ship_id`,`pay_id`,`ship_name`,`pay_name`,`total_price`,`user_id`,`ship_price`,`ship_time`,`consignee`,`province`,`city`,`district`,`address`,`zipcode`,`telephone`,`mobile`) VALUES ('146753053103088',1467530531,1467530531,0,2,0,1,1,1,'韵达快递','支付宝','8,400.00',6,0,0,'曹垒',24,272,2533,'成都市中和镇香榭国际',null,null,'13880186387') [ RunTime:0.004000s ]
+SQL: SELECT `goods_id`,`price`,`spec`,`nums`,`goods_name`,`goods_thumb`,`spec_desc`,`sel`,`goods_attr`,`goods_sn` FROM `ts_cart` WHERE ( user_id=6 AND sel=1 )  [ RunTime:0.001000s ]
+SQL: DESCRIBE ts_order_goods [ RunTime:0.003000s ]
+SQL: INSERT INTO `ts_order_goods` (`goods_id`,`price`,`attr_list`,`nums`,`goods_name`,`goods_sn`,`spec_value`,`order_id`) VALUES (96,'2200.00',null,'3','Apple iPhone 5s (A1530) 16GB 银色 移动联通4G手机','ECS576ea0921e910','',25) [ RunTime:0.000000s ]
+ERR: 1048:Le champ 'attr_list' ne peut être vide (null)
+ [ SQL语句 ] : INSERT INTO `ts_order_goods` (`goods_id`,`price`,`attr_list`,`nums`,`goods_name`,`goods_sn`,`spec_value`,`order_id`) VALUES (96,'2200.00',null,'3','Apple iPhone 5s (A1530) 16GB 银色 移动联通4G手机','ECS576ea0921e910','',25)
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-03T15:23:40+08:00 ] 127.0.0.1 /mall/Cart/orderInfo/act/cart.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-03T15:23:41+08:00 ] 127.0.0.1 /mall/Cart/addOrder.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: DESCRIBE ts_cart [ RunTime:0.004000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ts_cart` WHERE ( user_id=6 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: user_id D:\wamp\www\mall\mall\Home\Controller\CartController.class.php 第 482 行.
+SQL: DESCRIBE ts_user_address [ RunTime:0.003000s ]
+SQL: SELECT `consignee`,`province`,`city`,`district`,`address`,`zipcode`,`telephone`,`mobile` FROM `ts_user_address` WHERE ( address_id=6 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: DESCRIBE ts_order [ RunTime:0.003000s ]
+SQL: INSERT INTO `ts_order` (`order_sn`,`created`,`confirm_time`,`pay_time`,`order_status`,`pay_status`,`ship_status`,`ship_id`,`pay_id`,`ship_name`,`pay_name`,`total_price`,`user_id`,`ship_price`,`ship_time`,`consignee`,`province`,`city`,`district`,`address`,`zipcode`,`telephone`,`mobile`) VALUES ('146753062143329',1467530621,1467530621,0,2,0,1,1,1,'韵达快递','支付宝','8,400.00',6,0,0,'曹垒',24,272,2533,'成都市中和镇香榭国际',null,null,'13880186387') [ RunTime:0.003000s ]
+SQL: SELECT `goods_id`,`price`,`spec`,`nums`,`goods_name`,`goods_thumb`,`spec_desc`,`sel`,`goods_attr`,`goods_sn` FROM `ts_cart` WHERE ( user_id=6 AND sel=1 )  [ RunTime:0.000000s ]
+SQL: DESCRIBE ts_order_goods [ RunTime:0.002000s ]
+SQL: INSERT INTO `ts_order_goods` (`goods_id`,`price`,`attr_list`,`nums`,`goods_name`,`goods_sn`,`spec_value`,`order_id`) VALUES (96,'2200.00','','3','Apple iPhone 5s (A1530) 16GB 银色 移动联通4G手机','ECS576ea0921e910','',26) [ RunTime:0.002000s ]
+SQL: INSERT INTO `ts_order_goods` (`goods_id`,`price`,`attr_list`,`nums`,`goods_name`,`goods_sn`,`spec_value`,`order_id`) VALUES (95,'6100.00','307,308','3','Apple iPhone 6s Plus (A1699) 64G 玫瑰金色 移动联通电信4','ECS576e8c51dcff0','<strong>颜色</strong>：蓝色， <strong>套餐</strong>：套餐二',26) [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-03T21:38:43+08:00 ] 127.0.0.1 /mall/pay/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-03T21:38:53+08:00 ] 127.0.0.1 /mall/pay/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 模板不存在:./mall/Home/View/Default/Pay/index.html
+
+[ 2016-07-03T21:43:27+08:00 ] 127.0.0.1 /mall/pay/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-03T21:43:29+08:00 ] 127.0.0.1 /mall/Pay/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-03T21:45:11+08:00 ] 127.0.0.1 /mall/Pay/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-03T21:45:13+08:00 ] 127.0.0.1 /mall/Pay/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-03T21:46:45+08:00 ] 127.0.0.1 /mall/Pay/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-03T21:46:59+08:00 ] 127.0.0.1 /mall/Pay/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-03T21:50:50+08:00 ] 127.0.0.1 /mall/Pay/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-03T21:50:57+08:00 ] 127.0.0.1 /mall/Pay/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-03T21:51:31+08:00 ] 127.0.0.1 /mall/pay/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-03T21:52:07+08:00 ] 127.0.0.1 /mall/pay/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载控制器:Pay
+
+[ 2016-07-03T21:52:41+08:00 ] 127.0.0.1 /mall/pay/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载控制器:Pay
+
+[ 2016-07-03T21:52:51+08:00 ] 127.0.0.1 /mall/pay/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-03T21:52:52+08:00 ] 127.0.0.1 /mall/Pay/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-03T21:52:54+08:00 ] 127.0.0.1 /mall/Pay/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-03T21:52:55+08:00 ] 127.0.0.1 /mall/Pay/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-03T21:52:56+08:00 ] 127.0.0.1 /mall/Pay/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-03T21:52:56+08:00 ] 127.0.0.1 /mall/Pay/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-03T21:52:57+08:00 ] 127.0.0.1 /mall/Pay/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-03T21:52:57+08:00 ] 127.0.0.1 /mall/Pay/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-03T21:53:00+08:00 ] 127.0.0.1 /mall/Pay/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-03T21:53:01+08:00 ] 127.0.0.1 /mall/Pay/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-03T21:53:37+08:00 ] 127.0.0.1 /mall/Pay/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-03T21:54:00+08:00 ] 127.0.0.1 /mall/Pay/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-03T21:54:36+08:00 ] 127.0.0.1 /mall/Pay/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-03T21:54:53+08:00 ] 127.0.0.1 /mall/Pay/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-03T21:57:56+08:00 ] 127.0.0.1 /mall/Pay/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-03T21:59:29+08:00 ] 127.0.0.1 /mall/Pay/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-03T21:59:32+08:00 ] 127.0.0.1 /mall/Pay/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-03T21:59:33+08:00 ] 127.0.0.1 /mall/Pay/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-03T22:00:38+08:00 ] 127.0.0.1 /mall/Pay/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-03T22:00:40+08:00 ] 127.0.0.1 /mall/Pay/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-03T22:00:42+08:00 ] 127.0.0.1 /mall/Pay/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-03T22:00:43+08:00 ] 127.0.0.1 /mall/Pay/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-03T22:02:26+08:00 ] 127.0.0.1 /mall/Pay/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-03T22:02:29+08:00 ] 127.0.0.1 /mall/Pay/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-03T22:02:32+08:00 ] 127.0.0.1 /mall/Pay/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-03T22:04:03+08:00 ] 127.0.0.1 /mall/Pay/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-03T22:04:18+08:00 ] 127.0.0.1 /mall/Pay/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-03T22:04:20+08:00 ] 127.0.0.1 /mall/Pay/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-03T22:04:21+08:00 ] 127.0.0.1 /mall/Pay/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-03T22:06:07+08:00 ] 127.0.0.1 /mall/Pay/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-03T22:06:32+08:00 ] 127.0.0.1 /mall/Pay/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-03T22:06:43+08:00 ] 127.0.0.1 /mall/Pay/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-03T22:10:07+08:00 ] 127.0.0.1 /mall/Pay/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-03T22:11:25+08:00 ] 127.0.0.1 /mall/Pay/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-03T22:11:27+08:00 ] 127.0.0.1 /mall/Pay/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-03T22:11:30+08:00 ] 127.0.0.1 /mall/Pay/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-03T22:11:30+08:00 ] 127.0.0.1 /mall/Pay/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-03T22:12:04+08:00 ] 127.0.0.1 /mall/Pay/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-03T22:12:56+08:00 ] 127.0.0.1 /mall/Pay/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-03T22:12:58+08:00 ] 127.0.0.1 /mall/Pay/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-03T22:13:26+08:00 ] 127.0.0.1 /mall/Pay/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-03T22:17:41+08:00 ] 127.0.0.1 /mall/Pay/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-03T22:17:54+08:00 ] 127.0.0.1 /mall/Pay/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-03T22:18:10+08:00 ] 127.0.0.1 /mall/Pay/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-03T22:18:14+08:00 ] 127.0.0.1 /mall/Pay/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-03T22:19:53+08:00 ] 127.0.0.1 /mall/Pay/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-03T22:19:55+08:00 ] 127.0.0.1 /mall/Pay/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-03T22:20:36+08:00 ] 127.0.0.1 /mall/Pay/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-03T22:22:46+08:00 ] 127.0.0.1 /mall/Pay/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-03T22:23:15+08:00 ] 127.0.0.1 /mall/Pay/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-03T22:23:24+08:00 ] 127.0.0.1 /mall/Pay/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-03T22:23:25+08:00 ] 127.0.0.1 /mall/Pay/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-03T22:23:32+08:00 ] 127.0.0.1 /mall/Pay/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-03T22:23:33+08:00 ] 127.0.0.1 /mall/Pay/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-03T22:27:43+08:00 ] 127.0.0.1 /mall/Pay/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-03T22:27:43+08:00 ] 127.0.0.1 /mall/Pay/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-03T22:30:51+08:00 ] 127.0.0.1 /mall/Pay/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-03T22:30:52+08:00 ] 127.0.0.1 /mall/Pay/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-03T22:30:56+08:00 ] 127.0.0.1 /mall/Pay/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+

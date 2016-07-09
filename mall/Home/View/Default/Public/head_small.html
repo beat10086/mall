@@ -12,7 +12,7 @@
             <ul>
             	<if condition="$_SESSION['user_auth']['id']">
 	                <li>您好，！
-	                	<a href="__WEB__/user">
+	                	<a href="{:U('Auth/account')}">
 	                    <?php echo 	$_SESSION['user_auth']['username'];?>
 	                   </a>
 	                 </li>

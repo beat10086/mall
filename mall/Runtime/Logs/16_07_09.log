@@ -1,0 +1,1045 @@
+[ 2016-07-09T08:26:03+08:00 ] 127.0.0.1 /mall/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-09T08:26:08+08:00 ] 127.0.0.1 /mall/admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-09T08:26:08+08:00 ] 127.0.0.1 /mall/Admin/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-09T08:26:08+08:00 ] 127.0.0.1 /mall/Admin/Login/verity.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-09T08:26:15+08:00 ] 127.0.0.1 /mall/Admin/Login/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: DESCRIBE ts_admin [ RunTime:0.000000s ]
+SQL: SELECT `user_id`,`username`,`passwd` FROM `ts_admin` WHERE ( `username` = 'admin' ) AND ( `passwd` = 'e10adc3949ba59abbe56e057f20f883e' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: UPDATE `ts_admin` SET `last_login`=1468023975,`last_ip`=2130706433 WHERE ( `user_id` = 1 ) [ RunTime:0.000000s ]
+
+[ 2016-07-09T08:26:15+08:00 ] 127.0.0.1 /mall/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015600s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015600s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-09T08:26:15+08:00 ] 127.0.0.1 /mall/Admin/Index/main.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015600s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015600s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-09T08:26:15+08:00 ] 127.0.0.1 /mall/PUBLIC/Admin/js/plugins/layer/extend/layer.ext.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-07-09T08:26:17+08:00 ] 127.0.0.1 /mall/Admin/Goods/index.html?v=4.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: DESCRIBE ts_category [ RunTime:0.005000s ]
+SQL: select category_id,category_name,pid,is_nav,status,CONCAT(path,'-',category_id) as depath,path,goods_type_id from ts_category where status=1 order by depath ASC [ RunTime:0.001000s ]
+SQL: DESCRIBE ts_brand [ RunTime:0.004000s ]
+SQL: SELECT * FROM `ts_brand` ORDER BY sort DESC  [ RunTime:0.001000s ]
+SQL: DESCRIBE ts_goods [ RunTime:0.005000s ]
+SQL: SELECT `goods_id`,`goods_name`,`goods_price`,`goods_sn`,`is_on_sale`,`is_hot`,`is_well`,`is_first`,`sku` FROM `ts_goods` ORDER BY created DESC  [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: category_id D:\wamp\www\mall\mall\Runtime\Cache\Admin\3ea905b335e38bad065eef00e80c359f.php 第 53 行.
+NOTIC: [8] Undefined variable: category_id D:\wamp\www\mall\mall\Runtime\Cache\Admin\3ea905b335e38bad065eef00e80c359f.php 第 53 行.
+NOTIC: [8] Undefined variable: category_id D:\wamp\www\mall\mall\Runtime\Cache\Admin\3ea905b335e38bad065eef00e80c359f.php 第 53 行.
+NOTIC: [8] Undefined variable: category_id D:\wamp\www\mall\mall\Runtime\Cache\Admin\3ea905b335e38bad065eef00e80c359f.php 第 53 行.
+NOTIC: [8] Undefined variable: category_id D:\wamp\www\mall\mall\Runtime\Cache\Admin\3ea905b335e38bad065eef00e80c359f.php 第 53 行.
+NOTIC: [8] Undefined variable: category_id D:\wamp\www\mall\mall\Runtime\Cache\Admin\3ea905b335e38bad065eef00e80c359f.php 第 53 行.
+NOTIC: [8] Undefined variable: category_id D:\wamp\www\mall\mall\Runtime\Cache\Admin\3ea905b335e38bad065eef00e80c359f.php 第 53 行.
+NOTIC: [8] Undefined variable: category_id D:\wamp\www\mall\mall\Runtime\Cache\Admin\3ea905b335e38bad065eef00e80c359f.php 第 53 行.
+NOTIC: [8] Undefined variable: category_id D:\wamp\www\mall\mall\Runtime\Cache\Admin\3ea905b335e38bad065eef00e80c359f.php 第 53 行.
+NOTIC: [8] Undefined variable: category_id D:\wamp\www\mall\mall\Runtime\Cache\Admin\3ea905b335e38bad065eef00e80c359f.php 第 53 行.
+NOTIC: [8] Undefined variable: category_id D:\wamp\www\mall\mall\Runtime\Cache\Admin\3ea905b335e38bad065eef00e80c359f.php 第 53 行.
+NOTIC: [8] Undefined variable: category_id D:\wamp\www\mall\mall\Runtime\Cache\Admin\3ea905b335e38bad065eef00e80c359f.php 第 53 行.
+NOTIC: [8] Undefined variable: category_id D:\wamp\www\mall\mall\Runtime\Cache\Admin\3ea905b335e38bad065eef00e80c359f.php 第 53 行.
+NOTIC: [8] Undefined variable: category_id D:\wamp\www\mall\mall\Runtime\Cache\Admin\3ea905b335e38bad065eef00e80c359f.php 第 53 行.
+NOTIC: [8] Undefined variable: category_id D:\wamp\www\mall\mall\Runtime\Cache\Admin\3ea905b335e38bad065eef00e80c359f.php 第 53 行.
+NOTIC: [8] Undefined variable: category_id D:\wamp\www\mall\mall\Runtime\Cache\Admin\3ea905b335e38bad065eef00e80c359f.php 第 53 行.
+NOTIC: [8] Undefined variable: category_id D:\wamp\www\mall\mall\Runtime\Cache\Admin\3ea905b335e38bad065eef00e80c359f.php 第 53 行.
+NOTIC: [8] Undefined variable: category_id D:\wamp\www\mall\mall\Runtime\Cache\Admin\3ea905b335e38bad065eef00e80c359f.php 第 53 行.
+NOTIC: [8] Undefined variable: category_id D:\wamp\www\mall\mall\Runtime\Cache\Admin\3ea905b335e38bad065eef00e80c359f.php 第 53 行.
+NOTIC: [8] Undefined variable: category_id D:\wamp\www\mall\mall\Runtime\Cache\Admin\3ea905b335e38bad065eef00e80c359f.php 第 53 行.
+NOTIC: [8] Undefined variable: category_id D:\wamp\www\mall\mall\Runtime\Cache\Admin\3ea905b335e38bad065eef00e80c359f.php 第 53 行.
+NOTIC: [8] Undefined variable: category_id D:\wamp\www\mall\mall\Runtime\Cache\Admin\3ea905b335e38bad065eef00e80c359f.php 第 53 行.
+NOTIC: [8] Undefined variable: category_id D:\wamp\www\mall\mall\Runtime\Cache\Admin\3ea905b335e38bad065eef00e80c359f.php 第 53 行.
+NOTIC: [8] Undefined variable: category_id D:\wamp\www\mall\mall\Runtime\Cache\Admin\3ea905b335e38bad065eef00e80c359f.php 第 53 行.
+NOTIC: [8] Undefined variable: category_id D:\wamp\www\mall\mall\Runtime\Cache\Admin\3ea905b335e38bad065eef00e80c359f.php 第 53 行.
+NOTIC: [8] Undefined variable: category_id D:\wamp\www\mall\mall\Runtime\Cache\Admin\3ea905b335e38bad065eef00e80c359f.php 第 53 行.
+NOTIC: [8] Undefined variable: category_id D:\wamp\www\mall\mall\Runtime\Cache\Admin\3ea905b335e38bad065eef00e80c359f.php 第 53 行.
+NOTIC: [8] Undefined variable: category_id D:\wamp\www\mall\mall\Runtime\Cache\Admin\3ea905b335e38bad065eef00e80c359f.php 第 53 行.
+NOTIC: [8] Undefined variable: category_id D:\wamp\www\mall\mall\Runtime\Cache\Admin\3ea905b335e38bad065eef00e80c359f.php 第 53 行.
+NOTIC: [8] Undefined variable: category_id D:\wamp\www\mall\mall\Runtime\Cache\Admin\3ea905b335e38bad065eef00e80c359f.php 第 53 行.
+NOTIC: [8] Undefined variable: show_brand D:\wamp\www\mall\mall\Runtime\Cache\Admin\3ea905b335e38bad065eef00e80c359f.php 第 64 行.
+NOTIC: [8] Undefined variable: show_brand D:\wamp\www\mall\mall\Runtime\Cache\Admin\3ea905b335e38bad065eef00e80c359f.php 第 64 行.
+NOTIC: [8] Undefined variable: show_brand D:\wamp\www\mall\mall\Runtime\Cache\Admin\3ea905b335e38bad065eef00e80c359f.php 第 64 行.
+NOTIC: [8] Undefined variable: show_brand D:\wamp\www\mall\mall\Runtime\Cache\Admin\3ea905b335e38bad065eef00e80c359f.php 第 64 行.
+NOTIC: [8] Undefined variable: show_brand D:\wamp\www\mall\mall\Runtime\Cache\Admin\3ea905b335e38bad065eef00e80c359f.php 第 64 行.
+NOTIC: [8] Undefined variable: show_brand D:\wamp\www\mall\mall\Runtime\Cache\Admin\3ea905b335e38bad065eef00e80c359f.php 第 64 行.
+NOTIC: [8] Undefined variable: show_brand D:\wamp\www\mall\mall\Runtime\Cache\Admin\3ea905b335e38bad065eef00e80c359f.php 第 64 行.
+NOTIC: [8] Undefined variable: promote_type D:\wamp\www\mall\mall\Runtime\Cache\Admin\3ea905b335e38bad065eef00e80c359f.php 第 70 行.
+NOTIC: [8] Undefined variable: promote_type D:\wamp\www\mall\mall\Runtime\Cache\Admin\3ea905b335e38bad065eef00e80c359f.php 第 71 行.
+NOTIC: [8] Undefined variable: promote_type D:\wamp\www\mall\mall\Runtime\Cache\Admin\3ea905b335e38bad065eef00e80c359f.php 第 72 行.
+NOTIC: [8] Undefined variable: is_on_sale D:\wamp\www\mall\mall\Runtime\Cache\Admin\3ea905b335e38bad065eef00e80c359f.php 第 78 行.
+NOTIC: [8] Undefined variable: is_on_sale D:\wamp\www\mall\mall\Runtime\Cache\Admin\3ea905b335e38bad065eef00e80c359f.php 第 79 行.
+NOTIC: [8] Undefined variable: keywords D:\wamp\www\mall\mall\Runtime\Cache\Admin\3ea905b335e38bad065eef00e80c359f.php 第 85 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-09T08:26:19+08:00 ] 127.0.0.1 /mall/Detail/index/id/96
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-09T08:26:21+08:00 ] 127.0.0.1 /mall/Cart/getCart.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: DESCRIBE ts_cart [ RunTime:0.003000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ts_cart` WHERE ( user_id=8 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT `goods_id`,`user_id`,`spec`,`nums`,`price`,`goods_name`,`goods_thumb`,`spec_desc`,`goods_attr` FROM `ts_cart` WHERE ( user_id=8 )  [ RunTime:0.001000s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\mall\mall\Home\Controller\CartController.class.php 第 162 行.
+
+[ 2016-07-09T08:26:24+08:00 ] 127.0.0.1 /mall/Detail/index/id/96
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-09T08:26:27+08:00 ] 127.0.0.1 /mall/Detail/index/id/96
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-09T08:26:28+08:00 ] 127.0.0.1 /mall/Cart/addToCart.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: DESCRIBE ts_cart [ RunTime:0.003000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ts_cart` WHERE ( user_id=8 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: DESCRIBE ts_goods [ RunTime:0.004000s ]
+SQL: SELECT * FROM `ts_goods` WHERE ( goods_id=96 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Array to string conversion D:\wamp\www\mall\mall\Home\Controller\CartController.class.php 第 79 行.
+SQL: DESCRIBE ts_cart [ RunTime:0.003000s ]
+SQL: SELECT * FROM `ts_cart` WHERE ( goods_attr='Array,96' AND user_id=8 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `ts_goods` WHERE ( goods_id in (96) )  [ RunTime:0.001000s ]
+NOTIC: [8] Undefined offset: 0 D:\wamp\www\mall\ThinkPHP\Library\Think\Db.class.php 第 694 行.
+SQL: INSERT INTO `ts_cart` (`user_id`,`goods_id`,`price`,`nums`,`goods_name`,`goods_thumb`,`spec_desc`,`sel`,`goods_sn`,`goods_attr`) VALUES (8,96,'2300.00',1,'Apple iPhone 5s (A1530) 16GB 银色 移动联通4G手机','./Uploads/54_576ea06b494a8.jpg','',1,'ECS576ea0921e910','Array,96') [ RunTime:0.003000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ts_cart` WHERE ( user_id=8 ) LIMIT 1   [ RunTime:0.001000s ]
+
+[ 2016-07-09T08:26:33+08:00 ] 127.0.0.1 /mall/Auth/account.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-09T08:28:54+08:00 ] 127.0.0.1 /mall/Auth/account.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-09T08:29:48+08:00 ] 127.0.0.1 /mall/Auth/account.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-09T08:29:50+08:00 ] 127.0.0.1 /mall/PUBLIC/Home/js/jquery-1.10.2.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-07-09T08:30:09+08:00 ] 127.0.0.1 /mall/Auth/account.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-09T08:30:09+08:00 ] 127.0.0.1 /mall/PUBLIC/Home/js/jquery-1.10.2.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-07-09T08:30:36+08:00 ] 127.0.0.1 /mall/Auth/account.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-09T08:30:36+08:00 ] 127.0.0.1 /mall/PUBLIC/Home/js/jquery-1.10.2.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-07-09T08:30:37+08:00 ] 127.0.0.1 /mall/Auth/account.html?nickname=user3&realname=%E6%9B%B9%E7%A3%8A&gender=0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: DESCRIBE ts_cart [ RunTime:0.003000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ts_cart` WHERE ( user_id=8 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: DESCRIBE ts_user [ RunTime:0.004000s ]
+SQL: SELECT * FROM `ts_user` WHERE ( user_id=8 ) LIMIT 1   [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: goods_info D:\wamp\www\mall\mall\Runtime\Cache\Home\bf55926d4d1ac074e8c98c1eb30f3771.php 第 10 行.
+NOTIC: [8] Undefined variable: goods_info D:\wamp\www\mall\mall\Runtime\Cache\Home\bf55926d4d1ac074e8c98c1eb30f3771.php 第 11 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-09T08:33:58+08:00 ] 127.0.0.1 /mall/Auth/account.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-09T08:33:58+08:00 ] 127.0.0.1 /mall/PUBLIC/Home/js/jquery-1.10.2.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-07-09T08:34:00+08:00 ] 127.0.0.1 /mall/Home/Auth/saveUserInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: DESCRIBE ts_cart [ RunTime:0.003000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ts_cart` WHERE ( user_id=8 ) LIMIT 1   [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-09T08:34:36+08:00 ] 127.0.0.1 /mall/Auth/account.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-09T08:34:37+08:00 ] 127.0.0.1 /mall/PUBLIC/Home/js/jquery-1.10.2.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-07-09T08:34:38+08:00 ] 127.0.0.1 /mall/Home/Auth/saveUserInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: DESCRIBE ts_cart [ RunTime:0.004000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ts_cart` WHERE ( user_id=8 ) LIMIT 1   [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-09T08:34:40+08:00 ] 127.0.0.1 /mall/Auth/account.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-09T08:34:41+08:00 ] 127.0.0.1 /mall/PUBLIC/Home/js/jquery-1.10.2.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-07-09T08:35:29+08:00 ] 127.0.0.1 /mall/Auth/account.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-09T08:35:30+08:00 ] 127.0.0.1 /mall/PUBLIC/Home/js/jquery-1.10.2.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-07-09T08:36:21+08:00 ] 127.0.0.1 /mall/PUBLIC/Home/js/jquery-1.10.2.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-07-09T08:36:30+08:00 ] 127.0.0.1 /mall/Home/Auth/saveUserInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: DESCRIBE ts_cart [ RunTime:0.003000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ts_cart` WHERE ( user_id=8 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: DESCRIBE ts_user [ RunTime:0.003000s ]
+ERR: Think\Model:saveUserInfo方法不存在！
+
+[ 2016-07-09T08:40:38+08:00 ] 127.0.0.1 /mall/Auth/account.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-09T08:40:40+08:00 ] 127.0.0.1 /mall/Auth/account.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-09T08:40:45+08:00 ] 127.0.0.1 /mall/PUBLIC/Home/js/jquery-1.10.2.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-07-09T08:40:46+08:00 ] 127.0.0.1 /mall/Home/Auth/saveUserInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: DESCRIBE ts_cart [ RunTime:0.003000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ts_cart` WHERE ( user_id=8 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: DESCRIBE ts_user [ RunTime:0.003000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-09T08:40:52+08:00 ] 127.0.0.1 /mall/Auth/account.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-09T08:40:52+08:00 ] 127.0.0.1 /mall/PUBLIC/Home/js/jquery-1.10.2.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-07-09T08:40:53+08:00 ] 127.0.0.1 /mall/Auth/account.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-09T08:40:53+08:00 ] 127.0.0.1 /mall/Auth/account.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-09T08:40:53+08:00 ] 127.0.0.1 /mall/Auth/account.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-09T08:40:53+08:00 ] 127.0.0.1 /mall/Auth/account.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-09T08:40:53+08:00 ] 127.0.0.1 /mall/Auth/account.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-09T08:40:53+08:00 ] 127.0.0.1 /mall/Auth/account.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-09T08:40:53+08:00 ] 127.0.0.1 /mall/Auth/account.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-09T08:40:53+08:00 ] 127.0.0.1 /mall/Auth/account.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-09T08:40:53+08:00 ] 127.0.0.1 /mall/PUBLIC/Home/js/jquery-1.10.2.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-07-09T08:41:15+08:00 ] 127.0.0.1 /mall/Auth/account.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-09T08:41:15+08:00 ] 127.0.0.1 /mall/PUBLIC/Home/js/jquery-1.10.2.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-07-09T08:41:21+08:00 ] 127.0.0.1 /mall/Home/Auth/saveUserInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: DESCRIBE ts_cart [ RunTime:0.002000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ts_cart` WHERE ( user_id=8 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: DESCRIBE ts_user [ RunTime:0.003000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-09T08:42:45+08:00 ] 127.0.0.1 /mall/Auth/account.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-09T08:42:45+08:00 ] 127.0.0.1 /mall/PUBLIC/Home/js/jquery-1.10.2.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-07-09T08:42:47+08:00 ] 127.0.0.1 /mall/Home/Auth/saveUserInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: DESCRIBE ts_cart [ RunTime:0.003000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ts_cart` WHERE ( user_id=8 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: DESCRIBE ts_user [ RunTime:0.003000s ]
+SQL: UPDATE `ts_user` SET `nickname`='user3',`realname`='曹磊' WHERE ( user_id=8 ) [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-09T08:43:08+08:00 ] 127.0.0.1 /mall/Auth/account.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-09T08:43:08+08:00 ] 127.0.0.1 /mall/PUBLIC/Home/js/jquery-1.10.2.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-07-09T08:43:10+08:00 ] 127.0.0.1 /mall/Auth/account.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-09T08:43:10+08:00 ] 127.0.0.1 /mall/PUBLIC/Home/js/jquery-1.10.2.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-07-09T08:43:11+08:00 ] 127.0.0.1 /mall/Auth/account.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-09T08:43:11+08:00 ] 127.0.0.1 /mall/Auth/account.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-09T08:43:11+08:00 ] 127.0.0.1 /mall/Auth/account.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-09T08:43:11+08:00 ] 127.0.0.1 /mall/Auth/account.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-09T08:43:11+08:00 ] 127.0.0.1 /mall/Auth/account.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-09T08:43:11+08:00 ] 127.0.0.1 /mall/Auth/account.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-09T08:43:11+08:00 ] 127.0.0.1 /mall/Auth/account.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-09T08:43:11+08:00 ] 127.0.0.1 /mall/Auth/account.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-09T08:43:11+08:00 ] 127.0.0.1 /mall/Auth/account.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-09T08:43:11+08:00 ] 127.0.0.1 /mall/Auth/account.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-09T08:43:11+08:00 ] 127.0.0.1 /mall/Auth/account.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-09T08:43:11+08:00 ] 127.0.0.1 /mall/Auth/account.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-09T08:43:11+08:00 ] 127.0.0.1 /mall/Auth/account.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-09T08:43:11+08:00 ] 127.0.0.1 /mall/Auth/account.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-09T08:43:11+08:00 ] 127.0.0.1 /mall/Auth/account.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-09T08:43:11+08:00 ] 127.0.0.1 /mall/PUBLIC/Home/js/jquery-1.10.2.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-07-09T08:43:28+08:00 ] 127.0.0.1 /mall/Home/Auth/saveUserInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: DESCRIBE ts_cart [ RunTime:0.003000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ts_cart` WHERE ( user_id=8 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: DESCRIBE ts_user [ RunTime:0.002000s ]
+SQL: UPDATE `ts_user` SET `nickname`='beat',`realname`='曹磊' WHERE ( user_id=8 ) [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-09T08:43:56+08:00 ] 127.0.0.1 /mall/Auth/account.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-09T08:43:57+08:00 ] 127.0.0.1 /mall/PUBLIC/Home/js/jquery-1.10.2.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-07-09T08:44:01+08:00 ] 127.0.0.1 /mall/Home/Auth/saveUserInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: DESCRIBE ts_cart [ RunTime:0.003000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ts_cart` WHERE ( user_id=8 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: DESCRIBE ts_user [ RunTime:0.004000s ]
+SQL: UPDATE `ts_user` SET `nickname`='beat2',`realname`='曹磊' WHERE ( user_id=8 ) [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-09T08:46:24+08:00 ] 127.0.0.1 /mall/Auth/account.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-09T08:46:24+08:00 ] 127.0.0.1 /mall/PUBLIC/Home/js/jquery-1.10.2.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-07-09T08:46:57+08:00 ] 127.0.0.1 /mall/Auth/account.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-09T08:46:57+08:00 ] 127.0.0.1 /mall/PUBLIC/Home/js/jquery-1.10.2.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-07-09T08:47:06+08:00 ] 127.0.0.1 /mall/Home/Auth/saveUserInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: DESCRIBE ts_cart [ RunTime:0.003000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ts_cart` WHERE ( user_id=8 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: DESCRIBE ts_user [ RunTime:0.003000s ]
+SQL: UPDATE `ts_user` SET `nickname`='beat3',`realname`='曹磊' WHERE ( user_id=8 ) [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-09T08:48:33+08:00 ] 127.0.0.1 /mall/Auth/account.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-09T08:48:34+08:00 ] 127.0.0.1 /mall/Home/Auth/saveUserInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: DESCRIBE ts_cart [ RunTime:0.003000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ts_cart` WHERE ( user_id=8 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: DESCRIBE ts_user [ RunTime:0.003000s ]
+SQL: UPDATE `ts_user` SET `nickname`='beat3',`realname`='曹磊' WHERE ( user_id=8 ) [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-09T08:48:38+08:00 ] 127.0.0.1 /mall/Home/Auth/saveUserInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: DESCRIBE ts_cart [ RunTime:0.002000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ts_cart` WHERE ( user_id=8 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: DESCRIBE ts_user [ RunTime:0.003000s ]
+SQL: UPDATE `ts_user` SET `nickname`='beat3',`realname`='曹磊' WHERE ( user_id=8 ) [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-09T08:48:41+08:00 ] 127.0.0.1 /mall/Home/Auth/saveUserInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: DESCRIBE ts_cart [ RunTime:0.004000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ts_cart` WHERE ( user_id=8 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: DESCRIBE ts_user [ RunTime:0.002000s ]
+SQL: UPDATE `ts_user` SET `nickname`='beat3',`realname`='曹磊' WHERE ( user_id=8 ) [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-09T08:48:43+08:00 ] 127.0.0.1 /mall/PUBLIC/Home/js/jquery-1.10.2.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-07-09T08:48:49+08:00 ] 127.0.0.1 /mall/Home/Auth/saveUserInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: DESCRIBE ts_cart [ RunTime:0.004000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ts_cart` WHERE ( user_id=8 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: DESCRIBE ts_user [ RunTime:0.002000s ]
+SQL: UPDATE `ts_user` SET `nickname`='beat3',`realname`='曹磊' WHERE ( user_id=8 ) [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-09T08:49:11+08:00 ] 127.0.0.1 /mall/Auth/account.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-09T08:49:11+08:00 ] 127.0.0.1 /mall/PUBLIC/Home/js/jquery-1.10.2.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-07-09T08:49:14+08:00 ] 127.0.0.1 /mall/Auth/account.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-09T08:49:14+08:00 ] 127.0.0.1 /mall/PUBLIC/Home/js/jquery-1.10.2.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-07-09T08:49:18+08:00 ] 127.0.0.1 /mall/Auth/account.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-09T08:49:18+08:00 ] 127.0.0.1 /mall/PUBLIC/Home/js/jquery-1.10.2.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-07-09T08:50:08+08:00 ] 127.0.0.1 /mall/Home/Auth/saveUserInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: DESCRIBE ts_cart [ RunTime:0.003000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ts_cart` WHERE ( user_id=8 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: DESCRIBE ts_user [ RunTime:0.002000s ]
+SQL: UPDATE `ts_user` SET `nickname`='beat4',`realname`='曹磊' WHERE ( user_id=8 ) [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-09T08:51:19+08:00 ] 127.0.0.1 /mall/Auth/account.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-09T08:51:19+08:00 ] 127.0.0.1 /mall/PUBLIC/Home/js/jquery-1.10.2.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-07-09T08:51:23+08:00 ] 127.0.0.1 /mall/Home/Auth/saveUserInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: DESCRIBE ts_cart [ RunTime:0.003000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ts_cart` WHERE ( user_id=8 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: DESCRIBE ts_user [ RunTime:0.003000s ]
+SQL: UPDATE `ts_user` SET `nickname`='beat5',`realname`='曹磊' WHERE ( user_id=8 ) [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-09T08:54:26+08:00 ] 127.0.0.1 /mall/Auth/account.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-09T08:54:26+08:00 ] 127.0.0.1 /mall/PUBLIC/Home/js/jquery-1.10.2.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-07-09T08:54:32+08:00 ] 127.0.0.1 /mall/Home/Auth/saveUserInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: DESCRIBE ts_cart [ RunTime:0.002000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ts_cart` WHERE ( user_id=8 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: DESCRIBE ts_user [ RunTime:0.002000s ]
+SQL: UPDATE `ts_user` SET `nickname`='beat6',`realname`='曹磊' WHERE ( user_id=8 ) [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-09T08:55:20+08:00 ] 127.0.0.1 /mall/Auth/account.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-09T08:55:20+08:00 ] 127.0.0.1 /mall/PUBLIC/Home/js/jquery-1.10.2.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-07-09T08:55:22+08:00 ] 127.0.0.1 /mall/Home/Auth/saveUserInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: DESCRIBE ts_cart [ RunTime:0.003000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ts_cart` WHERE ( user_id=8 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: DESCRIBE ts_user [ RunTime:0.003000s ]
+SQL: UPDATE `ts_user` SET `nickname`='beat6',`realname`='曹磊' WHERE ( user_id=8 ) [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-09T08:55:27+08:00 ] 127.0.0.1 /mall/Auth/account.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-09T08:55:30+08:00 ] 127.0.0.1 /mall/Home/Auth/saveUserInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: DESCRIBE ts_cart [ RunTime:0.003000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ts_cart` WHERE ( user_id=8 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: DESCRIBE ts_user [ RunTime:0.003000s ]
+SQL: UPDATE `ts_user` SET `nickname`='beat7',`realname`='曹磊' WHERE ( user_id=8 ) [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-09T08:55:47+08:00 ] 127.0.0.1 /mall/Auth/account.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-09T08:55:51+08:00 ] 127.0.0.1 /mall/Home/Auth/saveUserInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: DESCRIBE ts_cart [ RunTime:0.003000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ts_cart` WHERE ( user_id=8 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: DESCRIBE ts_user [ RunTime:0.003000s ]
+SQL: UPDATE `ts_user` SET `nickname`='beat7',`realname`='曹磊' WHERE ( user_id=8 ) [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-09T08:55:55+08:00 ] 127.0.0.1 /mall/Home/Auth/saveUserInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: DESCRIBE ts_cart [ RunTime:0.004000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ts_cart` WHERE ( user_id=8 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: DESCRIBE ts_user [ RunTime:0.003000s ]
+SQL: UPDATE `ts_user` SET `nickname`='beat7',`realname`='曹磊' WHERE ( user_id=8 ) [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-09T08:55:58+08:00 ] 127.0.0.1 /mall/Home/Auth/saveUserInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: DESCRIBE ts_cart [ RunTime:0.003000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ts_cart` WHERE ( user_id=8 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: DESCRIBE ts_user [ RunTime:0.003000s ]
+SQL: UPDATE `ts_user` SET `nickname`='beat7',`realname`='曹磊' WHERE ( user_id=8 ) [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-09T08:56:00+08:00 ] 127.0.0.1 /mall/PUBLIC/Home/js/jquery-1.10.2.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-07-09T08:56:03+08:00 ] 127.0.0.1 /mall/Home/Auth/saveUserInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: DESCRIBE ts_cart [ RunTime:0.004000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ts_cart` WHERE ( user_id=8 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: DESCRIBE ts_user [ RunTime:0.003000s ]
+SQL: UPDATE `ts_user` SET `nickname`='beat7',`realname`='曹磊' WHERE ( user_id=8 ) [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-09T08:56:11+08:00 ] 127.0.0.1 /mall/Home/Auth/saveUserInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: DESCRIBE ts_cart [ RunTime:0.002000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ts_cart` WHERE ( user_id=8 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: DESCRIBE ts_user [ RunTime:0.003000s ]
+SQL: UPDATE `ts_user` SET `nickname`='beat7',`realname`='曹磊' WHERE ( user_id=8 ) [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-09T08:56:17+08:00 ] 127.0.0.1 /mall/Auth/account.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-09T08:56:17+08:00 ] 127.0.0.1 /mall/PUBLIC/Home/js/jquery-1.10.2.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-07-09T08:56:20+08:00 ] 127.0.0.1 /mall/Auth/account.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-09T08:56:21+08:00 ] 127.0.0.1 /mall/PUBLIC/Home/js/jquery-1.10.2.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-07-09T08:56:35+08:00 ] 127.0.0.1 /mall/Auth/account.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-09T08:56:36+08:00 ] 127.0.0.1 /mall/PUBLIC/Home/js/jquery-1.10.2.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-07-09T08:56:49+08:00 ] 127.0.0.1 /mall/Auth/account.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-09T08:56:49+08:00 ] 127.0.0.1 /mall/PUBLIC/Home/js/jquery-1.10.2.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-07-09T08:56:53+08:00 ] 127.0.0.1 /mall/Home/Auth/saveUserInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: DESCRIBE ts_cart [ RunTime:0.003000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ts_cart` WHERE ( user_id=8 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: DESCRIBE ts_user [ RunTime:0.003000s ]
+SQL: UPDATE `ts_user` SET `nickname`='beat7',`realname`='曹磊',`sex`=2 WHERE ( user_id=8 ) [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+

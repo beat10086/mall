@@ -43,3 +43,10 @@ function encryption($username, $type = 0) {
     $username = base64_decode($username);
     return $username ^ $key;
 }
+function  number_format_fun  ($price_format){
+    return number_format($price_format,2);
+}
+function format_mobile ($mobile) {
+   return  preg_replace('/(1[358]{1}[0-9])[0-9]{4}([0-9]{4})/i','$1****$2',$mobile);
+}
+

@@ -9,7 +9,10 @@
 	<script>
 	  var Thinkphp={
 	  	    'updateCartNums':'{:U("Cart/updateCartNums")}',
-	  	    'delCartGoods':'{:U("Cart/delCartGoods")}'
+	  	    'delCartGoods':'{:U("Cart/delCartGoods")}',
+	  	    'login_status':'{$Think.session.user_auth.id}',
+	  	    'modifly':'{:U("Cart/modifly")}',
+	  	    'orderInfo':'{:U("Cart/orderInfo",array("act"=>"cart"))}'
 	  }
 	</script>
 </block>
@@ -33,7 +36,11 @@
            	 <div id="cart-list">
                 <div class="head">
                     <div class="opt-checked">
-                        <input type="checkbox" class="checkbox select-all" checked="checked" />
+                    	<if condition="$_SESSION['user_auth']['id']">
+                             <input type="checkbox" class="checkbox select-all" <eq name="allselect" value="true">checked="checked"</eq> />
+                          <else/>
+                             <input type="checkbox" class="checkbox select-all" checked="checked" />
+                        </if>
                         <label for="select-all">全选</label>
                     </div>
                     <div class="head-goods">商品</div>
@@ -44,29 +51,46 @@
                 </div>
                 <div class="cart-content">	
 	                  <volist name="cart_info" id="cart_info">
-	                    <div class="cart-item checked" cart-id="{$key}">
+	                  	<if condition="$_SESSION['user_auth']['id']">	
+		                  	<eq name="cart_info.sel" value="1">
+		                        <div class="cart-item checked" cart-id="{$key}">
+		                       <else/>
+		                         <div class="cart-item" cart-id="{$key}">
+		                   </eq>
+		                 <else/>
+		                     <div class="cart-item checked" cart-id="{$key}">
+		               </if>
 	                        <div class="cart-item-checked">
-	                            <input type="checkbox" name="select-name"  checked="checked" />
+	                          <if condition="$_SESSION['user_auth']['id']">	
+		                        	<eq name="cart_info.sel" value="1">
+		                                <input type="checkbox" name="select-name"  checked="checked" />
+		                              <else/>
+		                                <input type="checkbox" name="select-name" />
+		                            </eq>
+	                             <else/>
+	                                <input type="checkbox" name="select-name"  checked="checked" />
+	                           </if>
 	                        </div>
 	                        <div class="cart-goods">
 	                            <div class="goods-img">
-	                                <a href="">
+	                                <a href="{:U('Detail/index',array('id'=>$cart_info['goods_id']))}">
 	                                	 <img src="__ROOT__/{$cart_info.goods_thumb}" alt="" width="49" height="49" />
 	                                </a>
 	                            </div>
 	                            <div class="goods-name">
-	                                <a href="__APP__/goods/index/id/{$cart.goods_id}">
+	                                <a href="{:U('Detail/index',array('id'=>$cart_info['goods_id']))}">
 	                                	{$cart_info.goods_name}
 	                                </a>
+	                                <p>{$cart_info.spec_desc}</p>
 	                            </div>
 	                        </div>
 	                        <div class="goods-price" style="width:90px;">
 	                        	    {$cart_info.price}
 	                        </div>
 	                        <div class="goods-nums" >
-	                            <a href="###" class="num-btn minus"></a>
+	                            <a href="javascript:void(0)" class="num-btn minus"></a>
 	                            <input type="text" name="" class="item-nums" autocomplete="off" old-nums="{$cart_info.nums}" value="{$cart_info.nums}" />
-	                            <a href="###" class="num-btn plus"></a>
+	                            <a href="javascript:void(0)" class="num-btn plus"></a>
 	                        </div>
 	                        <div class="goods-total">
 	                        	{$cart_info['price']*$cart_info['nums']}
@@ -85,11 +109,17 @@
 	            <div class="total-price">
 	                <p>
 	                    <strong>总价：</strong>
-	                    <span>￥<b>{$Think.session.total_price}</b>元</span>
+	                    <span>￥<b>
+	                       <if condition="$_SESSION['cart']">
+	                    	    {$Think.session.total_price}
+	                          <else/>
+	                    	    {$totalprice}
+	                       </if>
+	                     </b>元</span>
 	                </p>
 	            </div>
 	            <div class="cart-btn">
-	                <a href="__CONTROL__/orderInfo" class="fn-right go-order">去结算</a>
+	                <a href="javascript:void(0)" class="fn-right go-order">去结算</a>
 	            </div>
 	        </if>
         </div>

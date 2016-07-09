@@ -91,3 +91,85 @@ ul.address-list{
 padding-left: 40px;
 font-size: 14px;
 }
+.consignee-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    cursor: pointer;
+    height: 18px;
+    line-height: 18px;
+    list-style: outside none none;
+    padding: 5px 10px;
+    text-align: center;
+    width: 120px;
+    float:left;
+}
+.addr-detail {
+    float: left;
+    height: 30px;
+    line-height: 30px;
+    margin-left:5px;
+}
+
+#consignee-list .op-btns {
+    float: right;
+    height: 30px;
+    line-height: 30px;
+    text-align: right;
+    visibility: hidden;
+}
+#consignee-list li{
+	 overflow:hidden;
+	 padding:0 15px;
+	 margin:10px 0;
+}
+#consignee-list .op-btns .ftx-05 {
+	 color:#005ea7;
+} 
+.consignee-item span,.addr-detail span{
+	color:#666666;
+}
+.item-nav{
+	  overflow:hidden;
+}
+.item-nav h2{
+	  float:left;
+}
+.item-nav a{
+	  float:right;
+	  color:#005ea7;
+	  margin-right:18px;
+}
+#consignee-list .hover_bg{
+    float:left;
+	width:728px;
+	margin-left:10px;
+}
+#consignee-list .li_hover .hover_bg{
+	background:#fff3f3;
+
+}
+.addr-default {
+    background-color: #999;
+    color: #fff;
+    display: inline-block;
+    line-height: 20px;
+    margin: 5px 10px;
+    padding: 0 3px;
+}
+.pay_ul {
+	 overflow:hidden;
+	 padding:5px 0 0 12px;
+}
+.pay_ul li{
+	width:98px;
+	height:30px;
+	float:left;
+	text-align:center;
+	line-height:30px;
+	border:1px solid #dddddd;
+	color:#666666;
+	cursor:pointer;
+}
+.pay_ul li.pay_hover{
+	border:1px solid #e4393c;
+}

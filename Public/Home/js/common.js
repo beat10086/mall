@@ -209,7 +209,7 @@ function checkAddToCart (goods_id) {
 	$.post(Thinkphp.addToCart,data,function(data) {
 	        if(data){
 	        	if(data.code>0){
-	        		$(".icon-account span").html(data.cart_itemq);
+	        		$(".icon-account span").html(data.cart_item);
 	        		alert(data.message);
 	        	}else{
 	        		alert(data.message);

@@ -15,7 +15,10 @@
 	<script>
 	  var Thinkphp={
 	  	    'updateCartNums':'<?php echo U("Cart/updateCartNums");?>',
-	  	    'delCartGoods':'<?php echo U("Cart/delCartGoods");?>'
+	  	    'delCartGoods':'<?php echo U("Cart/delCartGoods");?>',
+	  	    'login_status':'<?php echo ($_SESSION['user_auth']['id']); ?>',
+	  	    'modifly':'<?php echo U("Cart/modifly");?>',
+	  	    'orderInfo':'<?php echo U("Cart/orderInfo",array("act"=>"cart"));?>'
 	  }
 	</script>
 
@@ -33,10 +36,15 @@
         </div>
         <div id="shortcut-right" class="fn-right">
             <ul>
-                <!--<li>您好，！<a href="__WEB__/user"></a></li>
-                <li><a href="__WEB__/auth/logout">[注销]</a></li>-->
-                <li>您好，欢迎来到后盾商城！<a href="<?php echo U('Auth/login');?>">[登录]</a></li>
-                <li><a href="<?php echo U('Auth/register');?>">[免费注册]</a></li>
+            	<?php if($_SESSION['user_auth']['id']): ?><li>您好，！
+	                	<a href="__WEB__/user">
+	                    <?php echo $_SESSION['user_auth']['username'];?>
+	                   </a>
+	                 </li>
+	                <li><a href="<?php echo U('Auth/layout');?>">[注销]</a></li>
+                <?php else: ?>
+	                <li>您好，欢迎来到后盾商城！<a href="<?php echo U('Auth/login');?>">[登录]</a></li>
+	                <li><a href="<?php echo U('Auth/register');?>">[免费注册]</a></li><?php endif; ?>
                 <li><a href="">我的订单</a></li>
                 <!--  li-activate 鼠标放上去加上此class -->
                 <li class="icon-li li-dropdown">
@@ -173,7 +181,9 @@
            <?php if($cart_info): ?><div id="cart-list">
                 <div class="head">
                     <div class="opt-checked">
-                        <input type="checkbox" class="checkbox select-all" checked="checked" />
+                    	<?php if($_SESSION['user_auth']['id']): ?><input type="checkbox" class="checkbox select-all" <?php if(($allselect) == "true"): ?>checked="checked"<?php endif; ?> />
+                          <?php else: ?>
+                             <input type="checkbox" class="checkbox select-all" checked="checked" /><?php endif; ?>
                         <label for="select-all">全选</label>
                     </div>
                     <div class="head-goods">商品</div>
@@ -183,29 +193,38 @@
                     <div class="opt">操作</div>
                 </div>
                 <div class="cart-content">	
-	                  <?php if(is_array($cart_info)): $i = 0; $__LIST__ = $cart_info;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$cart_info): $mod = ($i % 2 );++$i;?><div class="cart-item checked" cart-id="<?php echo ($key); ?>">
+	                  <?php if(is_array($cart_info)): $i = 0; $__LIST__ = $cart_info;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$cart_info): $mod = ($i % 2 );++$i; if($_SESSION['user_auth']['id']): if(($cart_info["sel"]) == "1"): ?><div class="cart-item checked" cart-id="<?php echo ($key); ?>">
+		                       <?php else: ?>
+		                         <div class="cart-item" cart-id="<?php echo ($key); ?>"><?php endif; ?>
+		                 <?php else: ?>
+		                     <div class="cart-item checked" cart-id="<?php echo ($key); ?>"><?php endif; ?>
 	                        <div class="cart-item-checked">
-	                            <input type="checkbox" name="select-name"  checked="checked" />
+	                          <?php if($_SESSION['user_auth']['id']): if(($cart_info["sel"]) == "1"): ?><input type="checkbox" name="select-name"  checked="checked" />
+		                              <?php else: ?>
+		                                <input type="checkbox" name="select-name" /><?php endif; ?>
+	                             <?php else: ?>
+	                                <input type="checkbox" name="select-name"  checked="checked" /><?php endif; ?>
 	                        </div>
 	                        <div class="cart-goods">
 	                            <div class="goods-img">
-	                                <a href="">
+	                                <a href="<?php echo U('Detail/index',array('id'=>$cart_info['goods_id']));?>">
 	                                	 <img src="/mall/<?php echo ($cart_info["goods_thumb"]); ?>" alt="" width="49" height="49" />
 	                                </a>
 	                            </div>
 	                            <div class="goods-name">
-	                                <a href="/mall/goods/index/id/<?php echo ($cart["goods_id"]); ?>">
+	                                <a href="<?php echo U('Detail/index',array('id'=>$cart_info['goods_id']));?>">
 	                                	<?php echo ($cart_info["goods_name"]); ?>
 	                                </a>
+	                                <p><?php echo ($cart_info["spec_desc"]); ?></p>
 	                            </div>
 	                        </div>
 	                        <div class="goods-price" style="width:90px;">
 	                        	    <?php echo ($cart_info["price"]); ?>
 	                        </div>
 	                        <div class="goods-nums" >
-	                            <a href="###" class="num-btn minus"></a>
+	                            <a href="javascript:void(0)" class="num-btn minus"></a>
 	                            <input type="text" name="" class="item-nums" autocomplete="off" old-nums="<?php echo ($cart_info["nums"]); ?>" value="<?php echo ($cart_info["nums"]); ?>" />
-	                            <a href="###" class="num-btn plus"></a>
+	                            <a href="javascript:void(0)" class="num-btn plus"></a>
 	                        </div>
 	                        <div class="goods-total">
 	                        	<?php echo ($cart_info['price']*$cart_info['nums']); ?>
@@ -221,11 +240,15 @@
             <?php if($cart_info): ?><div class="total-price">
 	                <p>
 	                    <strong>总价：</strong>
-	                    <span>￥<b><?php echo (session('total_price')); ?></b>元</span>
+	                    <span>￥<b>
+	                       <?php if($_SESSION['cart']): echo (session('total_price')); ?>
+	                          <?php else: ?>
+	                    	    <?php echo ($totalprice); endif; ?>
+	                     </b>元</span>
 	                </p>
 	            </div>
 	            <div class="cart-btn">
-	                <a href="__CONTROL__/orderInfo" class="fn-right go-order">去结算</a>
+	                <a href="javascript:void(0)" class="fn-right go-order">去结算</a>
 	            </div><?php endif; ?>
         </div>
 

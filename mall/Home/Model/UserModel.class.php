@@ -35,6 +35,7 @@ class UserModel extends Model{
             'repassword'=>$repasswd,
             'email'=>$email,
             'verify'=>$code,
+            'ban'   =>1
         );
         if ($this->create($data)) {
             $uid = $this->add();
@@ -73,7 +74,13 @@ class UserModel extends Model{
                  return $this->getError();
              }
          }
-         $user = $this->field('user_id,username,passwd,face')->where($map)->find();
+         $user = $this->field('user_id,username,passwd,face,ban,address_id')->where($map)->find();
+         if($user){
+             if($user['ban']==0){
+                 return -10;
+                 exit();
+             }
+         }
          //登陆成功
          if($user['passwd']==md5($passwd)){
              //登录验证后写入登录信息
@@ -88,21 +95,28 @@ class UserModel extends Model{
                  'id'=>$user['user_id'],
                  'username'=>$user['username'],
                  'face'=>json_decode($user['face']),
+                 'address_id'=>$user['address_id'],
                  'last_login'=>NOW_TIME,
              );
              //写入到session
              session('user_auth', $auth);
              //将用户名加密写入cookie
-             if ($autologin == '1') {
+          if ($autologin == '1') {
                  cookie('auto', encryption($user['username'].'|'.get_client_ip()), 3600 * 24 * 30);
              }
-             return $user['user_id'];
-            }else{
+             return  $user['user_id'];
+       }else{
                 
              return -9;		//密码不正确
-        }
-        
-        
+        }     
+    }
+    public function saveUserInfo ($nickname,$realname,$gender) {
+        $data=array(
+              'nickname'=>$nickname,
+              'realname'=>$realname,
+              'sex'  =>$gender         
+        );
+      return   $uid=$this->where('user_id='.$_SESSION['user_auth']['id'])->save($data)?1:0;      
     }
        
 }

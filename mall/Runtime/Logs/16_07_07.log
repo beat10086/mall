@@ -1,0 +1,588 @@
+[ 2016-07-07T11:04:18+08:00 ] 127.0.0.1 /mall/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-07T11:04:25+08:00 ] 127.0.0.1 /mall/admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-07T11:04:25+08:00 ] 127.0.0.1 /mall/Admin/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-07T11:04:25+08:00 ] 127.0.0.1 /mall/Admin/Login/verity.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-07T11:04:30+08:00 ] 127.0.0.1 /mall/Admin/Login/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: DESCRIBE ts_admin [ RunTime:0.007000s ]
+SQL: SELECT `user_id`,`username`,`passwd` FROM `ts_admin` WHERE ( `username` = 'admin' ) AND ( `passwd` = 'e10adc3949ba59abbe56e057f20f883e' ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: UPDATE `ts_admin` SET `last_login`=1467860670,`last_ip`=2130706433 WHERE ( `user_id` = 1 ) [ RunTime:0.001000s ]
+
+[ 2016-07-07T11:04:30+08:00 ] 127.0.0.1 /mall/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-07T11:04:30+08:00 ] 127.0.0.1 /mall/Admin/Index/main.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-07T11:04:30+08:00 ] 127.0.0.1 /mall/PUBLIC/Admin/js/plugins/layer/extend/layer.ext.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-07-07T11:04:33+08:00 ] 127.0.0.1 /mall/Admin/Goods/index.html?v=4.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: DESCRIBE ts_category [ RunTime:0.006000s ]
+SQL: select category_id,category_name,pid,is_nav,status,CONCAT(path,'-',category_id) as depath,path,goods_type_id from ts_category where status=1 order by depath ASC [ RunTime:0.002000s ]
+SQL: DESCRIBE ts_brand [ RunTime:0.005000s ]
+SQL: SELECT * FROM `ts_brand` ORDER BY sort DESC  [ RunTime:0.001000s ]
+SQL: DESCRIBE ts_goods [ RunTime:0.006000s ]
+SQL: SELECT `goods_id`,`goods_name`,`goods_price`,`goods_sn`,`is_on_sale`,`is_hot`,`is_well`,`is_first`,`sku` FROM `ts_goods` ORDER BY created DESC  [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: category_id D:\wamp\www\mall\mall\Runtime\Cache\Admin\3ea905b335e38bad065eef00e80c359f.php 第 53 行.
+NOTIC: [8] Undefined variable: category_id D:\wamp\www\mall\mall\Runtime\Cache\Admin\3ea905b335e38bad065eef00e80c359f.php 第 53 行.
+NOTIC: [8] Undefined variable: category_id D:\wamp\www\mall\mall\Runtime\Cache\Admin\3ea905b335e38bad065eef00e80c359f.php 第 53 行.
+NOTIC: [8] Undefined variable: category_id D:\wamp\www\mall\mall\Runtime\Cache\Admin\3ea905b335e38bad065eef00e80c359f.php 第 53 行.
+NOTIC: [8] Undefined variable: category_id D:\wamp\www\mall\mall\Runtime\Cache\Admin\3ea905b335e38bad065eef00e80c359f.php 第 53 行.
+NOTIC: [8] Undefined variable: category_id D:\wamp\www\mall\mall\Runtime\Cache\Admin\3ea905b335e38bad065eef00e80c359f.php 第 53 行.
+NOTIC: [8] Undefined variable: category_id D:\wamp\www\mall\mall\Runtime\Cache\Admin\3ea905b335e38bad065eef00e80c359f.php 第 53 行.
+NOTIC: [8] Undefined variable: category_id D:\wamp\www\mall\mall\Runtime\Cache\Admin\3ea905b335e38bad065eef00e80c359f.php 第 53 行.
+NOTIC: [8] Undefined variable: category_id D:\wamp\www\mall\mall\Runtime\Cache\Admin\3ea905b335e38bad065eef00e80c359f.php 第 53 行.
+NOTIC: [8] Undefined variable: category_id D:\wamp\www\mall\mall\Runtime\Cache\Admin\3ea905b335e38bad065eef00e80c359f.php 第 53 行.
+NOTIC: [8] Undefined variable: category_id D:\wamp\www\mall\mall\Runtime\Cache\Admin\3ea905b335e38bad065eef00e80c359f.php 第 53 行.
+NOTIC: [8] Undefined variable: category_id D:\wamp\www\mall\mall\Runtime\Cache\Admin\3ea905b335e38bad065eef00e80c359f.php 第 53 行.
+NOTIC: [8] Undefined variable: category_id D:\wamp\www\mall\mall\Runtime\Cache\Admin\3ea905b335e38bad065eef00e80c359f.php 第 53 行.
+NOTIC: [8] Undefined variable: category_id D:\wamp\www\mall\mall\Runtime\Cache\Admin\3ea905b335e38bad065eef00e80c359f.php 第 53 行.
+NOTIC: [8] Undefined variable: category_id D:\wamp\www\mall\mall\Runtime\Cache\Admin\3ea905b335e38bad065eef00e80c359f.php 第 53 行.
+NOTIC: [8] Undefined variable: category_id D:\wamp\www\mall\mall\Runtime\Cache\Admin\3ea905b335e38bad065eef00e80c359f.php 第 53 行.
+NOTIC: [8] Undefined variable: category_id D:\wamp\www\mall\mall\Runtime\Cache\Admin\3ea905b335e38bad065eef00e80c359f.php 第 53 行.
+NOTIC: [8] Undefined variable: category_id D:\wamp\www\mall\mall\Runtime\Cache\Admin\3ea905b335e38bad065eef00e80c359f.php 第 53 行.
+NOTIC: [8] Undefined variable: category_id D:\wamp\www\mall\mall\Runtime\Cache\Admin\3ea905b335e38bad065eef00e80c359f.php 第 53 行.
+NOTIC: [8] Undefined variable: category_id D:\wamp\www\mall\mall\Runtime\Cache\Admin\3ea905b335e38bad065eef00e80c359f.php 第 53 行.
+NOTIC: [8] Undefined variable: category_id D:\wamp\www\mall\mall\Runtime\Cache\Admin\3ea905b335e38bad065eef00e80c359f.php 第 53 行.
+NOTIC: [8] Undefined variable: category_id D:\wamp\www\mall\mall\Runtime\Cache\Admin\3ea905b335e38bad065eef00e80c359f.php 第 53 行.
+NOTIC: [8] Undefined variable: category_id D:\wamp\www\mall\mall\Runtime\Cache\Admin\3ea905b335e38bad065eef00e80c359f.php 第 53 行.
+NOTIC: [8] Undefined variable: category_id D:\wamp\www\mall\mall\Runtime\Cache\Admin\3ea905b335e38bad065eef00e80c359f.php 第 53 行.
+NOTIC: [8] Undefined variable: category_id D:\wamp\www\mall\mall\Runtime\Cache\Admin\3ea905b335e38bad065eef00e80c359f.php 第 53 行.
+NOTIC: [8] Undefined variable: category_id D:\wamp\www\mall\mall\Runtime\Cache\Admin\3ea905b335e38bad065eef00e80c359f.php 第 53 行.
+NOTIC: [8] Undefined variable: category_id D:\wamp\www\mall\mall\Runtime\Cache\Admin\3ea905b335e38bad065eef00e80c359f.php 第 53 行.
+NOTIC: [8] Undefined variable: category_id D:\wamp\www\mall\mall\Runtime\Cache\Admin\3ea905b335e38bad065eef00e80c359f.php 第 53 行.
+NOTIC: [8] Undefined variable: category_id D:\wamp\www\mall\mall\Runtime\Cache\Admin\3ea905b335e38bad065eef00e80c359f.php 第 53 行.
+NOTIC: [8] Undefined variable: category_id D:\wamp\www\mall\mall\Runtime\Cache\Admin\3ea905b335e38bad065eef00e80c359f.php 第 53 行.
+NOTIC: [8] Undefined variable: show_brand D:\wamp\www\mall\mall\Runtime\Cache\Admin\3ea905b335e38bad065eef00e80c359f.php 第 64 行.
+NOTIC: [8] Undefined variable: show_brand D:\wamp\www\mall\mall\Runtime\Cache\Admin\3ea905b335e38bad065eef00e80c359f.php 第 64 行.
+NOTIC: [8] Undefined variable: show_brand D:\wamp\www\mall\mall\Runtime\Cache\Admin\3ea905b335e38bad065eef00e80c359f.php 第 64 行.
+NOTIC: [8] Undefined variable: show_brand D:\wamp\www\mall\mall\Runtime\Cache\Admin\3ea905b335e38bad065eef00e80c359f.php 第 64 行.
+NOTIC: [8] Undefined variable: show_brand D:\wamp\www\mall\mall\Runtime\Cache\Admin\3ea905b335e38bad065eef00e80c359f.php 第 64 行.
+NOTIC: [8] Undefined variable: show_brand D:\wamp\www\mall\mall\Runtime\Cache\Admin\3ea905b335e38bad065eef00e80c359f.php 第 64 行.
+NOTIC: [8] Undefined variable: show_brand D:\wamp\www\mall\mall\Runtime\Cache\Admin\3ea905b335e38bad065eef00e80c359f.php 第 64 行.
+NOTIC: [8] Undefined variable: promote_type D:\wamp\www\mall\mall\Runtime\Cache\Admin\3ea905b335e38bad065eef00e80c359f.php 第 70 行.
+NOTIC: [8] Undefined variable: promote_type D:\wamp\www\mall\mall\Runtime\Cache\Admin\3ea905b335e38bad065eef00e80c359f.php 第 71 行.
+NOTIC: [8] Undefined variable: promote_type D:\wamp\www\mall\mall\Runtime\Cache\Admin\3ea905b335e38bad065eef00e80c359f.php 第 72 行.
+NOTIC: [8] Undefined variable: is_on_sale D:\wamp\www\mall\mall\Runtime\Cache\Admin\3ea905b335e38bad065eef00e80c359f.php 第 78 行.
+NOTIC: [8] Undefined variable: is_on_sale D:\wamp\www\mall\mall\Runtime\Cache\Admin\3ea905b335e38bad065eef00e80c359f.php 第 79 行.
+NOTIC: [8] Undefined variable: keywords D:\wamp\www\mall\mall\Runtime\Cache\Admin\3ea905b335e38bad065eef00e80c359f.php 第 85 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-07T11:04:34+08:00 ] 127.0.0.1 /mall/Detail/index/id/96
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-07T11:04:48+08:00 ] 127.0.0.1 /mall/Admin/Category/index.html?v=4.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: DESCRIBE ts_goods_type [ RunTime:0.005000s ]
+SQL: DESCRIBE ts_category [ RunTime:0.004000s ]
+NOTIC: [2] Missing argument 1 for Admin\Model\CategoryModel::showCategory(), called in D:\wamp\www\mall\mall\Admin\Controller\CategoryController.class.php on line 15 and defined D:\wamp\www\mall\mall\Admin\Model\CategoryModel.class.php 第 37 行.
+NOTIC: [8] Undefined variable: where D:\wamp\www\mall\mall\Admin\Model\CategoryModel.class.php 第 38 行.
+SQL: select category_id,category_name,pid,is_nav,status,CONCAT(path,'-',category_id) as depath,path,goods_type_id from ts_category order by depath ASC [ RunTime:0.001000s ]
+SQL: SELECT `goods_type_id`,`type_name` FROM `ts_goods_type`  [ RunTime:0.001000s ]
+NOTIC: [2] Missing argument 1 for Admin\Model\CategoryModel::showCategory(), called in D:\wamp\www\mall\mall\Admin\Controller\CategoryController.class.php on line 18 and defined D:\wamp\www\mall\mall\Admin\Model\CategoryModel.class.php 第 37 行.
+NOTIC: [8] Undefined variable: where D:\wamp\www\mall\mall\Admin\Model\CategoryModel.class.php 第 38 行.
+SQL: select category_id,category_name,pid,is_nav,status,CONCAT(path,'-',category_id) as depath,path,goods_type_id from ts_category order by depath ASC [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: cid D:\wamp\www\mall\mall\Runtime\Cache\Admin\2c26c34f23ab388c6123fa857a771ef6.php 第 47 行.
+NOTIC: [8] Undefined index: cid D:\wamp\www\mall\mall\Runtime\Cache\Admin\2c26c34f23ab388c6123fa857a771ef6.php 第 47 行.
+NOTIC: [8] Undefined index: cid D:\wamp\www\mall\mall\Runtime\Cache\Admin\2c26c34f23ab388c6123fa857a771ef6.php 第 47 行.
+NOTIC: [8] Undefined index: cid D:\wamp\www\mall\mall\Runtime\Cache\Admin\2c26c34f23ab388c6123fa857a771ef6.php 第 47 行.
+NOTIC: [8] Undefined index: cid D:\wamp\www\mall\mall\Runtime\Cache\Admin\2c26c34f23ab388c6123fa857a771ef6.php 第 47 行.
+NOTIC: [8] Undefined index: cid D:\wamp\www\mall\mall\Runtime\Cache\Admin\2c26c34f23ab388c6123fa857a771ef6.php 第 47 行.
+NOTIC: [8] Undefined index: cid D:\wamp\www\mall\mall\Runtime\Cache\Admin\2c26c34f23ab388c6123fa857a771ef6.php 第 47 行.
+NOTIC: [8] Undefined index: cid D:\wamp\www\mall\mall\Runtime\Cache\Admin\2c26c34f23ab388c6123fa857a771ef6.php 第 47 行.
+NOTIC: [8] Undefined index: cid D:\wamp\www\mall\mall\Runtime\Cache\Admin\2c26c34f23ab388c6123fa857a771ef6.php 第 47 行.
+NOTIC: [8] Undefined index: cid D:\wamp\www\mall\mall\Runtime\Cache\Admin\2c26c34f23ab388c6123fa857a771ef6.php 第 47 行.
+NOTIC: [8] Undefined index: cid D:\wamp\www\mall\mall\Runtime\Cache\Admin\2c26c34f23ab388c6123fa857a771ef6.php 第 47 行.
+NOTIC: [8] Undefined index: cid D:\wamp\www\mall\mall\Runtime\Cache\Admin\2c26c34f23ab388c6123fa857a771ef6.php 第 47 行.
+NOTIC: [8] Undefined index: cid D:\wamp\www\mall\mall\Runtime\Cache\Admin\2c26c34f23ab388c6123fa857a771ef6.php 第 47 行.
+NOTIC: [8] Undefined index: cid D:\wamp\www\mall\mall\Runtime\Cache\Admin\2c26c34f23ab388c6123fa857a771ef6.php 第 47 行.
+NOTIC: [8] Undefined index: cid D:\wamp\www\mall\mall\Runtime\Cache\Admin\2c26c34f23ab388c6123fa857a771ef6.php 第 47 行.
+NOTIC: [8] Undefined index: cid D:\wamp\www\mall\mall\Runtime\Cache\Admin\2c26c34f23ab388c6123fa857a771ef6.php 第 47 行.
+NOTIC: [8] Undefined index: cid D:\wamp\www\mall\mall\Runtime\Cache\Admin\2c26c34f23ab388c6123fa857a771ef6.php 第 47 行.
+NOTIC: [8] Undefined index: cid D:\wamp\www\mall\mall\Runtime\Cache\Admin\2c26c34f23ab388c6123fa857a771ef6.php 第 47 行.
+NOTIC: [8] Undefined index: cid D:\wamp\www\mall\mall\Runtime\Cache\Admin\2c26c34f23ab388c6123fa857a771ef6.php 第 47 行.
+NOTIC: [8] Undefined index: cid D:\wamp\www\mall\mall\Runtime\Cache\Admin\2c26c34f23ab388c6123fa857a771ef6.php 第 47 行.
+NOTIC: [8] Undefined index: cid D:\wamp\www\mall\mall\Runtime\Cache\Admin\2c26c34f23ab388c6123fa857a771ef6.php 第 47 行.
+NOTIC: [8] Undefined index: cid D:\wamp\www\mall\mall\Runtime\Cache\Admin\2c26c34f23ab388c6123fa857a771ef6.php 第 47 行.
+NOTIC: [8] Undefined index: cid D:\wamp\www\mall\mall\Runtime\Cache\Admin\2c26c34f23ab388c6123fa857a771ef6.php 第 47 行.
+NOTIC: [8] Undefined index: cid D:\wamp\www\mall\mall\Runtime\Cache\Admin\2c26c34f23ab388c6123fa857a771ef6.php 第 47 行.
+NOTIC: [8] Undefined index: cid D:\wamp\www\mall\mall\Runtime\Cache\Admin\2c26c34f23ab388c6123fa857a771ef6.php 第 47 行.
+NOTIC: [8] Undefined index: cid D:\wamp\www\mall\mall\Runtime\Cache\Admin\2c26c34f23ab388c6123fa857a771ef6.php 第 47 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-07T11:04:49+08:00 ] 127.0.0.1 /mall/Admin/GoodType/index.html?v=4.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: DESCRIBE ts_goods_type [ RunTime:0.004000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ts_goods_type` LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant PAGE_SIZE - assumed 'PAGE_SIZE' D:\wamp\www\mall\mall\Admin\Controller\GoodTypeController.class.php 第 10 行.
+NOTIC: [8] Use of undefined constant PAGE_SIZE - assumed 'PAGE_SIZE' D:\wamp\www\mall\mall\Admin\Controller\GoodTypeController.class.php 第 13 行.
+NOTIC: [8] Use of undefined constant PAGE_SIZE - assumed 'PAGE_SIZE' D:\wamp\www\mall\mall\Admin\Controller\GoodTypeController.class.php 第 17 行.
+SQL: SELECT `goods_type_id`,`type_name` FROM `ts_goods_type` LIMIT 0,10   [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-07T11:04:50+08:00 ] 127.0.0.1 /mall/Admin/Brand/index.html?v=4.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: DESCRIBE ts_brand [ RunTime:0.004000s ]
+SQL: SELECT * FROM `ts_brand` ORDER BY sort DESC  [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-07T11:04:54+08:00 ] 127.0.0.1 /mall/Admin/Admin/showlog.html?v=4.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: DESCRIBE ts_admin_log [ RunTime:0.005000s ]
+SQL: DESCRIBE ts_admin [ RunTime:0.003000s ]
+SQL: SELECT AdminLog.created_time AS created_time,AdminLog.con AS con,AdminLog.user_id AS user_id,AdminLog.login_ip AS login_ip,Admin.username AS admin_username FROM ts_admin_log AdminLog  JOIN ts_admin Admin ON AdminLog.user_id=Admin.user_id ORDER BY AdminLog.created_time desc  [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-07T11:04:56+08:00 ] 127.0.0.1 /mall/Admin/User/index.html?v=4.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: DESCRIBE ts_user [ RunTime:0.003000s ]
+NOTIC: [8] Undefined variable: username D:\wamp\www\mall\mall\Admin\Controller\UserController.class.php 第 19 行.
+NOTIC: [8] Undefined variable: created_start D:\wamp\www\mall\mall\Admin\Controller\UserController.class.php 第 19 行.
+NOTIC: [8] Undefined variable: created_end D:\wamp\www\mall\mall\Admin\Controller\UserController.class.php 第 19 行.
+NOTIC: [8] Undefined variable: map D:\wamp\www\mall\mall\Admin\Model\UserModel.class.php 第 35 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `ts_user` LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant PAGE_SIZE - assumed 'PAGE_SIZE' D:\wamp\www\mall\mall\Admin\Controller\UserController.class.php 第 20 行.
+NOTIC: [8] Use of undefined constant PAGE_SIZE - assumed 'PAGE_SIZE' D:\wamp\www\mall\mall\Admin\Controller\UserController.class.php 第 23 行.
+NOTIC: [8] Undefined variable: username D:\wamp\www\mall\mall\Admin\Controller\UserController.class.php 第 27 行.
+NOTIC: [8] Undefined variable: created_start D:\wamp\www\mall\mall\Admin\Controller\UserController.class.php 第 27 行.
+NOTIC: [8] Undefined variable: created_end D:\wamp\www\mall\mall\Admin\Controller\UserController.class.php 第 27 行.
+NOTIC: [8] Use of undefined constant PAGE_SIZE - assumed 'PAGE_SIZE' D:\wamp\www\mall\mall\Admin\Controller\UserController.class.php 第 27 行.
+NOTIC: [8] Undefined variable: map D:\wamp\www\mall\mall\Admin\Model\UserModel.class.php 第 15 行.
+SQL: SELECT * FROM `ts_user` ORDER BY last_login desc,created desc LIMIT 0,10   [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: value D:\wamp\www\mall\mall\Admin\Model\UserModel.class.php 第 23 行.
+NOTIC: [8] Undefined variable: value D:\wamp\www\mall\mall\Admin\Model\UserModel.class.php 第 23 行.
+NOTIC: [8] Undefined variable: value D:\wamp\www\mall\mall\Admin\Model\UserModel.class.php 第 23 行.
+NOTIC: [8] Undefined variable: value D:\wamp\www\mall\mall\Admin\Model\UserModel.class.php 第 23 行.
+NOTIC: [8] Undefined variable: value D:\wamp\www\mall\mall\Admin\Model\UserModel.class.php 第 23 行.
+NOTIC: [8] Undefined variable: value D:\wamp\www\mall\mall\Admin\Model\UserModel.class.php 第 23 行.
+NOTIC: [8] Undefined variable: value D:\wamp\www\mall\mall\Admin\Model\UserModel.class.php 第 23 行.
+NOTIC: [8] Undefined variable: value D:\wamp\www\mall\mall\Admin\Model\UserModel.class.php 第 23 行.
+NOTIC: [8] Undefined variable: value D:\wamp\www\mall\mall\Admin\Model\UserModel.class.php 第 23 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: username D:\wamp\www\mall\mall\Runtime\Cache\Admin\fa6e8a7730a1e51256a4ed9fc01c4285.php 第 53 行.
+NOTIC: [8] Undefined variable: created_start D:\wamp\www\mall\mall\Runtime\Cache\Admin\fa6e8a7730a1e51256a4ed9fc01c4285.php 第 60 行.
+NOTIC: [8] Undefined variable: created_start D:\wamp\www\mall\mall\Runtime\Cache\Admin\fa6e8a7730a1e51256a4ed9fc01c4285.php 第 63 行.
+NOTIC: [8] Undefined variable: created_end D:\wamp\www\mall\mall\Runtime\Cache\Admin\fa6e8a7730a1e51256a4ed9fc01c4285.php 第 64 行.
+NOTIC: [8] Undefined variable: good D:\wamp\www\mall\mall\Runtime\Cache\Admin\fa6e8a7730a1e51256a4ed9fc01c4285.php 第 103 行.
+NOTIC: [8] Undefined variable: good D:\wamp\www\mall\mall\Runtime\Cache\Admin\fa6e8a7730a1e51256a4ed9fc01c4285.php 第 103 行.
+NOTIC: [8] Undefined variable: good D:\wamp\www\mall\mall\Runtime\Cache\Admin\fa6e8a7730a1e51256a4ed9fc01c4285.php 第 103 行.
+NOTIC: [8] Undefined variable: good D:\wamp\www\mall\mall\Runtime\Cache\Admin\fa6e8a7730a1e51256a4ed9fc01c4285.php 第 103 行.
+NOTIC: [8] Undefined variable: good D:\wamp\www\mall\mall\Runtime\Cache\Admin\fa6e8a7730a1e51256a4ed9fc01c4285.php 第 103 行.
+NOTIC: [8] Undefined variable: good D:\wamp\www\mall\mall\Runtime\Cache\Admin\fa6e8a7730a1e51256a4ed9fc01c4285.php 第 103 行.
+NOTIC: [8] Undefined variable: good D:\wamp\www\mall\mall\Runtime\Cache\Admin\fa6e8a7730a1e51256a4ed9fc01c4285.php 第 103 行.
+NOTIC: [8] Undefined variable: good D:\wamp\www\mall\mall\Runtime\Cache\Admin\fa6e8a7730a1e51256a4ed9fc01c4285.php 第 103 行.
+NOTIC: [8] Undefined variable: good D:\wamp\www\mall\mall\Runtime\Cache\Admin\fa6e8a7730a1e51256a4ed9fc01c4285.php 第 103 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-07T11:06:15+08:00 ] 127.0.0.1 /mall/Cart/getCart.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: DESCRIBE ts_cart [ RunTime:0.004000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ts_cart` WHERE ( user_id=6 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT `goods_id`,`user_id`,`spec`,`nums`,`price`,`goods_name`,`goods_thumb`,`spec_desc`,`goods_attr` FROM `ts_cart` WHERE ( user_id=6 )  [ RunTime:0.001000s ]
+
+[ 2016-07-07T11:06:16+08:00 ] 127.0.0.1 /mall/Detail/index/id/__WEB__/user
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-07T11:15:19+08:00 ] 127.0.0.1 /mall/Detail/index/id/96
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-07T11:15:20+08:00 ] 127.0.0.1 /mall/Auth/account.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 非法操作:account
+
+[ 2016-07-07T11:17:09+08:00 ] 127.0.0.1 /mall/Auth/account.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 模板不存在:./mall/Home/View/Default/Auth/account.html
+
+[ 2016-07-07T11:17:31+08:00 ] 127.0.0.1 /mall/Auth/account.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-07T11:18:17+08:00 ] 127.0.0.1 /mall/Auth/account.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-07T11:18:23+08:00 ] 127.0.0.1 /mall/Auth/account.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-07T11:20:04+08:00 ] 127.0.0.1 /mall/Auth/account.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-07T11:20:22+08:00 ] 127.0.0.1 /mall/Auth/account.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-07T11:21:25+08:00 ] 127.0.0.1 /mall/Auth/account.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-07T11:22:55+08:00 ] 127.0.0.1 /mall/Auth/account.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-07T11:24:35+08:00 ] 127.0.0.1 /mall/Auth/account.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-07T11:27:12+08:00 ] 127.0.0.1 /mall/Auth/account.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-07T11:27:33+08:00 ] 127.0.0.1 /mall/Auth/__CONTROL__/account
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 非法操作:__CONTROL__
+
+[ 2016-07-07T11:27:37+08:00 ] 127.0.0.1 /mall/Auth/account.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-07T11:28:12+08:00 ] 127.0.0.1 /mall/Auth/account.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-07T11:28:13+08:00 ] 127.0.0.1 /mall/Auth/account.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-07T11:28:15+08:00 ] 127.0.0.1 /mall/Auth/account.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-07T11:33:34+08:00 ] 127.0.0.1 /mall/Auth/account.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-07T11:33:36+08:00 ] 127.0.0.1 /mall/Auth/account.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-07T11:33:55+08:00 ] 127.0.0.1 /mall/Auth/account.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-07T11:37:00+08:00 ] 127.0.0.1 /mall/Auth/account.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-07T11:37:09+08:00 ] 127.0.0.1 /mall/Auth/account.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-07T11:37:51+08:00 ] 127.0.0.1 /mall/Auth/account.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-07T11:38:49+08:00 ] 127.0.0.1 /mall/Auth/account.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-07T11:39:54+08:00 ] 127.0.0.1 /mall/Auth/account.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-07T11:40:00+08:00 ] 127.0.0.1 /mall/Auth/account.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-07T11:40:33+08:00 ] 127.0.0.1 /mall/Auth/account.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-07T11:40:41+08:00 ] 127.0.0.1 /mall/Auth/layout.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-07T11:40:41+08:00 ] 127.0.0.1 /mall/Auth/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-07T11:40:48+08:00 ] 127.0.0.1 /mall/Home/Auth/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: DESCRIBE ts_cart [ RunTime:0.003000s ]
+NOTIC: [8] Undefined index: user_auth D:\wamp\www\mall\mall\Home\Controller\CommonController.class.php 第 12 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `ts_cart` WHERE ( user_id= ) LIMIT 1   [ RunTime:0.000000s ]
+ERR: 1064:Erreur de syntaxe près de ') LIMIT 1' à la ligne 1
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM `ts_cart` WHERE ( user_id= ) LIMIT 1  
+SQL: DESCRIBE ts_user [ RunTime:0.003000s ]
+SQL: SELECT `user_id`,`username`,`passwd`,`face`,`ban`,`address_id` FROM `ts_user` WHERE ( `username` = 'user3' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: UPDATE `ts_user` SET `last_login`=1467862848,`last_ip`=2130706433 WHERE ( `user_id` = 8 ) [ RunTime:0.000000s ]
+
+[ 2016-07-07T11:40:48+08:00 ] 127.0.0.1 /mall/Auth/account.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-07T11:45:19+08:00 ] 127.0.0.1 /mall/Auth/account.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-07T11:47:33+08:00 ] 127.0.0.1 /mall/Auth/account.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-07T11:48:05+08:00 ] 127.0.0.1 /mall/Auth/account.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-07T11:48:51+08:00 ] 127.0.0.1 /mall/Auth/account.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-07T11:49:51+08:00 ] 127.0.0.1 /mall/Auth/account.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-07T11:50:29+08:00 ] 127.0.0.1 /mall/Auth/account.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-07T11:52:04+08:00 ] 127.0.0.1 /mall/Auth/account.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-07T11:52:48+08:00 ] 127.0.0.1 /mall/Auth/account.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-07T11:53:12+08:00 ] 127.0.0.1 /mall/Auth/account.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-07T11:53:14+08:00 ] 127.0.0.1 /mall/Auth/account.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-07T11:53:19+08:00 ] 127.0.0.1 /mall/Auth/account.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+

@@ -1,0 +1,43 @@
+<extend name="Base/common"/>
+<block name="main">
+    <div  class="wrapper wrapper-content animated fadeInRight">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="ibox float-e-margins">
+                    <div class="ibox-title">
+                        <ol class="breadcrumb">
+                              <li>数据库管理</li>
+                              <li class="active">数据表优化</li>
+                       </ol>
+                    </div>
+                    <div class="ibox-content">
+                    	 <table class="table table-condensed table-striped table-bordered table-hover">
+                            <thead>
+                                <tr>
+                                    <th>数据库</th>
+                                    <th>数据表类型</th>
+                                    <th>记录数</th>
+                                    <th>数据</th>
+                                    <th>碎片</th>
+                                    <th>字符集</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                            	 <volist name="list" id="list_db">
+	                            	  <tr>
+	                            	  	 <td>{$list_db.table}</td>
+	                                     <td>{$list_db.type}</td>
+	                                     <td>{$list_db.rec_num}</td>
+	                                     <td>{$list_db.rec_size}</td>
+	                                     <td>{$list_db.rec_chip}</td>
+	                                     <td>{$list_db.charset}</td>
+	                            	  </tr>
+                            	 </volist>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</block>

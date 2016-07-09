@@ -41,7 +41,7 @@
         <div id="shortcut-right" class="fn-right">
             <ul>
             	<?php if($_SESSION['user_auth']['id']): ?><li>您好，！
-	                	<a href="__WEB__/user">
+	                	<a href="<?php echo U('Auth/account');?>">
 	                    <?php echo $_SESSION['user_auth']['username'];?>
 	                   </a>
 	                 </li>

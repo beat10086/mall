@@ -1,0 +1,22 @@
+<extend name="Base/common"/>
+<block name="main">
+    <div  class="wrapper wrapper-content animated fadeInRight">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="ibox float-e-margins">
+                    <div class="ibox-title">
+                        <ol class="breadcrumb">
+                              <li>数据库管理</li>
+                              <li class="active">数据表备份</li>
+                       </ol>
+                    </div>
+                    <div class="ibox-content">
+                    	<form method="post" action="{:U('Db/export')}">
+                    	   <input type="submit" class="btn btn-primary" value="备份数据">
+                    	</form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</block>

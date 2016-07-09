@@ -25,8 +25,14 @@ $(function(){
 					if (responseText) {
 						if(responseText>0){
 							window.location.href=ThinkPHP.PREV_URL;
+						}else if(responseText==-10){
+							$('#loading').dialog('option', 'width',280).css('background', 'url(' + ThinkPHP['IMG'] + '/error.png) no-repeat 20px center').html('账号已禁用,请联系管理员...');
+					    	 setTimeout(function () {
+									$('#loading').dialog('close');
+									$('#loading').dialog('option', 'width', 180).css('background', 'url(' + ThinkPHP['IMG'] + '/loading.gif) no-repeat 20px center').html('数据交互中...');
+								}, 2000);
 						}else{
-							$('#loading').dialog('option', 'width',180).css('background', 'url(' + ThinkPHP['IMG'] + '/error.png) no-repeat 20px center').html('用户名和密码不正确...');
+							$('#loading').dialog('option', 'width',220).css('background', 'url(' + ThinkPHP['IMG'] + '/error.png) no-repeat 20px center').html('用户名和密码不正确...');
 					    	 setTimeout(function () {
 									$('#loading').dialog('close');
 									$('#loading').dialog('option', 'width', 180).css('background', 'url(' + ThinkPHP['IMG'] + '/loading.gif) no-repeat 20px center').html('数据交互中...');

@@ -141,3 +141,16 @@ float:left;
 .fn-right {
 float:right;
 }
+/*form验证的样式*/
+.form_style .succ {
+    width: 28px;
+    height: 20px;
+    display: inline-block;
+    background: url(../images/success.gif) no-repeat bottom;
+}
+.form_style .error{
+    color: #f00;
+}
+#loading{
+	 padding-left:50px;
+}

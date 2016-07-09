@@ -1,0 +1,85 @@
+<extend name="Base/common1"/>
+<block name="header">
+	<title>账户信息</title>
+	<meta name="keywords" content="{$goods_info.keywords}">
+	<meta name="description" content="{$goods_info.description}">
+	<link href="__CSS__/base.css" rel="stylesheet">
+	<link href="__CSS__/public.css" rel="stylesheet">
+	<link href="__CSS__/jquery.ui.css" rel="stylesheet">
+	<link href="__CSS__/profile.css" rel="stylesheet">
+	<script src="__JS__/jquery.js"></script> 
+	<script src="__JS__/jquery.ui.js"></script>
+    <script src="__JS__/jquery.form.js"></script>
+    <script src="__JS__/jquery.validate.js"></script>
+	<script>
+	  var ThinkPHP = {
+				'MODULE' : '__MODULE__',
+				'IMG' : '__PUBLIC__/{:MODULE_NAME}/images',
+			};
+	</script>
+</block>
+<block name="main">
+         <div class="right">
+                <div class="opt-title">
+                    <h2>账户信息</h2>
+                </div>
+                <div class="opt-content">
+                    <div class="opt-nav">
+                        <ul>
+                            <li class="active"><a href="">基本信息</a></li>
+                            <li><a href="">更多个人信息</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                    	<form id="account" class="form_style">
+                            <table class="table-form">
+                                <tr>
+                                    <th>用户名：</th>
+                                    <td>{$userFindDate.username}</td>
+                                </tr>
+                                <tr>
+                                    <th><span class="star">*</span>昵称：</th>
+                                    <td>
+                                    	<empty name="userFindDate.nickname">
+                                    	    <input type="text" name="nickname" class="input" value="{$userFindDate.username}" />
+                                    	  <else/>
+                                    	    <input type="text" name="nickname" class="input" value="{$userFindDate.nickname}" />
+                                    	</empty>
+                                    	<span></span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th><span class="star">*</span>真实姓名：</th>
+                                    <td>
+                                    	<input type="text" name="realname" class="input" value="{$userFindDate.realname}" />
+                                    	<span></span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>性别：</th>
+                                    <td>
+                                        <label class="radio"><input type="radio" name="gender" value="0" <eq name="userFindDate.sex" value="0">checked='checked'</eq> />保密</label>
+                                        <label class="radio"><input type="radio" name="gender" value="1" <eq name="userFindDate.sex" value="1">checked='checked'</eq>/>男</label>
+                                        <label class="radio"><input type="radio" name="gender" value="2" <eq name="userFindDate.sex" value="2">checked='checked'</eq> />女</label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>邮箱：</th>
+                                    <td><input type="text" name="email" class="input" disabled value="{$userFindDate.email}" /></td>
+                                </tr>
+                                <tr>
+                                    <th></th>
+                                    <td>
+                                        <button type="submit" class="btn">提交</button>
+                                    </td>
+                                </tr>
+                            </table>
+                         </form>
+                    </div>
+                </div>
+            </div>
+            <div id="loading">数据交互中...</div>
+</block>
+<block name="foot">
+	 <script src="__JS__/account.js"></script>
+</block>
