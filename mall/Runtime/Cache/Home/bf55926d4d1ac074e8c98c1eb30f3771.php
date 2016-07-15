@@ -90,7 +90,7 @@
         <dt>订单中心</dt>
         <dd>
             <ul>
-                <li><a href="__CONTROL__/orders">我的订单</a></li>
+                <li><a href="<?php echo U('Auth/orders');?>">我的订单</a></li>
                 <li><a href="__CONTROL__/account">浏览历史</a></li>
             </ul>
         </dd>

@@ -1,0 +1,139 @@
+<extend name="Base/common1"/>
+<block name="header">
+	<title>账户信息</title>
+	<meta name="keywords" content="{$goods_info.keywords}">
+	<meta name="description" content="{$goods_info.description}">
+	<link href="__CSS__/base.css" rel="stylesheet">
+	<link href="__CSS__/public.css" rel="stylesheet">
+	<link href="__CSS__/jquery.ui.css" rel="stylesheet">
+	<link href="__CSS__/profile.css" rel="stylesheet">
+	<script src="__JS__/jquery.js"></script> 
+	<script src="__JS__/jquery.ui.js"></script>
+    <script src="__JS__/jquery.form.js"></script>
+    <script src="__JS__/jquery.validate.js"></script>
+	<script>
+	  var ThinkPHP = {
+				'MODULE' : '__MODULE__',
+				'IMG' : '__PUBLIC__/{:MODULE_NAME}/images',
+			};
+	</script>
+</block>
+<block name="main">
+	   <div class="right">
+                <div class="opt-title">
+                    <h2>订单列表</h2>
+                </div>
+                <div class="opt-content">
+                    <ul class="extra-l">
+                       <li><a href="__ROOT__/Auth/orders" <eq name="curr" value="">class="curr"</eq>>全部订单</a></li>
+                       <li><a href="__ROOT__/Auth/orders/s/1" <eq name="curr" value="1">class="curr"</eq>  >待付款</a></li>
+                       <li><a href="__ROOT__/Auth/orders/s/2" <eq name="curr" value="2">class="curr"</eq> >待收货</a></li>
+                       <li><a href="__ROOT__/Auth/orders/s/3" <eq name="curr" value="3">class="curr"</eq> >待评价</a></li>
+                    </ul>
+                   <volist name="orderAll" id="orderAll">
+                    <dl class="opt-content-dl">
+                    	 <dt class="sep-row">
+                    	 	  <span>{$orderAll.created}</span>
+                    	 	  <span>订单号:<span class="order_num">{$orderAll.order_sn}</span></span>
+                    	 </dt>
+                    	 <dd>
+                    	 	 <table style="width:100%;" class="table-order">
+                    	 	 	  <tr> 
+                    	 	 	  	  <foreach name="orderAll.order_goods" item="order_goods">
+                    	 	 	  	  	  <eq name="key" value="0">
+		                    	 	 	  	  <td width="50%">
+		                    	 	 	  	  	  <div class="p-img">
+		                    	 	 	  	  	  	 <a href="__ROOT__/Detail/index/id/{$order_goods.goods_id}" target="_blank">
+		                    	 	 	  	  	  	   	<img class="" width="60" height="60"  title="" src="__ROOT__/{$order_goods.thunb_pic.thumb}">
+		                    	 	 	  	  	  	  </a>
+		                    	 	 	  	  	  </div>
+		                    	 	 	  	  	  <div class="p-msg">
+		                    	 	 	  	  	  	   <div class="p-name-order">
+		                                                  <a class="a-link" title="{$order_goods.goods_name}" target="_blank"  href="__ROOT__/Detail/index/id/{$order_goods.goods_id}">
+		                                                  	{$order_goods.goods_name}
+		                                                  </a>
+		                                               </div>
+		                                               <div class="goods-number"> x{$order_goods.nums}</div>
+		                    	 	 	  	  	  </div>
+		                    	 	 	  	  </td>
+		                    	 	 	  </eq>
+                    	 	 	  	  </foreach>
+                    	 	 	  	  <td width="10%" rowspan="{$orderAll.order_num}">
+                    	 	 	  	  	  <div class="consignee tooltip">
+											<span class="txt" >{$orderAll.consignee}</span>
+											<b onclick="alert('有空做')"></b>
+											<!------鼠标移动到头像的效果,有空做-------->
+											<div class="prompt-01 prompt-02" style="display: none;">
+												<div class="pc">
+													<strong>dsfsad</strong>
+													<p>河北张家口市张北县单晶河乡sdafsd</p>
+													<p>138****6387</p>
+												</div>
+											     <div class="p-arrow p-arrow-left"></div>
+											</div>
+										</div>                    	 	 	  	  	
+                    	 	 	  	  </td>
+                    	 	 	  	  <td width="10%" rowspan="{$orderAll.order_num}">
+                    	 	 	  	  	  <div class="amount">
+                	                             <span>总额 ¥{$orderAll.total_price}</span> <br>
+                	                    	     <strong>应付</strong> <br>
+                    	                         <strong>¥{$orderAll.total_price}</strong> <br>
+                                                 <span class="ftx-13">{$orderAll.pay_name}</span>
+                                         </div>  	
+                    	 	 	  	  </td>
+                    	 	 	  	  <td width="10%" rowspan="{$orderAll.order_num}">
+                    	 	 	  	  	  <div class="status">
+                    	 	 	  	  	  	<if condition="$orderAll.pay_status eq 0">
+                    	 	 	  	  	  		   <span class="order-status ftx-04"> 等待付款 </span><br>
+                    	 	 	  	  	  		 <elseif condition="$orderAll.ship_status eq 2" />
+                    	 	 	  	  	  		    <span class="order-status ftx-04"> 正在出货 </span><br> 
+                    	 	 	  	  	  		 <elseif condition="$orderAll.ship_status eq 3" />
+                    	 	 	  	  	  		    <span class="order-status ftx-04"> 发货中 </span><br> 
+                    	 	 	  	  	  	</if>
+                                            <div class="tooltip">
+                                                <a target="_blank"  href="">订单详情</a>
+                                            </div>
+                    	 	 	  	  	  </div> 
+                    	 	 	  	  </td>
+                    	 	 	  	  <td width="10%" rowspan="{$orderAll.order_num}">
+                    	 	 	  	  	  <div class="operate">
+                                             <div _val="83431" class="count-time" style="display: block;"><i class="time-icon"></i>剩余23时11分</div>
+                                             <if condition="$orderAll.pay_status eq 0">
+                                                <a target="_blank" >付款</a>
+                                             </if>
+                                             <a href="javascript:void(0);" class="a-link order-cancel">取消订单</a>
+                                             <br>
+                                          </div>
+                    	 	 	  	  </td>
+                    	 	 	  </tr>
+                    	 	 	  <foreach name="orderAll.order_goods" item="order_goods1">
+                    	 	 	  	 <gt name="key" value="0">
+		                    	 	 	  <tr>
+		                    	 	 	  	  <td width="50%">
+		                    	 	 	  	  	  <div class="p-img">
+		                    	 	 	  	  	  	 <a href="__ROOT__/Detail/index/id/{$order_goods.goods_id}" target="_blank">
+		                    	 	 	  	  	  	   	<img class="" width="60" height="60"  title="" src="__ROOT__/{$order_goods1.thunb_pic.thumb}">
+		                    	 	 	  	  	  	  </a>
+		                    	 	 	  	  	  </div>
+		                    	 	 	  	  	  <div class="p-msg">
+		                    	 	 	  	  	  	   <div class="p-name-order">
+		                                                  <a class="a-link" title="{$order_goods1.goods_name}" target="_blank"  href="__ROOT__/Detail/index/id/{$order_goods.goods_id}">
+		                                                      	{$order_goods1.goods_name}
+		                                                  </a>
+		                                               </div>
+		                                               <div class="goods-number"> x1 </div>
+		                    	 	 	  	  	  </div>
+		                    	 	 	  	  </td>
+		                    	 	 	 </tr>
+	                    	 	 	</gt>
+                    	 	 	 </foreach>
+                    	 	 </table>
+                    	 </dd>
+                    <dl>
+                  </volist>
+                </div>
+            </div>
+</block>
+<block name="foot">
+	 <script src="__JS__/account.js"></script>
+</block>

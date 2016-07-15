@@ -1,0 +1,139 @@
+<extend name="Base/common"/>
+<block name="head">
+	 <script>
+	     var Thinkphp={
+	     	    'delGoods':'{:U("Goods/delGoods")}',
+	     	    'modifyPromote':'{:U("Goods/modifyPromote")}'
+	     }
+	 </script>
+	 <style>
+	    .sursor{
+	    	  cursor:pointer;
+	    }
+	 </style>
+</block>
+<block name="main">
+	   <div  class="wrapper wrapper-content animated fadeInRight">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="ibox float-e-margins">
+                    <div class="ibox-title">
+                        <ol class="breadcrumb">
+                              <li>订单管理</li>
+                              <li class="active">订单列表</li>
+                       </ol>
+                    </div>
+                    <div id="addGoods" >
+                       <form  action="{:U('Goods/index')}" method="get">
+                    	<div class="row">
+                    	  <div class="col-md-3">
+                    		 <select name="category_id" class="form-control">
+	                                <option value="">所有栏目</option>
+	                                <volist name="categorys" id="categoryadd"> 
+                                           	   	   <option value="{$categoryadd.category_id}" <eq name="categoryadd.category_id" value="$category_id" >selected="selected"</eq>  path="{$categoryadd.path}">
+                                           	   	   	 <if condition="$categoryadd.path eq '0' ">
+                                           	   	   	     ├─{$categoryadd.category_name}
+                                           	   	   	 <else/>
+                                           	   	   	     <?php
+                                           	   	   	       $nums=substr_count($categoryadd['path'],'-');
+                                           	   	   	       echo str_repeat('&nbsp;&nbsp;&nbsp;&nbsp;',$nums).'└';
+                                           	   	   	       echo str_repeat('─',$nums).$categoryadd['category_name'];
+                                           	   	   	     ?>
+                                           	   	   	 </if>
+                                           	   	   </option>
+                                    </volist>
+	                           </select>
+	                      </div>
+	                      <div class="col-md-3">
+	                      	   <select name="brand_id" class="form-control">
+	                      	   	    <option value="">所有品牌</option>
+	                      	   	    <volist name="brands" id="brand">
+	                      	   	    	 <option value="{$brand.brand_id}" <eq name="brand.brand_id" value="$show_brand">selected="selected"</eq>   >{$brand.brand_name}</option>
+	                      	   	    </volist>
+	                      	   </select>
+	                      </div>
+	                      <div class="col-md-3">
+	                      	   <select name="promote_type"  class="form-control">
+						            <option value="">全部</option>
+						            <option value="is_hot" <eq name="promote_type" value="is_hot">selected="selected"</eq> >热卖</option>
+						            <option value="is_well" <eq name="promote_type" value="is_well">selected="selected"</eq> >人气</option>
+						            <option value="is_first" <eq name="promote_type" value="is_first">selected="selected"</eq> >首发</option>
+						        </select>
+	                      </div>
+	                      <div class="col-md-3">
+	                      	    <select name="is_on_sale" class="form-control">
+							            <option value="">全部</option>
+							            <option value="1" <eq name="is_on_sale" value="1">selected="selected"</eq>>上架</option>
+							            <option value="0" <eq name="is_on_sale" value="0">selected="selected"</eq>>下架</option>
+							    </select>
+	                      </div>
+	                   </div>
+	                   <div class="row" style="margin-top:10px;">
+	                   	   <div class="col-md-3">
+	                   	   	   <input type="text" name="keywords" value="{$keywords}" id="keywords" class="form-control">
+	                   	   </div>
+	                   	   <div class="col-md-3">
+	                   	   	   <button type="submit" id="" class="btn btn-success">
+	                   	   	   	   <i class="icon-search icon-white"></i> 搜索
+	                   	   	   </button>
+	                   	   </div> 	
+	                   </div>
+                      </form>
+                    </div>
+                    <div>
+                          <a href="javascript:window.location.reload();" class="btn btn-primary  pull-right">
+                              <span class="glyphicon glyphicon-refresh"></span> 刷新
+                          </a>
+                    </div>
+                    <div class="ibox-content" id="goods" style="margin-top:20px;border:none;">
+                    	 <table class="table table-condensed table-striped table-bordered table-hover">
+                            <thead>
+                                <tr>
+                                	<th style="width:2%;"><input type="checkbox" name="" class="select-all"></th>
+                                    <th>订单号</th>
+                                    <th>下单时间</th>
+                                    <th>收货人</th>
+                                    <th>收货地址</th>
+                                    <th>总金额</th>
+                                    <th>订单状态</th>
+                                    <th>快递</th>
+                                    <th>操作</th>
+                                </tr>
+                            </thead>
+                            <tbody> 	
+                            	<volist name="allorder" id="allorder">
+                            	  <tr>
+                            		<td style="width:2%;"><input type="checkbox" name="" class="select-name"></td>
+                                    <td>{$allorder.order_sn}</td>
+                                    <td>{$allorder.created}</td>
+                                    <td>
+                                    	{$allorder.consignee} [Mobile: <span style="color:#4face5;">{$allorder.mobile}</span>]
+                                    </td>
+                                    <td>{$allorder.province}-{$allorder.city}-{$allorder.district} {$allorder.address}</td>
+                                    <td>￥ {$allorder.total_price}</td>
+                                    <td>{$allorder.order_status},{$allorder.pay_status},{$allorder.ship_status}</td>
+                                    <td>{$allorder.ship_name}</td>
+                                    <td>
+                                    	<a class="btn btn-primary btn-xs" href="__ROOT__/Admin/Order/OrderInfo/id/{$allorder.order_id}" >
+                                                <span class="glyphicon glyphicon-camera" aria-hidden="true"></span> 查看
+                                        </a>
+                                        <a class="btn btn-success btn-xs cannel" href="" >
+                                                <span class="glyphicon glyphicon-minus-sign" aria-hidden="true"></span> 取消
+                                        </a>
+                                    	<a class="btn btn-danger btn-xs del" href="" >
+                                                <span class="glyphicon glyphicon-remove" aria-hidden="true"></span> 删除
+                                        </a>
+                                    </td>
+                                  </tr>
+                                </volist>
+                            </tbody>
+                          </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</block>
+<block name="foot">
+	  <script src="__JS__/order.js"></script>
+</block>	

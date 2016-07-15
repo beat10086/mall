@@ -210,3 +210,79 @@
 #account span{
 	 color:red;
 }
+.extra-l li{
+	  float:left;
+}
+.opt-content{
+	 padding:5px 10px;
+}
+.extra-l{
+	overflow:hidden;
+	margin-bottom:20px;
+}
+.extra-l li a{
+	color:#333;
+	display: inline-block;
+    vertical-align: middle;
+    margin-right:10px;
+}
+.extra-l li a.curr{
+	font-weight:bold;
+	color:#e4393c;
+	border-bottom:2px solid #e4393c;
+}
+.extra-l li a:hover{
+	color:#e4393c;
+	display: inline-block;
+    vertical-align: middle;
+    margin-right:10px;
+    text-decoration:none;
+}
+.sep-row{
+	 height:30px;
+	 background:#f5f5f5;
+}
+.sep-row span{
+	line-height:30px;
+	margin-left:10px;
+	color:#aaaaaa;
+}
+.sep-row span .order_num{
+	margin-left:10px;
+	color:#333333;
+}
+.p-img{
+	border:1px solid #efefef;
+	width:65px;
+	height:65px;
+	float:left;
+	margin-top:12px;
+	margin-left:14px;
+	margin-bottom:8px;
+}
+.p-name-order{
+	width:230px;
+	margin-top:15px;
+	float:left;
+}
+.goods-number{
+	float:left;
+    margin-top:18px;
+    margin-left:5px;
+    color:#aaaab9;
+}
+.table-order tr td{
+	vertical-align:top;
+	border:1px solid #e5e5e5;
+}
+.consignee b {
+    background: rgba(0, 0, 0, 0) url("//misc.360buyimg.com/user/myjd-2015/css/i/order-icon20150916.png") repeat scroll 0 -24px;
+    display: inline-block;
+    height: 16px;
+    margin: 0 0 0 5px;
+    vertical-align: middle;
+    width: 14px;
+}
+.opt-content-dl{
+	  margin-top:10px;
+}

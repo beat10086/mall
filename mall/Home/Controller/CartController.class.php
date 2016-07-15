@@ -319,7 +319,6 @@ class CartController extends CommonController {
       if(!isset($_SESSION['user_auth'])){
           $this->redirect('Auth/login');
       }
-      PRINT_R($_SESSION);
       //购物车购买
       if($_GET['act']=='cart'){
           $cartmodel=D('Cart');
@@ -333,16 +332,21 @@ class CartController extends CommonController {
                       if($goodsdata['goods_price']!=$cartdata[$k]['price']){
                           if($goodsdata['promote_stime']<time() && $goodsdata['promote_etime'] >time() && $goodsdata['is_promote']==1){
                               $cartdata[$k]['price']=$goodsdata['promote_price'];
+                              $orderTotal+=$goodsdata['goods_price']*$cartdata[$k]['nums'];
                           }else{
                               $cartdata[$k]['price']=$goodsdata['goods_price'];
-                          }
-                          
+                              $orderTotal+=$goodsdata['goods_price']*$cartdata[$k]['nums'];
+                          }                
+                      }else{
+                          $cartdata[$k]['price']=$goodsdata['goods_price'];
+                          $orderTotal+=$goodsdata['goods_price']*$cartdata[$k]['nums'];
                       }
                   }else{
                       $productdata=$cartmodel->table('ts_product')->where('good_id='.$cartdata[$k]['goods_id'].' AND attr_list=\''.$cartdata[$k]['spec'].',\'')->find();
                       $cartdata[$k]['price']=$productdata['goods_price'];
+                      $orderTotal+=$productdata['goods_price']*$cartdata[$k]['nums'];
                   }
-                  $orderTotal+=$cartdata[$k]['price'];
+                  $orderTotal=$orderTotal;
               }
               /**
                * 收货人信息

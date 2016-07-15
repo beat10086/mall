@@ -140,5 +140,49 @@ class  AuthController extends CommonController {
             $this->error('非法操作！');
         }      
     }
-    
+    //显示订单
+    public function orders () {
+        $s=$_GET['s'];
+        if($s>0 && $s<4){
+            $order=D('order');
+            //获取订单
+            if($s==1){
+                $orderAll=$order->where('user_id='.$_SESSION['user_auth']['id'].' AND pay_status=0')->order('created desc')->select();
+            }else if($s==2){
+                $orderAll=$order->where('( user_id='.$_SESSION['user_auth']['id'].' AND pay_status=1) AND (ship_status=0 OR ship_status=1 OR ship_status=2)')->order('created desc')->select();
+            }
+            //根据订单获取商品
+            if(!empty($orderAll)){
+                foreach ($orderAll as $k=>$v){
+                    $orderAll[$k]['created']=date('Y-m-d H:i:s',$v['created']);
+                    $orderAll[$k]['order_goods']=$order->query('SELECT OG.goods_name,OG.goods_id,OG.nums,G.thunb_pic FROM ts_order_goods AS OG LEFT JOIN ts_goods AS G ON OG.goods_id=G.goods_id WHERE order_id=' . $v['order_id']);
+                    $orderAll[$k]['order_num']=count($orderAll[$k]['order_goods']);
+                    foreach($orderAll[$k]['order_goods'] as $k1=>$v2){
+                        $orderAll[$k]['order_goods'][$k1]['thunb_pic']=json_decode(htmlspecialchars_decode($v2['thunb_pic']),true);
+                    }
+                }
+            }
+            $curr=$s;
+        }else{
+            $order=D('order');
+            //获取订单
+            $orderAll=$order->where('user_id='.$_SESSION['user_auth']['id'])->order('created desc')->select();
+            //根据订单获取商品
+            if(!empty($orderAll)){
+                foreach ($orderAll as $k=>$v){
+                    $orderAll[$k]['created']=date('Y-m-d H:i:s',$v['created']);
+                    $orderAll[$k]['order_goods']=$order->query('SELECT OG.goods_name,OG.goods_id,OG.nums,G.thunb_pic FROM ts_order_goods AS OG LEFT JOIN ts_goods AS G ON OG.goods_id=G.goods_id WHERE order_id=' . $v['order_id']);
+                    $orderAll[$k]['order_num']=count($orderAll[$k]['order_goods']);
+                    foreach($orderAll[$k]['order_goods'] as $k1=>$v2){
+                        $orderAll[$k]['order_goods'][$k1]['thunb_pic']=json_decode(htmlspecialchars_decode($v2['thunb_pic']),true);
+                    }
+                }
+            }
+            $curr="";
+        }
+        //print_r($orderAll);
+        $this->assign('curr',$curr);
+        $this->assign('orderAll',$orderAll);
+        $this->display();
+    }
 }
