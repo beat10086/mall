@@ -1,0 +1,193 @@
+<extend name="Base/common"/>
+<block name="head">
+	  <link rel="stylesheet" href="__CSS__/font-awesome.min.css" rel="stylesheet">
+	  <link rel="stylesheet" type="text/css" media="all" href="__CSS__/daterangepicker-bs3.css" />
+	  <link rel="stylesheet" href="__CSS__/daterangepicker.css" rel="stylesheet">  
+	  <link rel="stylesheet" href="__UPLOADIFY__/uploadify.css">
+	  <style>
+	     .tips{
+	     	display:inline-block; 
+	     	padding: 6px 12px;
+	     	}
+	  </style>
+	  <script type="text/javascript" charset="utf-8">
+	      var flage_type=true;
+		  var Thinkphp={
+		  	    ROOT:'__ROOT__',
+		  }
+	  </script>
+</block>
+<block name="main">
+	<div  class="wrapper wrapper-content animated fadeInRight">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="ibox float-e-margins">
+                    <div class="ibox-title">
+                        <ol class="breadcrumb">
+                              <li>广告管理</li>
+                              <li class="active">广告列表</li>
+                       </ol>
+                    </div>
+                    <div class="ibox-content">
+                    	  <ul class="nav nav-tabs" role="tablist">
+							    <li role="presentation" class="active">
+							    	<a href="#ads_list" aria-controls="ads_list" role="tab" data-toggle="tab">广告列表</a>
+							    </li>
+							    <li role="presentation">
+							    	<a href="#add_ads" aria-controls="add_ads" role="tab" data-toggle="tab">添加广告</a>
+							    </li>
+							    <li role="presentation">
+							    	<a href="#ads_position_manage" aria-controls="ads_position_manage" role="tab" data-toggle="tab">广告位管理</a>
+							    </li>
+							    <li role="presentation">
+							    	<a href="#ads_position" aria-controls="ads_position" role="tab" data-toggle="tab">添加广告位</a>
+							    </li>
+                         </ul>
+                         
+	                         <div class="tab-content" style="margin-top:10px;">
+								    <div role="tabpanel" class="tab-pane fade in active" id="ads_list">
+								    </div>
+								    <div role="tabpanel" class="tab-pane fade" id="add_ads">
+								    	<form action="{:U('Ads/addAds')}" method="post" class="form-horizontal" enctype="multipart/form-data"> 	
+								    	 	<div class="form-group">
+                                               <label class="col-sm-2 control-label" for="ads_title">广告标题：</label>
+                                                 <div class="col-sm-4">
+                                                   <input id="ads_title" class="form-control" type="text" placeholder="广告标题" autocomplete="off" name="ads_title">
+											     </div>
+											</div>
+											<div class="form-group">
+                                               <label class="col-sm-2 control-label" for="ads_title">位置：</label>
+                                               <div class="col-sm-4">
+                                                   <select name="position_id" class="form-control">
+                                                   	  <option value="">请选择</option>
+                                                   	  <volist name="adsposition" id="adsposition2">
+                                                   	     <option value="{$adsposition2.position_id}">{$adsposition2.title}</option>
+                                                   	  </volist>
+                                                   </select>
+											   </div>
+											</div>
+											<div class="form-group">
+			                                    <label class="col-sm-2 control-label" for="ads_time">广告日期：</label>
+			                                    <div class="col-sm-4"> 
+			                                    	  <div class="input-prepend input-group">
+		                                                   <span class="add-on input-group-addon">
+		                                                       <i class="glyphicon glyphicon-calendar"></i>
+		                                                   </span>
+		                                                   <input type="text" readonly="readonly" style="width: 200px" name="ads_time" value="" autocomplete="off" class="form-control" id="ads_time">
+		                                                   <input type="hidden" autocomplete="off" name="addtime">
+		                                                   <input type="hidden" autocomplete="off" name="endtime">
+		                                              </div>
+			                                    </div>
+		                                     </div>
+		                                     <div class="form-group">
+                                               <label class="col-sm-2 control-label" for="ads_status">状态：</label>
+                                               <div class="col-sm-4">
+                                                      <label class="radio-inline">
+													      <input type="radio" name="ads_status" value="1" style="margin-top:2px;">开启
+													  </label>
+													  <label class="radio-inline">
+													      <input type="radio" name="ads_status"  value="0" style="margin-top:2px;">关闭
+													  </label>
+											   </div>
+											</div>
+											<div class="form-group">
+                                               <label class="col-sm-2 control-label" for="ads_title">投放栏目：</label>
+                                               <div class="col-sm-4">
+                                                   <select name="category_id" class="form-control">
+                                                   	  <option value="">请选择</option>
+                                                   	    <volist name="category" id="categoryadd"> 
+		                                           	   	   <option value="{$categoryadd.category_id}" path="{$categoryadd.path}">
+		                                           	   	   	 <if condition="$categoryadd.path eq '0' ">
+		                                           	   	   	     ├─{$categoryadd.category_name}
+		                                           	   	   	 <else/>
+		                                           	   	   	     <?php
+		                                           	   	   	       $nums=substr_count($categoryadd['path'],'-');
+		                                           	   	   	       echo str_repeat('&nbsp;&nbsp;&nbsp;&nbsp;',$nums).'└';
+		                                           	   	   	       echo str_repeat('─',$nums).$categoryadd['category_name'];
+		                                           	   	   	     ?>
+		                                           	   	   	 </if>
+		                                           	   	   </option>
+                                           	           </volist> 
+                                                   </select>
+											   </div>
+											</div>
+									    </form>
+								    </div>
+								    <div role="tabpanel" class="tab-pane fade" id="ads_position_manage">
+								    	 <table class="table table-striped">
+								    	 	 <tr>
+									            <th>广告位名称</th>
+									            <th>调用ID</th>
+									            <th>调用名称</th>
+									            <th>属性</th>
+									            <th>编辑</th>
+									        </tr>
+									        <volist name="adsposition" id="adsposition1">
+										       <tr>
+										            <td>{$adsposition1.title}</td>
+										            <td>{$adsposition1.position_id}</td>
+										            <td>{$adsposition1.pname}</td>
+										            <td>{$adsposition1.type}</td>
+										            <td>
+										            	<a class="btn btn-primary btn-xs edit_brand_btn" href="javascript:void(0)">
+                                                            <span class="glyphicon glyphicon-pencil" aria-hidden="true"></span>编辑
+                                                        </a>
+                                                        <button class="btn btn-danger btn-xs del_brand_btn" type="button">
+                                                            <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>删除
+                                                        </button>
+										            </td>
+										        </tr>
+									        </volist>
+                                         </table>	  
+								    </div>
+									 <div role="tabpanel" class="tab-pane fade" id="ads_position">
+									 	<form action="{:U('Ads/addAdvert')}" class="form-horizontal" method="post" id="addAdsPositionForm">
+										    <div class="form-group">
+								    	  	        	<label for="ads_title" class="col-sm-2 control-label">广告位名称</label>
+												        <div class="col-sm-6">
+								                           <input type="text" class="form-control" name="ads_title" id="ads_title" autocomplete="off" placeholder="广告位名称">	        
+												        </div>
+								    	  	 </div>
+								    	  	 <div class="form-group">
+								    	  	  	     <label for="ads_call" class="col-sm-2 control-label">调用名称：</label>
+												     <div class="col-sm-5">
+												     	    <div class="form-group">
+												     	    	 <div class="col-sm-8">
+														            <input type="text" class="form-control" name="ads_call" id="ads_call" placeholder="调用名称">
+														         </div>
+														         <div class="col-sm-4">
+														           <span class="tips">* 在模板中调用，只能为字母</span>
+														         </div>
+														    </div>
+													 </div>
+								    	  	  </div>
+								    	  	  <div class="form-group">
+								    	  	  	     <label  class="col-sm-2 control-label">广告位类型：</label>
+												     <div class="col-sm-5">
+												     	    <div class="form-group">
+												     	    	<foreach name="add_type" item="add_type">
+													     	    	 <label class="radio-inline" style="margin-left:8px;">
+		                                                                 <input type="radio" name="type"  value="{$key}" <eq name="key" value="1">checked</eq> style="margin-top:3px;"> {$add_type}
+		                                                             </label>
+	                                                            </foreach>
+														    </div>
+													 </div>
+								    	  	  </div>  
+						                      <p style="margin-top:10px;margin-left:170px;">
+													 <input class="btn btn-primary" type="submit" onclick="return checkAdsPosition()" value="添加">
+										      </p>	
+								        </form>
+								     </div>
+	                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+     </div>
+</block>
+<block name="foot">
+	<script src="__JS__/jquery.uploadify.min.js"></script>
+	<script src="__JS__/moment.min.js"></script>
+	<script src="__JS__/daterangepicker.js"></script>
+ 	<script src="__JS__/ads.js"></script>
+</block>

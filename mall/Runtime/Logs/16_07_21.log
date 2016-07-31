@@ -1,0 +1,589 @@
+[ 2016-07-21T21:32:15+08:00 ] 127.0.0.1 /mall/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-07-21T21:32:18+08:00 ] 127.0.0.1 /mall/admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-21T21:32:18+08:00 ] 127.0.0.1 /mall/Admin/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-21T21:32:18+08:00 ] 127.0.0.1 /mall/Admin/Login/verity.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-21T21:32:31+08:00 ] 127.0.0.1 /mall/Admin/Login/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: DESCRIBE ts_admin [ RunTime:0.006000s ]
+SQL: SELECT `user_id`,`username`,`passwd` FROM `ts_admin` WHERE ( `username` = 'admin' ) AND ( `passwd` = '25d55ad283aa400af464c76d713c07ad' ) LIMIT 1   [ RunTime:0.001000s ]
+
+[ 2016-07-21T21:32:36+08:00 ] 127.0.0.1 /mall/Admin/Login/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: DESCRIBE ts_admin [ RunTime:0.003000s ]
+SQL: SELECT `user_id`,`username`,`passwd` FROM `ts_admin` WHERE ( `username` = 'admin' ) AND ( `passwd` = 'e10adc3949ba59abbe56e057f20f883e' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: UPDATE `ts_admin` SET `last_login`=1469107956,`last_ip`=2130706433 WHERE ( `user_id` = 1 ) [ RunTime:0.003000s ]
+
+[ 2016-07-21T21:32:36+08:00 ] 127.0.0.1 /mall/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-21T21:32:36+08:00 ] 127.0.0.1 /mall/Admin/Index/main.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-21T21:32:36+08:00 ] 127.0.0.1 /mall/PUBLIC/Admin/js/plugins/layer/extend/layer.ext.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-07-21T21:33:01+08:00 ] 127.0.0.1 /mall/Admin/Goods/index.html?v=4.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: DESCRIBE ts_category [ RunTime:0.005000s ]
+SQL: select category_id,category_name,pid,is_nav,status,CONCAT(path,'-',category_id) as depath,path,goods_type_id from ts_category where status=1 order by depath ASC [ RunTime:0.002000s ]
+SQL: DESCRIBE ts_brand [ RunTime:0.005000s ]
+SQL: SELECT * FROM `ts_brand` ORDER BY sort DESC  [ RunTime:0.001000s ]
+SQL: DESCRIBE ts_goods [ RunTime:0.005000s ]
+SQL: SELECT `goods_id`,`goods_name`,`goods_price`,`goods_sn`,`is_on_sale`,`is_hot`,`is_well`,`is_first`,`sku` FROM `ts_goods` ORDER BY created DESC  [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: category_id D:\wamp\www\mall\mall\Runtime\Cache\Admin\3ea905b335e38bad065eef00e80c359f.php 第 53 行.
+NOTIC: [8] Undefined variable: category_id D:\wamp\www\mall\mall\Runtime\Cache\Admin\3ea905b335e38bad065eef00e80c359f.php 第 53 行.
+NOTIC: [8] Undefined variable: category_id D:\wamp\www\mall\mall\Runtime\Cache\Admin\3ea905b335e38bad065eef00e80c359f.php 第 53 行.
+NOTIC: [8] Undefined variable: category_id D:\wamp\www\mall\mall\Runtime\Cache\Admin\3ea905b335e38bad065eef00e80c359f.php 第 53 行.
+NOTIC: [8] Undefined variable: category_id D:\wamp\www\mall\mall\Runtime\Cache\Admin\3ea905b335e38bad065eef00e80c359f.php 第 53 行.
+NOTIC: [8] Undefined variable: category_id D:\wamp\www\mall\mall\Runtime\Cache\Admin\3ea905b335e38bad065eef00e80c359f.php 第 53 行.
+NOTIC: [8] Undefined variable: category_id D:\wamp\www\mall\mall\Runtime\Cache\Admin\3ea905b335e38bad065eef00e80c359f.php 第 53 行.
+NOTIC: [8] Undefined variable: category_id D:\wamp\www\mall\mall\Runtime\Cache\Admin\3ea905b335e38bad065eef00e80c359f.php 第 53 行.
+NOTIC: [8] Undefined variable: category_id D:\wamp\www\mall\mall\Runtime\Cache\Admin\3ea905b335e38bad065eef00e80c359f.php 第 53 行.
+NOTIC: [8] Undefined variable: category_id D:\wamp\www\mall\mall\Runtime\Cache\Admin\3ea905b335e38bad065eef00e80c359f.php 第 53 行.
+NOTIC: [8] Undefined variable: category_id D:\wamp\www\mall\mall\Runtime\Cache\Admin\3ea905b335e38bad065eef00e80c359f.php 第 53 行.
+NOTIC: [8] Undefined variable: category_id D:\wamp\www\mall\mall\Runtime\Cache\Admin\3ea905b335e38bad065eef00e80c359f.php 第 53 行.
+NOTIC: [8] Undefined variable: category_id D:\wamp\www\mall\mall\Runtime\Cache\Admin\3ea905b335e38bad065eef00e80c359f.php 第 53 行.
+NOTIC: [8] Undefined variable: category_id D:\wamp\www\mall\mall\Runtime\Cache\Admin\3ea905b335e38bad065eef00e80c359f.php 第 53 行.
+NOTIC: [8] Undefined variable: category_id D:\wamp\www\mall\mall\Runtime\Cache\Admin\3ea905b335e38bad065eef00e80c359f.php 第 53 行.
+NOTIC: [8] Undefined variable: category_id D:\wamp\www\mall\mall\Runtime\Cache\Admin\3ea905b335e38bad065eef00e80c359f.php 第 53 行.
+NOTIC: [8] Undefined variable: category_id D:\wamp\www\mall\mall\Runtime\Cache\Admin\3ea905b335e38bad065eef00e80c359f.php 第 53 行.
+NOTIC: [8] Undefined variable: category_id D:\wamp\www\mall\mall\Runtime\Cache\Admin\3ea905b335e38bad065eef00e80c359f.php 第 53 行.
+NOTIC: [8] Undefined variable: category_id D:\wamp\www\mall\mall\Runtime\Cache\Admin\3ea905b335e38bad065eef00e80c359f.php 第 53 行.
+NOTIC: [8] Undefined variable: category_id D:\wamp\www\mall\mall\Runtime\Cache\Admin\3ea905b335e38bad065eef00e80c359f.php 第 53 行.
+NOTIC: [8] Undefined variable: category_id D:\wamp\www\mall\mall\Runtime\Cache\Admin\3ea905b335e38bad065eef00e80c359f.php 第 53 行.
+NOTIC: [8] Undefined variable: category_id D:\wamp\www\mall\mall\Runtime\Cache\Admin\3ea905b335e38bad065eef00e80c359f.php 第 53 行.
+NOTIC: [8] Undefined variable: category_id D:\wamp\www\mall\mall\Runtime\Cache\Admin\3ea905b335e38bad065eef00e80c359f.php 第 53 行.
+NOTIC: [8] Undefined variable: category_id D:\wamp\www\mall\mall\Runtime\Cache\Admin\3ea905b335e38bad065eef00e80c359f.php 第 53 行.
+NOTIC: [8] Undefined variable: category_id D:\wamp\www\mall\mall\Runtime\Cache\Admin\3ea905b335e38bad065eef00e80c359f.php 第 53 行.
+NOTIC: [8] Undefined variable: category_id D:\wamp\www\mall\mall\Runtime\Cache\Admin\3ea905b335e38bad065eef00e80c359f.php 第 53 行.
+NOTIC: [8] Undefined variable: category_id D:\wamp\www\mall\mall\Runtime\Cache\Admin\3ea905b335e38bad065eef00e80c359f.php 第 53 行.
+NOTIC: [8] Undefined variable: category_id D:\wamp\www\mall\mall\Runtime\Cache\Admin\3ea905b335e38bad065eef00e80c359f.php 第 53 行.
+NOTIC: [8] Undefined variable: category_id D:\wamp\www\mall\mall\Runtime\Cache\Admin\3ea905b335e38bad065eef00e80c359f.php 第 53 行.
+NOTIC: [8] Undefined variable: category_id D:\wamp\www\mall\mall\Runtime\Cache\Admin\3ea905b335e38bad065eef00e80c359f.php 第 53 行.
+NOTIC: [8] Undefined variable: show_brand D:\wamp\www\mall\mall\Runtime\Cache\Admin\3ea905b335e38bad065eef00e80c359f.php 第 64 行.
+NOTIC: [8] Undefined variable: show_brand D:\wamp\www\mall\mall\Runtime\Cache\Admin\3ea905b335e38bad065eef00e80c359f.php 第 64 行.
+NOTIC: [8] Undefined variable: show_brand D:\wamp\www\mall\mall\Runtime\Cache\Admin\3ea905b335e38bad065eef00e80c359f.php 第 64 行.
+NOTIC: [8] Undefined variable: show_brand D:\wamp\www\mall\mall\Runtime\Cache\Admin\3ea905b335e38bad065eef00e80c359f.php 第 64 行.
+NOTIC: [8] Undefined variable: show_brand D:\wamp\www\mall\mall\Runtime\Cache\Admin\3ea905b335e38bad065eef00e80c359f.php 第 64 行.
+NOTIC: [8] Undefined variable: show_brand D:\wamp\www\mall\mall\Runtime\Cache\Admin\3ea905b335e38bad065eef00e80c359f.php 第 64 行.
+NOTIC: [8] Undefined variable: show_brand D:\wamp\www\mall\mall\Runtime\Cache\Admin\3ea905b335e38bad065eef00e80c359f.php 第 64 行.
+NOTIC: [8] Undefined variable: promote_type D:\wamp\www\mall\mall\Runtime\Cache\Admin\3ea905b335e38bad065eef00e80c359f.php 第 70 行.
+NOTIC: [8] Undefined variable: promote_type D:\wamp\www\mall\mall\Runtime\Cache\Admin\3ea905b335e38bad065eef00e80c359f.php 第 71 行.
+NOTIC: [8] Undefined variable: promote_type D:\wamp\www\mall\mall\Runtime\Cache\Admin\3ea905b335e38bad065eef00e80c359f.php 第 72 行.
+NOTIC: [8] Undefined variable: is_on_sale D:\wamp\www\mall\mall\Runtime\Cache\Admin\3ea905b335e38bad065eef00e80c359f.php 第 78 行.
+NOTIC: [8] Undefined variable: is_on_sale D:\wamp\www\mall\mall\Runtime\Cache\Admin\3ea905b335e38bad065eef00e80c359f.php 第 79 行.
+NOTIC: [8] Undefined variable: keywords D:\wamp\www\mall\mall\Runtime\Cache\Admin\3ea905b335e38bad065eef00e80c359f.php 第 85 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-21T21:33:03+08:00 ] 127.0.0.1 /mall/Detail/index/id/96
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-21T21:33:05+08:00 ] 127.0.0.1 /mall/Cart/getCart.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: DESCRIBE ts_cart [ RunTime:0.002000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ts_cart` WHERE ( user_id=8 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT `goods_id`,`user_id`,`spec`,`nums`,`price`,`goods_name`,`goods_thumb`,`spec_desc`,`goods_attr` FROM `ts_cart` WHERE ( user_id=8 )  [ RunTime:0.001000s ]
+
+[ 2016-07-21T21:33:06+08:00 ] 127.0.0.1 /mall/Cart/getCart.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: DESCRIBE ts_cart [ RunTime:0.003000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ts_cart` WHERE ( user_id=8 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `goods_id`,`user_id`,`spec`,`nums`,`price`,`goods_name`,`goods_thumb`,`spec_desc`,`goods_attr` FROM `ts_cart` WHERE ( user_id=8 )  [ RunTime:0.000000s ]
+
+[ 2016-07-21T21:33:08+08:00 ] 127.0.0.1 /mall/Auth/account.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-21T21:33:10+08:00 ] 127.0.0.1 /mall/Auth/orders.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-21T21:33:15+08:00 ] 127.0.0.1 /mall/Auth/__CONTROL__/account
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 非法操作:__CONTROL__
+
+[ 2016-07-21T21:34:03+08:00 ] 127.0.0.1 /mall/Detail/index/id/96
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-21T21:34:04+08:00 ] 127.0.0.1 /mall/Cart/getCart.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: DESCRIBE ts_cart [ RunTime:0.003000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ts_cart` WHERE ( user_id=8 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `goods_id`,`user_id`,`spec`,`nums`,`price`,`goods_name`,`goods_thumb`,`spec_desc`,`goods_attr` FROM `ts_cart` WHERE ( user_id=8 )  [ RunTime:0.001000s ]
+
+[ 2016-07-21T21:34:04+08:00 ] 127.0.0.1 /mall/Cart/getCart.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: DESCRIBE ts_cart [ RunTime:0.003000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ts_cart` WHERE ( user_id=8 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `goods_id`,`user_id`,`spec`,`nums`,`price`,`goods_name`,`goods_thumb`,`spec_desc`,`goods_attr` FROM `ts_cart` WHERE ( user_id=8 )  [ RunTime:0.000000s ]
+
+[ 2016-07-21T21:34:13+08:00 ] 127.0.0.1 /mall/Auth/account.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-21T21:34:14+08:00 ] 127.0.0.1 /mall/Auth/orders.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-21T21:34:16+08:00 ] 127.0.0.1 /mall/Auth/account.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-21T21:34:18+08:00 ] 127.0.0.1 /mall/Auth/account.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-21T21:36:32+08:00 ] 127.0.0.1 /mall/Cart/getCart.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: DESCRIBE ts_cart [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ts_cart` WHERE ( user_id=8 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `goods_id`,`user_id`,`spec`,`nums`,`price`,`goods_name`,`goods_thumb`,`spec_desc`,`goods_attr` FROM `ts_cart` WHERE ( user_id=8 )  [ RunTime:0.000000s ]
+
+[ 2016-07-21T21:43:06+08:00 ] 127.0.0.1 /mall/Auth/__CONTROL__/account
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 非法操作:__CONTROL__
+
+[ 2016-07-21T21:43:10+08:00 ] 127.0.0.1 /mall/Cart/getCart.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015600s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015600s ]
+SQL: DESCRIBE ts_cart [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ts_cart` WHERE ( user_id=8 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `goods_id`,`user_id`,`spec`,`nums`,`price`,`goods_name`,`goods_thumb`,`spec_desc`,`goods_attr` FROM `ts_cart` WHERE ( user_id=8 )  [ RunTime:0.000000s ]
+
+[ 2016-07-21T21:48:45+08:00 ] 127.0.0.1 /mall/Auth/account.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-21T21:48:48+08:00 ] 127.0.0.1 /mall/Detail/index/id/96
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-21T21:49:56+08:00 ] 127.0.0.1 /mall/Auth/account.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-21T21:50:04+08:00 ] 127.0.0.1 /mall/Auth/account.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-21T21:50:16+08:00 ] 127.0.0.1 /mall/Auth/account.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-21T21:50:24+08:00 ] 127.0.0.1 /mall/Detail/index/id/96
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-21T21:51:05+08:00 ] 127.0.0.1 /mall/Detail/index/id/96
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-21T21:51:06+08:00 ] 127.0.0.1 /mall/Auth/account.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-21T21:51:08+08:00 ] 127.0.0.1 /mall/Detail/index/id/96
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-21T21:51:09+08:00 ] 127.0.0.1 /mall/Cart/getCart.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: DESCRIBE ts_cart [ RunTime:0.003000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ts_cart` WHERE ( user_id=8 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `goods_id`,`user_id`,`spec`,`nums`,`price`,`goods_name`,`goods_thumb`,`spec_desc`,`goods_attr` FROM `ts_cart` WHERE ( user_id=8 )  [ RunTime:0.000000s ]
+
+[ 2016-07-21T21:54:25+08:00 ] 127.0.0.1 /mall/Detail/index/id/96
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-21T21:54:46+08:00 ] 127.0.0.1 /mall/Detail/index/id/96
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-21T21:54:51+08:00 ] 127.0.0.1 /mall/Detail/index/id/96
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-21T21:54:54+08:00 ] 127.0.0.1 /mall/Cart/getCart.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: DESCRIBE ts_cart [ RunTime:0.003000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ts_cart` WHERE ( user_id=8 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `goods_id`,`user_id`,`spec`,`nums`,`price`,`goods_name`,`goods_thumb`,`spec_desc`,`goods_attr` FROM `ts_cart` WHERE ( user_id=8 )  [ RunTime:0.001000s ]
+
+[ 2016-07-21T21:56:44+08:00 ] 127.0.0.1 /mall/Detail/index/id/96
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-21T21:57:07+08:00 ] 127.0.0.1 /mall/Detail/index/id/96
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-21T21:57:10+08:00 ] 127.0.0.1 /mall/Cart/getCart.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: DESCRIBE ts_cart [ RunTime:0.003000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ts_cart` WHERE ( user_id=8 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `goods_id`,`user_id`,`spec`,`nums`,`price`,`goods_name`,`goods_thumb`,`spec_desc`,`goods_attr` FROM `ts_cart` WHERE ( user_id=8 )  [ RunTime:0.001000s ]
+
+[ 2016-07-21T21:57:31+08:00 ] 127.0.0.1 /mall/Detail/index/id/96
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-21T21:57:32+08:00 ] 127.0.0.1 /mall/Detail/index/id/96
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-21T21:57:35+08:00 ] 127.0.0.1 /mall/Cart/getCart.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: DESCRIBE ts_cart [ RunTime:0.003000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ts_cart` WHERE ( user_id=8 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `goods_id`,`user_id`,`spec`,`nums`,`price`,`goods_name`,`goods_thumb`,`spec_desc`,`goods_attr` FROM `ts_cart` WHERE ( user_id=8 )  [ RunTime:0.001000s ]
+
+[ 2016-07-21T21:57:47+08:00 ] 127.0.0.1 /mall/Detail/index/id/96
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-21T21:59:11+08:00 ] 127.0.0.1 /mall/Detail/index/id/96
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-21T21:59:32+08:00 ] 127.0.0.1 /mall/Detail/index/id/96
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-21T21:59:50+08:00 ] 127.0.0.1 /mall/Detail/index/id/96
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-21T21:59:54+08:00 ] 127.0.0.1 /mall/Cart/getCart.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: DESCRIBE ts_cart [ RunTime:0.003000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ts_cart` WHERE ( user_id=8 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `goods_id`,`user_id`,`spec`,`nums`,`price`,`goods_name`,`goods_thumb`,`spec_desc`,`goods_attr` FROM `ts_cart` WHERE ( user_id=8 )  [ RunTime:0.000000s ]
+
+[ 2016-07-21T22:00:26+08:00 ] 127.0.0.1 /mall/Auth/layout.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-21T22:00:26+08:00 ] 127.0.0.1 /mall/Auth/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-21T22:00:31+08:00 ] 127.0.0.1 /mall/Detail/index/id/96
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-21T22:00:32+08:00 ] 127.0.0.1 /mall/Cart/getCart.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: DESCRIBE ts_cart [ RunTime:0.003000s ]
+NOTIC: [8] Undefined index: user_auth D:\wamp\www\mall\mall\Home\Controller\CommonController.class.php 第 12 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `ts_cart` WHERE ( user_id= ) LIMIT 1   [ RunTime:0.000000s ]
+ERR: 1064:Erreur de syntaxe près de ') LIMIT 1' à la ligne 1
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM `ts_cart` WHERE ( user_id= ) LIMIT 1  
+NOTIC: [8] Undefined index: user_auth D:\wamp\www\mall\mall\Home\Controller\CartController.class.php 第 161 行.
+SQL: SELECT `goods_id`,`user_id`,`spec`,`nums`,`price`,`goods_name`,`goods_thumb`,`spec_desc`,`goods_attr` FROM `ts_cart` WHERE ( user_id= )  [ RunTime:0.000000s ]
+ERR: 1064:Erreur de syntaxe près de ')' à la ligne 1
+ [ SQL语句 ] : SELECT `goods_id`,`user_id`,`spec`,`nums`,`price`,`goods_name`,`goods_thumb`,`spec_desc`,`goods_attr` FROM `ts_cart` WHERE ( user_id= ) 
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\mall\mall\Home\Controller\CartController.class.php 第 162 行.
+
+[ 2016-07-21T22:00:55+08:00 ] 127.0.0.1 /mall/Detail/index/id/96
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-21T22:00:56+08:00 ] 127.0.0.1 /mall/Cart/getCart.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: DESCRIBE ts_cart [ RunTime:0.003000s ]
+NOTIC: [8] Undefined index: user_auth D:\wamp\www\mall\mall\Home\Controller\CommonController.class.php 第 12 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `ts_cart` WHERE ( user_id= ) LIMIT 1   [ RunTime:0.000000s ]
+ERR: 1064:Erreur de syntaxe près de ') LIMIT 1' à la ligne 1
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM `ts_cart` WHERE ( user_id= ) LIMIT 1  
+NOTIC: [8] Undefined index: user_auth D:\wamp\www\mall\mall\Home\Controller\CartController.class.php 第 161 行.
+SQL: SELECT `goods_id`,`user_id`,`spec`,`nums`,`price`,`goods_name`,`goods_thumb`,`spec_desc`,`goods_attr` FROM `ts_cart` WHERE ( user_id= )  [ RunTime:0.000000s ]
+ERR: 1064:Erreur de syntaxe près de ')' à la ligne 1
+ [ SQL语句 ] : SELECT `goods_id`,`user_id`,`spec`,`nums`,`price`,`goods_name`,`goods_thumb`,`spec_desc`,`goods_attr` FROM `ts_cart` WHERE ( user_id= ) 
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\mall\mall\Home\Controller\CartController.class.php 第 162 行.
+
+[ 2016-07-21T22:03:24+08:00 ] 127.0.0.1 /mall/Auth/__CONTROL__/account
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 非法操作:__CONTROL__
+
+[ 2016-07-21T22:03:36+08:00 ] 127.0.0.1 /mall/Cart/getCart.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: DESCRIBE ts_cart [ RunTime:0.003000s ]
+NOTIC: [8] Undefined index: user_auth D:\wamp\www\mall\mall\Home\Controller\CommonController.class.php 第 12 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `ts_cart` WHERE ( user_id= ) LIMIT 1   [ RunTime:0.000000s ]
+ERR: 1064:Erreur de syntaxe près de ') LIMIT 1' à la ligne 1
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM `ts_cart` WHERE ( user_id= ) LIMIT 1  
+NOTIC: [8] Undefined index: user_auth D:\wamp\www\mall\mall\Home\Controller\CartController.class.php 第 161 行.
+SQL: SELECT `goods_id`,`user_id`,`spec`,`nums`,`price`,`goods_name`,`goods_thumb`,`spec_desc`,`goods_attr` FROM `ts_cart` WHERE ( user_id= )  [ RunTime:0.000000s ]
+ERR: 1064:Erreur de syntaxe près de ')' à la ligne 1
+ [ SQL语句 ] : SELECT `goods_id`,`user_id`,`spec`,`nums`,`price`,`goods_name`,`goods_thumb`,`spec_desc`,`goods_attr` FROM `ts_cart` WHERE ( user_id= ) 
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\mall\mall\Home\Controller\CartController.class.php 第 162 行.
+
+[ 2016-07-21T22:04:43+08:00 ] 127.0.0.1 /mall/Detail/index/id/96
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-21T22:04:50+08:00 ] 127.0.0.1 /mall/Cart/getCart.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: DESCRIBE ts_cart [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: user_auth D:\wamp\www\mall\mall\Home\Controller\CommonController.class.php 第 12 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `ts_cart` WHERE ( user_id= ) LIMIT 1   [ RunTime:0.000000s ]
+ERR: 1064:Erreur de syntaxe près de ') LIMIT 1' à la ligne 1
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM `ts_cart` WHERE ( user_id= ) LIMIT 1  
+NOTIC: [8] Undefined index: user_auth D:\wamp\www\mall\mall\Home\Controller\CartController.class.php 第 161 行.
+SQL: SELECT `goods_id`,`user_id`,`spec`,`nums`,`price`,`goods_name`,`goods_thumb`,`spec_desc`,`goods_attr` FROM `ts_cart` WHERE ( user_id= )  [ RunTime:0.000000s ]
+ERR: 1064:Erreur de syntaxe près de ')' à la ligne 1
+ [ SQL语句 ] : SELECT `goods_id`,`user_id`,`spec`,`nums`,`price`,`goods_name`,`goods_thumb`,`spec_desc`,`goods_attr` FROM `ts_cart` WHERE ( user_id= ) 
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\mall\mall\Home\Controller\CartController.class.php 第 162 行.
+
+[ 2016-07-21T22:08:08+08:00 ] 127.0.0.1 /mall/Auth/__CONTROL__/account
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 非法操作:__CONTROL__
+
+[ 2016-07-21T22:12:29+08:00 ] 127.0.0.1 /mall/Cart/getCart.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: DESCRIBE ts_cart [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: user_auth D:\wamp\www\mall\mall\Home\Controller\CommonController.class.php 第 12 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `ts_cart` WHERE ( user_id= ) LIMIT 1   [ RunTime:0.000000s ]
+ERR: 1064:Erreur de syntaxe près de ') LIMIT 1' à la ligne 1
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM `ts_cart` WHERE ( user_id= ) LIMIT 1  
+NOTIC: [8] Undefined index: user_auth D:\wamp\www\mall\mall\Home\Controller\CartController.class.php 第 161 行.
+SQL: SELECT `goods_id`,`user_id`,`spec`,`nums`,`price`,`goods_name`,`goods_thumb`,`spec_desc`,`goods_attr` FROM `ts_cart` WHERE ( user_id= )  [ RunTime:0.000000s ]
+ERR: 1064:Erreur de syntaxe près de ')' à la ligne 1
+ [ SQL语句 ] : SELECT `goods_id`,`user_id`,`spec`,`nums`,`price`,`goods_name`,`goods_thumb`,`spec_desc`,`goods_attr` FROM `ts_cart` WHERE ( user_id= ) 
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\mall\mall\Home\Controller\CartController.class.php 第 162 行.
+
+[ 2016-07-21T22:12:32+08:00 ] 127.0.0.1 /mall/Cart/getCart.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: DESCRIBE ts_cart [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: user_auth D:\wamp\www\mall\mall\Home\Controller\CommonController.class.php 第 12 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `ts_cart` WHERE ( user_id= ) LIMIT 1   [ RunTime:0.000000s ]
+ERR: 1064:Erreur de syntaxe près de ') LIMIT 1' à la ligne 1
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM `ts_cart` WHERE ( user_id= ) LIMIT 1  
+NOTIC: [8] Undefined index: user_auth D:\wamp\www\mall\mall\Home\Controller\CartController.class.php 第 161 行.
+SQL: SELECT `goods_id`,`user_id`,`spec`,`nums`,`price`,`goods_name`,`goods_thumb`,`spec_desc`,`goods_attr` FROM `ts_cart` WHERE ( user_id= )  [ RunTime:0.000000s ]
+ERR: 1064:Erreur de syntaxe près de ')' à la ligne 1
+ [ SQL语句 ] : SELECT `goods_id`,`user_id`,`spec`,`nums`,`price`,`goods_name`,`goods_thumb`,`spec_desc`,`goods_attr` FROM `ts_cart` WHERE ( user_id= ) 
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\mall\mall\Home\Controller\CartController.class.php 第 162 行.
+

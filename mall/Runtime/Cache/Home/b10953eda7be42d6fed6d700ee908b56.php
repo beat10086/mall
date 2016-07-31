@@ -171,7 +171,7 @@
         <div class="site-here">
             <strong><a href="/mall">首页</a></strong> &gt;
             <?php if(is_array($ur_here)): $i = 0; $__LIST__ = $ur_here;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$ur_here_1): $mod = ($i % 2 );++$i;?><a href="<?php echo U('List/index',array('id'=>$ur_here_1['category_id']));?>" ><?php echo ($ur_here_1["category_name"]); ?></a> &gt;<?php endforeach; endif; else: echo "" ;endif; ?>
-            <a href="/mall/Detail/index/id/95"><?php echo ($goodsOne["goods_name"]); ?></a>
+            <a href="/mall/Detail/index/id/96"><?php echo ($goodsOne["goods_name"]); ?></a>
        </div>
 <div id="goods-info">
 <!--相册-->

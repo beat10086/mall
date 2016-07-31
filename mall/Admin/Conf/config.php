@@ -10,6 +10,8 @@ return array(
 	    '__UEDITOR__'=>__ROOT__.'/PUBLIC/'.MODULE_NAME.'/ueditor',
 	),
     'PAGE_SIZE'=>10,
+    //页面Trace
+    'SHOW_PAGE_TRACE'=>true,
     //图片上传路径
     'UPLOAD_PATH'=>'./Uploads/',
     'LOGO_PATH'=>'./logo/',

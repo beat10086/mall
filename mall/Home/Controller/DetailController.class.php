@@ -16,6 +16,24 @@ class DetailController extends CommonController {
             if(!$goodsOne['is_on_sale']){
                 $this->error("此商品已下架！");
             }
+            //加入历史记录,登陆状态cookie暂时没有考虑
+            if($_SESSION['user_auth']['id']){
+                 $history=D('History');
+                 //判断该商品，是否加载过
+                 $map=array(
+                      'goods_id'=>$goods_id,
+                      'user_id' =>$_SESSION['user_auth']['id']
+                 );
+                 $his_id=$history->field('his_id')->where($map)->find();
+                 if($his_id==""){
+                     $data=array(
+                         'user_id'=>$_SESSION['user_auth']['id'],
+                         'goods_id'=>$goods_id,
+                         'add_time'=>time()
+                     );
+                     $history->add($data);
+                 }     
+            }  
             //获取商品描述
             $goods_info = $goods->goods_info($goods_id);
             $goods_info['content']=htmlspecialchars_decode($goods_info['content']);
