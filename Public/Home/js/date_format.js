@@ -1,4 +1,3 @@
-//格式化时间
 Date.prototype.format = function(format) {
     var date = {
         "M+": this.getMonth() + 1,
@@ -20,13 +19,12 @@ Date.prototype.format = function(format) {
     }
     return format;
 }
-//处理时间时间，转换为显示时间
-Date.prototype.timeAgo = function(time) {
+Date.prototype.timeAgo = function() {
     var now = new Date();
     now = now.getTime();
     var list = {h:'小时前', m:'分钟前', s:'秒前', n:'刚刚'};
 
-    var timeDiff = now - time;
+    var timeDiff = now - this.getTime();
     if (timeDiff > 24*60*60*1000) {
         // 超过一天，显示具体日期
         return this.format('yyyy-MM-dd');
